@@ -128,16 +128,16 @@ dash_app = dash.Dash(
 
 owners = sorted(df['owner'].dropna().unique())
 lift_options = sorted(df['surface_lifts_only'].dropna().unique())
-sort_vars = ['vertical_drop_ft', 'base_elevation_ft', 'peak_elevation_ft', 'price', 'annual_snowfall', 'slope_mi', 'skiable_acres', 'total_lifts']
+sort_vars = ['vertical_drop', 'base_elevation', 'peak_elevation', 'price', 'snowfall', 'slope_length', 'acreage', 'lift_total']
 sort_dict = {
-    'Vertical Drop': 'vertical_drop_ft',
-    'Base Elevation': 'base_elevation_ft',
-    'Peak Elevation': 'peak_elevation_ft',
+    'Vertical Drop': 'vertical_drop',
+    'Base Elevation': 'base_elevation',
+    'Peak Elevation': 'peak_elevation',
     'Day Ticket Price': 'price',
-    'Annual Snowfall': 'annual_snowfall',
-    'Slope Length': 'slope_mi',
-    'Acreage': 'skiable_acres',
-    'Total Lifts': 'total_lifts'
+    'Annual Snowfall': 'snowfall',
+    'Slope Length': 'slope_length',
+    'Acreage': 'acreage',
+    'Total Lifts': 'lift_total'
 }
 
 
@@ -295,14 +295,14 @@ dash_app.layout = html.Div(style={
 )
 def update_map(owner, lift, sort_var):
     column_lookup = {
-        'vertical_drop_ft': 'Vertical Drop (ft)',
-        'base_elevation_ft': 'Base Elevation (ft)',
-        'peak_elevation_ft': 'Peak Elevation (ft)',
+        'vertical_drop': 'Vertical Drop (ft)',
+        'base_elevation': 'Base Elevation (ft)',
+        'peak_elevation': 'Peak Elevation (ft)',
         'price': 'Day Ticket Price ($)',
-        'annual_snowfall': 'Annual Snowfall (in)',
-        'slope_mi': 'Slope Length (mi)',
-        'skiable_acres': 'Skiable Acres',
-        'total_lifts': 'Total Lifts'
+        'snowfall': 'Annual Snowfall (in)',
+        'slope_length': 'Slope Length (mi)',
+        'acreage': 'Skiable Acres',
+        'lift_total': 'Total Lifts'
     }
     sort_label = column_lookup.get(sort_var, 'price')
     filtered_df = df.copy()
