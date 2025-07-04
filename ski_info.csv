@@ -1,0 +1,441 @@
+name,url,price,base_elevation_ft,peak_elevation_ft,vertical_drop_ft,slope_mi,state,skiable_acres,annual_snowfall,owner,Tram,Gondola,Pulse Gondola,Cabriolet,8-pack,6-pack,Chondola,Detach Quad,Fixed Quad,Triple,Detach Triple,Double,Single,T-Bar,J-Bar,Poma/platter,Ropetow,Carpet,total_lifts,surface_lifts_only,latitude,longitude,nonprofit
+49 Degrees North,https://www.skiresort.info/ski-resort/49-degrees-north-mountain-resort/,84.0,3924,5774,1850,42.0,Washington,2325,301,CMR Lands,0,0,0,0,0,0,0,1,1,0,0,4,0,0,0,0,0,1,7,No,48.3013648092357,-117.562926562625,No
+Abenaki,https://www.skiresort.info/ski-resort/abenaki/,20.0,591,820,230,1.0,New Hampshire,18,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,Yes,43.6093782653616,-71.2299884117107,No
+Adventure Mountain,https://www.skiresort.info/ski-resort/adventure-mountain-greenland/,7.0,1237,1362,125,0.2,Michigan,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,46.7724464400728,-89.0902901496086,No
+Afton Alps,https://www.skiresort.info/ski-resort/afton-alps/,89.0,919,1270,351,5.0,Minnesota,300,60,Vail Resorts,0,0,0,0,0,0,0,0,1,2,0,12,0,0,0,0,2,2,19,No,44.8576205018608,-92.788473835517,No
+Alpine Valley (Michigan),https://www.skiresort.info/ski-resort/alpine-valley-white-lake/,61.0,961,1211,249,4.0,Michigan,100,20,Wisconsin Resorts,0,0,0,0,0,0,0,0,1,3,0,1,0,0,0,0,2,2,9,No,42.6536253997723,-83.523108876399,No
+Alpine Valley (Ohio),https://www.skiresort.info/ski-resort/alpine-valley-ohio/,59.0,1115,1329,213,2.0,Ohio,72,120,Vail Resorts,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,1,1,5,No,41.5268343596115,-81.2600027141888,No
+Alpine Valley (Wisconsin),https://www.skiresort.info/ski-resort/alpine-valley-resort-elkhorn/,78.0,1017,1362,344,2.0,Wisconsin,90,80,Wisconsin Resorts,0,0,0,0,0,0,0,3,0,4,0,0,0,0,0,0,2,6,15,No,42.7356907071581,-88.4283824972845,No
+Alta,https://www.skiresort.info/ski-resort/alta/,199.0,8530,10499,1969,44.0,Utah,2614,540,Independent,0,0,0,0,0,1,0,3,1,1,0,1,0,0,0,1,1,2,11,No,40.579942027823,-111.619986768103,No
+Alta Sierra,https://www.skiresort.info/ski-resort/alta-sierra-shirley-meadows/,75.0,6686,7087,400,1.0,California,80,80,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,3,No,35.71129003695,-118.560117456341,No
+Alyeska,https://www.skiresort.info/ski-resort/alyeska-resort-girdwood/,169.0,269,2756,2487,39.0,Alaska,1610,650,Independent,1,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,1,6,No,60.9703423974469,-149.097432276847,No
+Andes Tower Hills,https://www.skiresort.info/ski-resort/andes-tower-hills/,60.0,1329,1621,292,2.0,Minnesota,35,55,Independent,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,1,2,6,No,45.850690999254,-95.6312052063786,No
+Angel Fire,https://www.skiresort.info/ski-resort/angel-fire/,125.0,8599,10676,2077,47.0,New Mexico,560,210,Independent,0,0,0,0,0,0,0,2,1,0,0,3,0,0,0,0,0,2,8,No,36.3865151311332,-105.272091015304,No
+Antelope Butte,https://www.skiresort.info/ski-resort/antelope-butte/,69.0,8399,9400,1001,13.0,Wyoming,225,200,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,3,No,44.6115668434155,-107.514621362812,Yes
+Anthony Lakes Mountain Resort,https://www.skiresort.info/ski-resort/anthony-lakes-mountain-resort/,50.0,7100,7999,899,6.0,Oregon,1100,300,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,3,No,44.9628890567817,-118.233556922865,No
+Appalachian Ski Mountain,https://www.skiresort.info/ski-resort/appalachian-ski-mountain/,79.0,3632,3999,367,3.0,North Carolina,27,27,Independent,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,1,2,6,No,36.1743348914397,-81.6625247152887,No
+Arapahoe Basin,https://www.skiresort.info/ski-resort/arapahoe-basin/,189.0,10781,12434,1654,32.0,Colorado,1428,350,Alterra,0,0,0,0,0,1,0,2,2,0,0,1,0,0,0,0,1,2,9,No,39.6340336078039,-105.870415777636,No
+Arctic Valley,https://www.skiresort.info/ski-resort/arctic-valley/,55.0,2500,3898,1398,16.0,Alaska,320,250,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,1,0,4,No,61.2466015908083,-149.532587690714,Yes
+Arizona Snowbowl,https://www.skiresort.info/ski-resort/arizona-snowbowl/,127.0,9199,11499,2300,23.0,Arizona,777,260,Mountain Capital Partners,0,0,0,0,0,1,1,0,3,1,0,0,0,0,0,0,0,2,8,No,35.3304395329149,-111.705536396305,No
+Ascutney Mountain,https://www.skiresort.info/ski-resort/ascutney-mountain/,20.0,719,2520,1801,1.0,Vermont,26,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,43.4625511141721,-72.4672947870429,No
+Aspen Highlands,https://www.skiresort.info/ski-resort/aspen-highlands/,264.0,8041,11677,3635,84.0,Colorado,1010,300,Aspen Skiing Company,0,0,0,0,0,0,0,3,0,2,0,1,0,0,0,0,0,0,6,No,39.1813983732029,-106.856105524982,No
+Aspen Mountain,https://www.skiresort.info/ski-resort/aspen-mountain/,264.0,7946,11214,3268,64.0,Colorado,826,300,Aspen Skiing Company,0,1,0,0,0,0,0,2,1,0,1,3,0,0,0,0,0,0,8,No,39.1842152867587,-106.821690810338,No
+Attitash Mountain Resort,https://www.skiresort.info/ski-resort/attitash-mountain-resort/,144.0,600,2349,1749,23.0,New Hampshire,311,120,Vail Resorts,0,0,0,0,0,0,0,3,2,2,0,0,0,0,0,0,0,1,8,No,44.0826692333144,-71.2294189159093,No
+Ausblick Ski Club,https://www.skiresort.info/ski-resort/ausblick-sussex/,30.0,968,1148,180,1.0,Wisconsin,10,,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,2,No,43.1345002931069,-88.264657223581,No
+Badger Mountain,https://www.skiresort.info/ski-resort/badger-mountain/,10.0,2999,3484,486,1.0,Washington,10,120,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,3,Yes,47.6126974760702,-120.129741684916,Yes
+Badger Pass,https://www.skiresort.info/ski-resort/badger-pass/,69.0,7201,8005,804,6.0,California,90,300,Independent,0,0,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,0,4,No,37.662217217046,-119.66368957656,Yes
+Bald Mountain,https://www.skiresort.info/ski-resort/bald-mountain/,25.0,3999,4800,801,6.0,Idaho,140,100,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,46.570582678996,-115.869627147372,No
+Bear Creek Mountain Resort,https://www.skiresort.info/ski-resort/bear-creek-mountain-resort/,85.0,591,1099,509,6.0,Pennsylvania,86,30,Independent,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,1,5,No,40.4766121333448,-75.6257066495122,No
+Bear Paw Ski Bowl,https://www.skiresort.info/ski-resort/bear-paw-ski-bowl/,25.0,4199,5279,1079,6.0,Montana,80,140,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,48.1643835073863,-109.670176989619,No
+Bear Valley,https://www.skiresort.info/ski-resort/bear-valley/,169.0,6598,8497,1900,42.0,California,1680,359,Independent,0,0,0,0,0,1,0,1,1,2,0,2,0,0,0,0,0,2,9,No,38.4924084257156,-120.04436535711,No
+Beartooth Basin,https://www.skiresort.info/ski-resort/beartooth-basin/,50.0,9898,10899,1001,3.0,Wyoming,600,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,Yes,44.9760407102785,-109.435232900875,No
+Beartown,https://www.skiresort.info/ski-resort/beartown/,24.0,863,997,135,0.5,New York,32,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,2,Yes,44.763714789627,-73.5842494720497,Yes
+Beaver Creek,https://www.skiresort.info/ski-resort/beaver-creek/,329.0,7398,11444,4045,93.0,Colorado,2082,325,Vail Resorts,0,2,0,0,0,0,1,12,1,1,0,1,0,0,0,0,0,7,25,No,39.601397968372,-106.528719291705,No
+Beaver Mountain,https://www.skiresort.info/ski-resort/beaver-mountain/,70.0,7201,8858,1657,19.0,Utah,880,400,Independent,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,0,0,2,6,No,41.9679154294829,-111.540667860691,No
+Beech Mountain,https://www.skiresort.info/ski-resort/beech-mountain/,79.0,4672,5505,833,9.0,North Carolina,95,84,Independent,0,0,0,0,0,0,0,0,4,0,0,2,0,0,0,0,1,2,9,No,36.1946449807837,-81.8782671370259,No
+Belleayre Mountain,https://www.skiresort.info/ski-resort/belleayre-mountain/,114.0,2024,3428,1404,12.0,New York,171,141,New York State,0,1,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,4,9,No,42.1409475000713,-74.5020555965859,Yes
+Berkshire East,https://www.skiresort.info/ski-resort/berkshire-east/,99.0,659,1841,1181,8.0,Massachusetts,180,120,The Schaefer Family,0,0,0,0,0,0,0,1,2,0,0,1,0,0,0,0,0,2,6,No,42.6208879427655,-72.8768560536622,No
+Big Bear at Masthope Mountain,https://www.skiresort.info/ski-resort/big-bear-at-masthope-mountain/,78.0,722,1286,564,4.0,Pennsylvania,26,50,Independent,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,3,7,No,41.5237095917575,-75.024579805837,No
+Big Bear: Bear Mountain,https://www.skiresort.info/ski-resort/bear-mountain-big-bear-lake/,169.0,7139,8806,1667,17.0,California,198,100,Alterra,0,0,0,0,0,1,0,2,0,2,0,2,0,0,0,0,0,4,11,No,34.2279780828159,-116.86089636389,No
+Big Bear: Snow Summit,https://www.skiresort.info/ski-resort/snow-summit-big-bear-lake/,169.0,6988,8202,1214,18.0,California,240,100,Alterra,0,0,0,0,0,0,0,2,2,2,0,4,0,0,0,0,0,5,15,No,34.2358206937449,-116.889253309291,No
+Big Bear: Snow Valley,https://www.skiresort.info/ski-resort/snow-valley/,169.0,6726,7841,1115,21.0,California,240,160,Alterra,0,0,0,0,0,1,0,0,0,4,0,4,0,0,0,0,0,2,11,No,34.2245705198959,-117.035519019636,No
+Big Boulder,https://www.skiresort.info/ski-resort/big-boulder/,105.0,1699,2175,476,3.0,Pennsylvania,55,50,Vail Resorts,0,0,0,0,0,0,0,0,2,1,0,1,0,0,0,0,0,1,5,No,41.0497914194315,-75.6006871876771,No
+Big Moose,https://www.skiresort.info/ski-resort/big-squaw/,40.0,1325,1896,571,5.0,Maine,,136,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,2,No,45.5064963517218,-69.7018982148919,No
+Big Powderhorn Mountain,https://www.skiresort.info/ski-resort/big-powderhorn-mountain/,89.0,1148,1772,623,6.0,Michigan,253,214,Independent,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,1,0,10,No,46.5090445551297,-90.0946769349822,No
+Big Sky Resort,https://www.skiresort.info/ski-resort/big-sky-resort/,275.0,6801,11165,4364,155.0,Montana,5800,400,Boyne Resorts,1,2,0,0,2,2,0,4,3,9,0,4,0,0,0,3,1,8,39,No,45.2850349517533,-111.402136915504,No
+BigRock Mountain,https://www.skiresort.info/ski-resort/bigrock-mountain/,60.0,656,1634,978,12.0,Maine,90,100,Independent,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,4,No,46.5219754018494,-67.8287422553209,No
+Bittersweet,https://www.skiresort.info/ski-resort/bittersweet/,72.0,715,1063,348,4.0,Michigan,100,90,Wisconsin Resorts,0,0,0,0,0,0,0,2,0,3,0,1,0,0,0,0,2,3,11,No,42.4667711702261,-85.757892883055,No
+Black Mountain – Jackson,https://www.skiresort.info/ski-resort/black-mountain-jackson/,99.0,1234,2247,1014,7.0,New Hampshire,143,125,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,1,0,5,No,44.1666742645383,-71.1643961519989,No
+Black Mountain – Rumford,https://www.skiresort.info/ski-resort/black-mountain-rumford/,60.0,1001,2100,1099,9.0,Maine,300,120,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,4,No,44.5768679486146,-70.6134405916493,No
+Blacktail Mountain,https://www.skiresort.info/ski-resort/blacktail-mountain/,80.0,5338,6778,1440,11.0,Montana,1000,250,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,1,4,No,48.0149080958699,-114.369770983142,No
+Blue Hills,https://www.skiresort.info/ski-resort/blue-hills/,75.0,262,591,328,2.0,Massachusetts,60,,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,3,No,42.2155158957154,-71.1190765610771,No
+Blue Knob,https://www.skiresort.info/ski-resort/blue-knob/,90.0,2080,3150,1070,10.0,Pennsylvania,100,120,Independent,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,1,5,No,40.288527305399,-78.5630545423995,No
+Blue Mountain,https://www.skiresort.info/ski-resort/blue-mountain/,99.0,459,1542,1083,11.0,Pennsylvania,164,33,Independent,0,0,0,0,0,2,0,1,0,1,0,1,0,0,0,0,0,7,12,No,40.8106478458437,-75.5206597973621,No
+Bluewood,https://www.skiresort.info/ski-resort/bluewood/,65.0,4544,5669,1125,7.0,Washington,355,300,Independent,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,2,4,No,46.0822970103602,-117.850866940001,No
+Bogus Basin,https://www.skiresort.info/ski-resort/bogus-basin/,79.0,5797,7582,1785,31.0,Idaho,2600,250,Independent,0,0,0,0,0,0,0,4,2,0,0,1,0,0,0,0,0,3,10,No,43.7644278050647,-116.101973121779,Yes
+Bolton Valley,https://www.skiresort.info/ski-resort/bolton-valley/,119.0,1447,3150,1703,19.0,Vermont,300,300,Independent,0,0,0,0,0,0,0,0,2,0,0,3,0,0,0,0,1,0,6,No,44.420850797586,-72.8508535743811,No
+Boreal,https://www.skiresort.info/ski-resort/boreal/,119.0,7201,7733,531,12.0,California,380,400,Powdr,0,0,0,0,0,0,0,1,2,3,0,0,0,0,0,0,0,2,8,No,39.3357225439072,-120.350519961207,No
+Boston Mills,https://www.skiresort.info/ski-resort/boston-mills/,88.0,656,886,230,1.0,Ohio,40,54,Vail Resorts,0,0,0,0,0,0,0,0,1,4,0,1,0,0,0,0,0,1,7,No,41.2650773714258,-81.564551864819,No
+Bottineau Winter Park,https://www.skiresort.info/ski-resort/bottineau-winter-park/,45.0,2274,2448,174,1.0,North Dakota,40,18,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,2,2,6,No,48.9506456513199,-100.474577093826,No
+Bousquet,https://www.skiresort.info/ski-resort/bousquet/,80.0,1109,1857,748,5.0,Massachusetts,200,83,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,3,No,42.4190828508367,-73.2771992181888,No
+Boyce Park,https://www.skiresort.info/ski-resort/boyce-park/,25.0,1115,1247,131,1.0,Pennsylvania,25,36,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,2,No,40.4613808841664,-79.7471179674883,Yes
+Boyne Mountain,https://www.skiresort.info/ski-resort/boyne-mountain/,110.0,620,1119,499,9.0,Michigan,435,140,Boyne Resorts,0,0,0,0,1,1,0,0,4,1,0,2,0,0,0,0,0,1,10,No,45.1626107136863,-84.9303885165529,No
+Bradford,https://www.skiresort.info/ski-resort/bradford/,69.0,33,262,230,2.0,Massachusetts,48,,Independent,0,0,0,0,0,0,0,0,0,3,0,0,0,1,0,0,3,3,10,No,42.7444830187125,-71.0559975935861,No
+Brandywine,https://www.skiresort.info/ski-resort/brandywine/,88.0,623,886,262,1.0,Ohio,40,54,Vail Resorts,0,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,1,1,7,No,41.2841089989265,-81.5520691820093,No
+Brantling,https://www.skiresort.info/ski-resort/brantling/,34.0,459,689,230,1.0,New York,36,100,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,5,0,6,Yes,43.1493980673562,-77.065462440144,No
+Breckenridge,https://www.skiresort.info/ski-resort/breckenridge/,299.0,9600,12841,3241,95.0,Colorado,2908,353,Vail Resorts,0,1,0,0,0,5,0,8,1,1,0,4,0,1,0,3,0,11,35,No,39.4803469507199,-106.06576639861,No
+Bretton Woods,https://www.skiresort.info/ski-resort/bretton-woods/,129.0,1601,3100,1499,35.0,New Hampshire,464,200,Independent,0,1,0,0,0,0,0,4,1,0,0,0,0,1,0,0,0,2,9,No,44.2592312355739,-71.4606135125541,No
+Brian Head,https://www.skiresort.info/ski-resort/brian-head/,97.0,9600,10919,1319,28.0,Utah,650,360,Mountain Capital Partners,0,0,0,0,0,0,0,2,0,5,0,1,0,0,0,0,0,2,10,No,37.7020031192772,-112.849999461276,No
+Bridger Bowl,https://www.skiresort.info/ski-resort/bridger-bowl-bozeman/,97.0,6102,8799,2697,44.0,Montana,2000,300,Independent,0,0,0,0,0,0,0,0,1,6,0,1,0,0,0,1,0,2,11,No,45.8170869826085,-110.896564759054,Yes
+Brighton,https://www.skiresort.info/ski-resort/brighton/,159.0,8750,10627,1877,41.0,Utah,1050,500,Boyne Resorts,0,0,0,0,0,1,0,3,1,1,0,0,0,0,0,0,0,2,8,No,40.5983453073401,-111.583744867119,No
+Bristol Mountain,https://www.skiresort.info/ski-resort/bristol-mountain/,90.0,997,2198,1201,12.0,New York,138,130,Independent,0,0,0,0,0,0,0,2,1,1,0,1,0,0,0,0,0,2,7,No,42.7450030256251,-77.4046326684485,No
+Bromley Mountain,https://www.skiresort.info/ski-resort/bromley-mountain/,96.0,1949,3284,1335,28.0,Vermont,178,145,Independent,0,0,0,0,0,0,0,1,1,0,0,4,0,1,0,0,0,2,9,No,43.2136153886941,-72.9350896745236,No
+Bruce Mound,https://www.skiresort.info/ski-resort/bruce-mound/,27.0,984,1312,328,3.0,Wisconsin,40,45,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,3,0,6,No,44.4461971176846,-90.7855479437797,No
+Brundage Mountain,https://www.skiresort.info/ski-resort/brundage-mountain/,125.0,5840,7638,1798,19.0,Idaho,1920,320,Independent,0,0,0,0,0,0,0,2,0,3,0,0,0,0,0,0,0,1,6,No,45.004595879371,-116.154873443202,No
+Bryce Resort,https://www.skiresort.info/ski-resort/bryce-resort/,80.0,1247,1749,502,3.0,Virginia,50,30,Independent,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,2,5,No,38.8170206847087,-78.7664647797194,No
+Buck Hill,https://www.skiresort.info/ski-resort/buck-hill-ski-area/,59.0,951,1217,266,1.0,Minnesota,45,60,Independent,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,4,2,9,No,44.7245161906983,-93.2838130781488,No
+Buena Vista,https://www.skiresort.info/ski-resort/buena-vista/,52.0,1312,1542,230,2.0,Minnesota,30,78,Independent,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,1,0,5,No,47.6575801557123,-94.8794756314242,No
+Buffalo Ski Center,https://www.skiresort.info/ski-resort/buffalo/,57.0,1007,1483,476,7.0,New York,300,,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,1,1,6,No,42.6817834596537,-78.6912460695517,No
+Burke Mountain,https://www.skiresort.info/ski-resort/burke-mountain/,89.0,1217,3199,1982,6.0,Vermont,178,217,Independent,0,0,0,0,0,0,0,2,0,0,0,0,0,1,1,0,0,1,5,No,44.5875679421193,-71.9162141707593,No
+Buttermilk Mountain,https://www.skiresort.info/ski-resort/buttermilk-mountain/,264.0,7871,9902,2031,21.0,Colorado,435,200,Aspen Skiing Company,0,0,0,0,0,0,0,3,0,0,0,1,0,0,0,0,1,1,6,No,39.2047973615625,-106.859022975074,No
+Butternut,https://www.skiresort.info/ski-resort/butternut/,85.0,820,1772,951,14.0,Massachusetts,110,110,Independent,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,4,9,No,42.1828719137424,-73.3200574015584,No
+Caberfae Peaks,https://www.skiresort.info/ski-resort/caberfae-peaks/,79.0,1171,1532,361,7.0,Michigan,200,140,Independent,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,1,5,No,44.2445781127255,-85.720540316803,No
+Camden Snow Bowl,https://www.skiresort.info/ski-resort/camden-snow-bowl/,52.0,236,1083,846,4.0,Maine,100,50,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,3,No,44.2166095605337,-69.1345024591333,Yes
+Camelback,https://www.skiresort.info/ski-resort/camelback/,99.0,1247,2044,797,21.0,Pennsylvania,160,50,Independent,0,0,0,0,0,1,0,1,1,3,0,3,0,0,0,0,0,4,13,No,41.0511315901175,-75.3481292219498,No
+Camp 10,https://www.skiresort.info/ski-resort/camp-10/,52.0,1509,1739,230,2.0,Wisconsin,120,60,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,2,0,0,1,0,4,No,45.5500994946087,-89.5038307965984,No
+Campgaw Mountain,https://www.skiresort.info/ski-resort/campgaw-mountain/,65.0,469,712,243,1.0,New Jersey,23,45,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,3,5,No,41.0589197289547,-74.1951353648283,No
+Campton Mountain,https://www.skiresort.info/ski-resort/campton-mountain/,40.0,1188,1427,240,1.0,New Hampshire,,,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,43.868154757864,-71.6097074395595,No
+Canaan Valley,https://www.skiresort.info/ski-resort/canaan-valley/,90.0,3428,4278,850,6.0,West Virginia,95,160,Independent,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,3,6,No,39.0074914670958,-79.43806136362,No
+Cannon Mountain,https://www.skiresort.info/ski-resort/cannon-mountain/,134.0,1965,4078,2113,31.0,New Hampshire,285,160,Independent,1,0,0,0,0,0,0,1,2,3,0,1,0,1,0,0,1,0,10,No,44.1771132551515,-71.7016955572861,Yes
+Cannonsburg,https://www.skiresort.info/ski-resort/cannonsburg/,55.0,689,919,230,1.0,Michigan,100,100,Independent,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,4,1,8,No,43.0534982746022,-85.5015390819272,No
+Cascade Mountain,https://www.skiresort.info/ski-resort/cascade-mountain/,99.0,820,1240,420,9.0,Wisconsin,176,80,Independent,0,0,0,0,0,0,0,2,3,1,0,2,0,0,0,0,1,1,10,No,43.5031174765504,-89.5180722948491,No
+Cataloochee,https://www.skiresort.info/ski-resort/cataloochee/,86.0,4462,5194,732,4.0,North Carolina,50,24,Independent,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,2,5,No,35.5625691923737,-83.0902548179601,No
+Catamount,https://www.skiresort.info/ski-resort/catamount/,105.0,902,1903,1001,9.0,New York,133,108,The Schaefer Family,0,0,0,0,0,0,0,0,2,3,0,0,0,0,0,0,0,3,8,No,42.1691236267811,-73.4774407875158,No
+Chapman Hill,https://www.skiresort.info/ski-resort/chapman-hill-durango/,16.0,6568,6877,308,0.4,Colorado,7,71,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,2,Yes,37.2831302278055,-107.86855524965,Yes
+Cherry Peak,https://www.skiresort.info/ski-resort/cherry-peak/,55.0,7382,8645,1263,12.0,Utah,400,320,Independent,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,1,4,No,41.9264359764878,-111.756877872185,No
+Chester Bowl,https://www.skiresort.info/ski-resort/chester-bowl/,15.0,1083,1247,164,1.0,Minnesota,6,100,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,No,46.8132915091172,-92.0956478092792,No
+Chestnut Mountain,https://www.skiresort.info/ski-resort/chestnut-mountain/,70.0,623,1099,476,4.0,Illinois,220,34,Independent,0,0,0,0,0,0,0,0,2,4,0,0,0,0,0,0,1,2,9,No,42.317755614171,-90.3942865298377,No
+China Peak,https://www.skiresort.info/ski-resort/china-peak/,169.0,7044,8629,1585,31.0,California,1200,300,California Mountain Resort Company,0,0,0,0,0,0,0,0,2,4,0,0,0,1,0,0,0,4,11,No,37.2356010250206,-119.155097914595,No
+Chipmunk Hills,https://www.skiresort.info/ski-resort/chipmunk/,5.0,6450,6752,302,0.3,Idaho,30,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,44.4713558283973,-114.322116686657,No
+Christie Mountain,https://www.skiresort.info/ski-resort/christie-mountain/,53.0,1312,1673,361,3.0,Wisconsin,45,60,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,0,5,No,45.5091626564987,-91.381230548605,No
+Christmas Mountain,https://www.skiresort.info/ski-resort/christmas-mountain/,80.0,1017,1214,197,1.0,Wisconsin,40,40,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,2,No,43.6090472474722,-89.8598086658323,No
+Cloudcroft,https://www.skiresort.info/ski-resort/cloudcroft/,65.0,8399,9098,699,6.0,New Mexico,74,120,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,3,No,32.9507846242142,-105.707296364764,No
+Cloudmont,https://www.skiresort.info/ski-resort/cloudmont/,40.0,1650,1798,148,0.2,Alabama,9,6,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,34.5350438872562,-85.6011419277421,No
+Cochran,https://www.skiresort.info/ski-resort/cochran/,19.0,400,699,299,1.0,Vermont,15,150,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,44.395273403242,-72.9818795400841,Yes
+Coffee Mill,https://www.skiresort.info/ski-resort/coffee-mill/,55.0,755,1181,427,1.0,Minnesota,40,48,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,3,No,44.36358039017,-92.0436122530289,No
+Cooper Spur,https://www.skiresort.info/ski-resort/cooper-spur/,49.0,3999,4347,348,6.0,Oregon,50,100,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,45.4123878862393,-121.605333363129,No
+Copper Mountain,https://www.skiresort.info/ski-resort/copper-mountain/,264.0,9711,12441,2730,78.0,Colorado,2465,305,Powdr,0,0,0,0,0,3,1,3,0,5,0,4,0,1,0,2,0,6,25,No,39.4997265764632,-106.156610464311,No
+Coppervale,https://www.skiresort.info/ski-resort/coppervale/,40.0,5249,5988,738,2.0,California,80,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,2,Yes,40.3453440529268,-120.904121709562,No
+Cottonwood Butte,https://www.skiresort.info/ski-resort/cottonwood-butte/,20.0,4757,5600,843,3.0,Idaho,260,45,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,Yes,46.0755408149496,-116.452689033904,No
+Cranmore Mountain Resort,https://www.skiresort.info/ski-resort/cranmore-mountain-resort/,119.0,876,1998,1122,27.0,New Hampshire,170,120,Independent,0,0,0,0,0,0,0,1,1,2,0,1,0,0,0,0,0,2,7,No,44.0568725463447,-71.1101185043782,No
+Cranor Ski Hill,https://www.skiresort.info/ski-resort/cranor-ski-hill-gunnison/,22.0,7874,8189,315,1.0,Colorado,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,Yes,38.586962261632,-106.895818247931,No
+Crested Butte,https://www.skiresort.info/ski-resort/crested-butte/,179.0,9101,11877,2776,75.0,Colorado,1547,234,Vail Resorts,0,0,0,0,0,0,0,4,3,3,0,0,0,2,0,0,0,3,15,No,38.8989044753285,-106.965688145434,No
+Crotched Mountain,https://www.skiresort.info/ski-resort/crotched-mountain/,94.0,1188,2067,879,5.0,New Hampshire,75,105,Vail Resorts,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,5,No,43.0117944096497,-71.8789622628888,No
+Crystal Mountain (Michigan),https://www.skiresort.info/ski-resort/crystal-mountain-mi/,115.38,804,1178,374,3.0,Michigan,103,132,Independent,0,0,0,0,0,0,0,1,3,2,0,0,0,0,0,0,0,2,8,No,44.5198105230083,-85.9923169096196,No
+Crystal Mountain (Washington),https://www.skiresort.info/ski-resort/crystal-mountain-wa/,199.0,4400,7011,2612,31.0,Washington,2600,466,Alterra,0,1,0,0,0,2,0,2,1,2,0,2,0,0,0,0,0,1,11,No,46.9354019219933,-121.474849805705,No
+Crystal Ridge,https://www.skiresort.info/ski-resort/the-rock-snowpark/,70.0,702,932,230,1.0,Wisconsin,30,50,Schmitz Brothers,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,5,No,42.9200449360399,-88.0155669009846,No
+Dartmouth Skiway,https://www.skiresort.info/ski-resort/dartmouth-skiway/,65.0,974,1942,968,10.0,New Hampshire,104,100,Independent,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,2,4,No,43.7878873851641,-72.09978476655,No
+Deer Valley,https://www.skiresort.info/ski-resort/deer-valley/,299.0,6509,9570,3061,66.0,Utah,2026,300,Alterra,0,2,0,0,0,2,0,20,1,5,0,1,0,0,0,1,0,5,37,No,40.6371959568097,-111.478197937968,No
+Detroit Mountain,https://www.skiresort.info/ski-resort/detroit-mountain/,52.0,1444,1608,164,1.0,Minnesota,45,47,Independent,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,2,6,No,46.8132100326255,-95.7837874701962,Yes
+Devil’s Head,https://www.skiresort.info/ski-resort/devils-head/,95.0,492,994,502,6.0,Wisconsin,300,70,Independent,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,2,0,8,No,43.4185257775061,-89.6267086497673,No
+Diamond Peak,https://www.skiresort.info/ski-resort/diamond-peak/,180.0,6699,8537,1837,10.0,Nevada,655,188,Independent,0,0,0,0,0,0,0,1,2,0,0,3,0,0,0,0,0,1,7,No,39.2537469292922,-119.923804332164,No
+Discovery Ski Area,https://www.skiresort.info/ski-resort/discovery-ski-area/,65.0,5768,8150,2382,28.0,Montana,2200,215,Independent,0,0,0,0,0,0,0,0,0,5,0,2,0,0,0,0,0,1,8,No,46.2494550872273,-113.238454460882,No
+Dodge Ridge,https://www.skiresort.info/ski-resort/dodge-ridge/,109.0,6598,8199,1601,31.0,California,862,300,California Mountain Resort Company,0,0,0,0,0,0,0,0,1,3,0,3,0,1,0,0,1,2,11,No,38.1896088238942,-119.956636379746,No
+Donner Ski Ranch,https://www.skiresort.info/ski-resort/donner-ski-ranch/,99.0,7028,7779,751,32.0,California,460,396,Independent,0,0,0,0,0,0,0,0,0,1,0,5,0,0,0,0,0,1,7,No,39.3183704268204,-120.330170801418,No
+Dry Hill,https://www.skiresort.info/ski-resort/dry-hill/,50.0,712,984,272,1.0,New York,42,125,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,2,No,43.9309944454555,-75.9015954266134,No
+Dynamite Hill,https://www.skiresort.info/ski-resort/dynamite-hill-chestertown/,0.0,830,922,92,0.1,New York,8,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,43.6590170168698,-73.7972756115119,No
+Eagle Point,https://www.skiresort.info/ski-resort/eagle-point/,90.0,9098,10597,1499,12.0,Utah,650,400,Independent,0,0,0,0,0,0,0,0,1,1,0,2,0,0,0,1,0,0,5,No,38.3202765202732,-112.384067965442,No
+Eaglecrest,https://www.skiresort.info/ski-resort/eaglecrest-juneau/,75.0,1148,2690,1542,11.0,Alaska,640,350,Independent,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,No,58.2744014134941,-134.512719943021,No
+Echo Mountain – Idaho Springs,https://www.skiresort.info/ski-resort/echo-mountain-park-idaho-springs/,79.0,10499,11158,659,2.0,Colorado,60,150,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,2,No,39.684515618697,-105.519414261192,No
+Echo Valley – Lake Chelan,https://www.skiresort.info/ski-resort/echo-valley-lake-chelan/,40.0,2618,3110,492,1.0,Washington,70,100,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,0,4,Yes,47.9357936901783,-120.05525877244,No
+Eldora Mountain,https://www.skiresort.info/ski-resort/eldora-mountain/,199.0,9199,10801,1601,32.0,Colorado,680,300,Powdr,0,0,0,0,0,1,0,0,2,1,0,3,0,0,0,1,1,1,10,No,39.936907670782,-105.58362274104,No
+Elk Mountain,https://www.skiresort.info/ski-resort/elk-mountain/,89.0,1706,2690,984,9.0,Pennsylvania,140,65,Independent,0,0,0,0,0,0,0,0,1,0,0,5,0,0,0,0,0,0,6,No,41.7230922724518,-75.5533631304153,No
+Elko Snowbowl,https://www.skiresort.info/ski-resort/elko-snobowl/,20.0,6339,6988,650,2.0,Nevada,60,24,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,40.9087182990652,-115.854217229024,No
+Ferguson Ridge,https://www.skiresort.info/ski-resort/ferguson-ridge/,20.0,5200,5840,640,3.0,Oregon,170,300,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,45.2818285027238,-117.112116090316,No
+Fort Wainwright – Birch Hill,https://www.skiresort.info/ski-resort/fort-wainwrightbirch-hill-fairbanks/,30.0,459,984,525,3.0,Alaska,,,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,2,No,64.8585918456996,-147.619431540999,No
+Four Lakes,https://www.skiresort.info/ski-resort/four-lakes/,30.0,656,722,66,1.0,Illinois,9,24,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,7,Yes,41.7807983122941,-88.0832867666979,No
+Four Seasons,https://www.skiresort.info/ski-resort/four-seasons/,30.0,525,607,82,0.5,New York,25,125,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,2,No,43.0357831001274,-75.9721773178541,No
+Frisco Adventure Park,https://www.skiresort.info/ski-resort/frisco-adventure-park/,55.0,9085,9163,79,0.1,Colorado,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,Yes,39.573684425141,-106.077682971732,No
+Frost Fire Park,https://www.skiresort.info/ski-resort/frost-fire-park/,50.0,1083,1444,361,1.0,North Dakota,30,35,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,2,No,48.9120255438674,-98.0686432833885,No
+Giants Ridge,https://www.skiresort.info/ski-resort/giants-ridge/,64.0,1444,1837,394,7.0,Minnesota,165,62,Independent,0,0,0,0,0,0,0,1,1,1,0,2,0,0,0,0,0,2,7,No,47.5762880634521,-92.3034803393746,Yes
+Gore Mountain,https://www.skiresort.info/ski-resort/gore-mountain/,109.0,997,3599,2602,36.0,New York,439,150,New York State,0,1,0,0,0,0,0,3,6,1,0,0,0,0,1,0,0,2,14,No,43.6727116846365,-74.0074677758006,Yes
+Granby Ranch,https://www.skiresort.info/ski-resort/granby-ranch/,164.0,8199,9199,1001,12.0,Colorado,406,120,Independent,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,2,6,No,40.0446160179453,-105.906278859327,No
+Grand Geneva,https://www.skiresort.info/ski-resort/grand-geneva/,70.0,787,997,210,1.0,Wisconsin,20,46,Independent,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,1,2,6,No,42.6113706796109,-88.3864054634684,No
+Grand Targhee,https://www.skiresort.info/ski-resort/grand-targhee/,170.0,7651,9862,2211,35.0,Wyoming,2602,500,Independent,0,0,0,0,0,1,0,2,2,0,0,0,0,0,0,0,0,1,6,No,43.7888594489091,-110.957590249613,No
+Granite Gorge,https://www.skiresort.info/ski-resort/granite-gorge/,55.0,801,1325,525,4.0,New Hampshire,25,100,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,3,No,42.9708916180167,-72.2120761898773,No
+Granite Peak,https://www.skiresort.info/ski-resort/granite-peak-at-rib-mountain-state-park/,105.0,1247,1949,702,12.0,Wisconsin,155,75,Midwest Family Ski Resorts,0,0,0,0,0,1,0,2,0,2,0,0,0,0,0,0,0,2,7,No,44.929020884139,-89.683766937317,No
+Granlibakken,https://www.skiresort.info/ski-resort/granlibakken/,45.0,6312,6611,299,1.0,California,25,170,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,2,Yes,39.1554361019215,-120.154048740325,No
+Great Bear Ski Valley,https://www.skiresort.info/ski-resort/great-bear-ski-valley/,35.0,1345,1542,197,2.0,South Dakota,20,49,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,3,No,43.5779634092926,-96.6649009549158,No
+Great Divide,https://www.skiresort.info/ski-resort/great-divide/,68.0,5748,7251,1503,31.0,Montana,1600,180,Independent,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,1,0,6,No,46.7526346800267,-112.314192899339,No
+Greek Peak,https://www.skiresort.info/ski-resort/greek-peak/,115.0,1148,2100,951,12.0,New York,220,122,Independent,0,0,0,0,0,0,0,0,1,2,0,3,0,0,0,0,0,2,8,No,42.507952835637,-76.145009035926,No
+Gunstock,https://www.skiresort.info/ski-resort/gunstock/,109.0,866,2264,1398,25.0,New Hampshire,227,120,Independent,0,0,0,0,0,0,0,1,2,2,0,0,0,0,0,0,0,3,8,No,43.5407035680523,-71.3665668479944,Yes
+Hanson Hills,https://www.skiresort.info/ski-resort/hanson-hills/,30.0,1148,1280,131,1.0,Michigan,125,60,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,3,Yes,44.6455937707218,-84.7536994088373,No
+Hard’ack (Aldis Hill),https://www.skiresort.info/ski-resort/hardack-aldis-hill-st-albans/,0.0,623,755,131,0.1,Vermont,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,44.8153058326591,-73.0666027860906,Yes
+Hatley Pointe,https://www.skiresort.info/ski-resort/wolf-ridge/,88.0,3999,4698,699,4.0,North Carolina,72,65,Independent,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,1,1,5,No,35.9541380045367,-82.5088419613478,No
+Heavenly,https://www.skiresort.info/ski-resort/heavenly/,265.0,6657,10067,3410,58.0,California,4800,360,Vail Resorts,1,1,0,0,0,2,0,8,1,5,0,2,0,0,0,0,2,4,26,No,38.9347057927039,-119.940079125155,No
+Hermon Mountain,https://www.skiresort.info/ski-resort/hermon-mountain/,55.0,164,459,295,2.0,Maine,60,90,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,2,No,44.7806330628185,-68.9570670554077,No
+Hesperus Ski Area,https://www.skiresort.info/ski-resort/hesperus-ski-area/,48.0,8278,8878,600,6.0,Colorado,60,150,Mountain Capital Partners,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,No,37.2985613131526,-108.055322022662,No
+Hiawatha – Rock River Township,https://www.skiresort.info/ski-resort/hiawatha-rock-river-township/,5.0,850,938,89,0.3,Michigan,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,46.3581714755926,-86.8812239069032,No
+Hidden Valley (Missouri),https://www.skiresort.info/ski-resort/hidden-valley-mo/,52.0,492,787,295,2.0,Missouri,65,19,Vail Resorts,0,0,0,0,0,0,0,0,2,2,0,1,0,0,0,0,1,1,7,No,38.5351202062255,-90.6509531632514,No
+Hidden Valley (Pennsylvania),https://www.skiresort.info/ski-resort/hidden-valley-pa/,76.0,2395,2920,525,6.0,Pennsylvania,110,140,Vail Resorts,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,8,No,40.0577928580795,-79.2578199930338,No
+Hillberg,https://www.skiresort.info/ski-resort/hillberg/,28.0,131,394,262,1.0,Alaska,,,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,3,No,61.2751919629919,-149.82116625393,No
+Hilltop,https://www.skiresort.info/ski-resort/hilltop-anchorage/,39.0,492,787,295,3.0,Alaska,30,76,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,3,No,61.1409961476271,-149.744703410311,Yes
+Hoedown Hill,https://www.skiresort.info/ski-resort/hoedown-hill-windsor/,51.0,4839,4970,131,1.0,Colorado,12,24,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,Yes,40.452640007411,-104.930769837536,No
+Hogadon Ski Area,https://www.skiresort.info/ski-resort/hogadon-ski-area/,60.0,7398,7999,600,3.0,Wyoming,60,140,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,2,No,42.7445338188477,-106.338362242757,Yes
+Holiday Mountain (New York),https://www.skiresort.info/ski-resort/holiday-mountain-ny/,75.0,1050,1444,394,2.0,New York,37,90,Independent,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,3,No,41.6264933413898,-74.6109681445628,No
+Holiday Valley,https://www.skiresort.info/ski-resort/holiday-valley/,105.0,1499,2247,748,30.0,New York,290,180,Independent,0,0,0,0,0,1,0,3,7,0,0,0,0,0,0,0,0,2,13,No,42.2625035071625,-78.6653806301598,No
+Holimont,https://www.skiresort.info/ski-resort/holimont/,114.0,1558,2260,702,12.0,New York,135,180,Independent,0,0,0,0,0,0,0,1,1,2,0,2,0,0,0,0,0,2,8,No,42.2729118230291,-78.6877224644232,No
+Homewood Mountain Resort,https://www.skiresort.info/ski-resort/homewood-mountain-resort/,159.0,6230,7881,1650,12.0,California,1260,450,JMA Ventures,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,1,0,1,6,No,39.0853334379431,-120.1619123945,No
+Hoodoo Ski Area,https://www.skiresort.info/ski-resort/hoodoo-ski-area/,85.0,4692,5709,1017,11.0,Oregon,806,350,Independent,0,0,0,0,0,0,0,0,3,1,0,1,0,0,0,0,0,1,6,No,44.4084752556319,-121.871405074466,No
+Howelsen Hill,https://www.skiresort.info/ski-resort/howelsen-hill-steamboat-springs/,49.0,6693,7136,443,2.0,Colorado,50,170,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,2,4,No,40.4833852695287,-106.83845825946,Yes
+Huff Hills,https://www.skiresort.info/ski-resort/huff-hills/,39.0,1870,2231,361,2.0,North Dakota,80,40,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,2,0,4,No,46.6268871105075,-100.723374935725,No
+Hunt Hollow Ski Club,https://www.skiresort.info/ski-resort/hunt-hollow-ski-club/,70.0,1132,2008,876,3.0,New York,80,130,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,4,No,42.6459959711726,-77.4782967224263,No
+Hunter Mountain,https://www.skiresort.info/ski-resort/hunter-mountain/,119.0,1598,3199,1601,34.0,New York,320,120,Vail Resorts,0,0,0,0,0,3,0,1,2,1,0,2,0,0,0,1,0,3,13,No,42.2045265507671,-74.2108603032475,No
+Hurricane Ridge,https://www.skiresort.info/ski-resort/hurricane-ridge/,57.0,4800,5499,699,1.0,Washington,250,400,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,3,Yes,47.9693016642462,-123.498458212375,No
+Hyland Hills,https://www.skiresort.info/ski-resort/hyland-hills/,44.0,853,1017,164,1.0,Minnesota,35,60,Independent,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,2,8,No,44.8437267252721,-93.3637614531589,Yes
+Jack Frost Mountain,https://www.skiresort.info/ski-resort/jack-frost-mountain/,105.0,1401,2001,600,7.0,Pennsylvania,100,50,Vail Resorts,0,0,0,0,0,0,0,0,4,0,0,2,0,0,0,0,0,0,6,No,41.1075794353382,-75.6519291686943,No
+Jackson Hole,https://www.skiresort.info/ski-resort/jackson-hole/,269.0,6312,10449,4137,72.0,Wyoming,2500,459,Independent,1,2,0,0,0,0,0,6,3,0,0,1,0,0,0,0,1,2,16,No,43.5893595892153,-110.82849785039,No
+Jay Peak,https://www.skiresort.info/ski-resort/jay-peak/,129.0,1847,3855,2008,47.0,Vermont,385,349,Pacific Group Resorts,1,0,0,0,0,0,0,1,3,1,0,1,0,0,0,0,0,2,9,No,44.9384784616126,-72.5062957979276,No
+Jiminy Peak,https://www.skiresort.info/ski-resort/jiminy-peak/,109.0,1247,2375,1129,6.0,Massachusetts,170,100,Independent,0,0,0,0,0,1,0,0,2,3,0,1,0,0,0,0,0,2,9,No,42.5551067560408,-73.290749250716,No
+John & Melissa Besse Sports Park – Gladstone,https://www.skiresort.info/ski-resort/john-melissa-besse-sports-park-gladstone/,12.0,643,748,105,0.4,Michigan,25,50,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,Yes,45.8604473436724,-87.0376130987832,No
+June Mountain,https://www.skiresort.info/ski-resort/june-mountain/,199.0,7507,10089,2582,25.0,California,1500,250,Alterra,0,0,0,0,0,0,0,2,0,0,0,4,0,0,0,0,0,1,7,No,37.7679730434281,-119.090472342176,No
+Kelly Canyon,https://www.skiresort.info/ski-resort/kelly-canyon/,79.0,5807,6660,853,7.0,Idaho,640,200,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,1,4,No,43.6457218544875,-111.629520322929,No
+Kendall Mountain,https://www.skiresort.info/ski-resort/kendall-mountain-silverton/,26.0,9318,9843,525,1.0,Colorado,16,200,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,No,37.8112870858261,-107.656883876614,No
+Kettlebowl,https://www.skiresort.info/ski-resort/kettlebowl/,10.0,1617,1778,161,1.0,Wisconsin,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,5,Yes,45.2717884587547,-88.8995523344941,No
+Keyes Peak,https://www.skiresort.info/ski-resort/keyes-peak/,15.0,1312,1476,164,0.3,Wisconsin,15,60,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,3,Yes,45.8957004682133,-88.2993912608995,No
+Keystone,https://www.skiresort.info/ski-resort/keystone/,292.0,9301,12280,2979,84.0,Colorado,3149,235,Vail Resorts,0,2,0,0,0,4,0,3,1,1,0,2,0,0,0,0,0,7,20,No,39.6045019679104,-105.954063903235,No
+Killington,https://www.skiresort.info/ski-resort/killington/,199.0,1165,4242,3077,73.0,Vermont,1509,250,Powdr,0,2,0,0,0,2,0,4,5,2,0,1,0,0,0,1,0,3,20,No,43.6172250681186,-72.8034997593375,No
+King Pine,https://www.skiresort.info/ski-resort/king-pine-purity-spring-resort/,82.0,476,787,312,3.0,New Hampshire,45,82,Independent,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,2,5,No,43.8678806436834,-71.0895126044749,No
+Kirkwood,https://www.skiresort.info/ski-resort/kirkwood/,187.0,7799,9800,2001,40.0,California,2300,354,Vail Resorts,0,0,0,0,0,0,0,2,1,6,0,1,0,1,0,0,0,2,13,No,38.6830465895021,-120.066531160618,No
+Kissing Bridge,https://www.skiresort.info/ski-resort/kissing-bridge/,88.0,1240,1706,466,11.0,New York,,182,Independent,0,0,0,0,0,0,0,0,2,1,0,3,0,0,0,0,2,1,9,No,42.5998115787149,-78.6527952549621,No
+Labrador Mountain,https://www.skiresort.info/ski-resort/labrador-mountain/,74.0,1181,1870,689,11.0,New York,250,125,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,1,0,0,2,0,6,No,42.7409557418233,-76.0300862573546,No
+Lake City Ski Hill,https://www.skiresort.info/ski-resort/lake-city-ski-hill/,30.0,8868,9091,223,1.0,Colorado,14,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,Yes,38.0110533359667,-107.311863054551,No
+Las Vegas Ski and Snowboard Resort – Lee Canyon,https://www.skiresort.info/ski-resort/las-vegas-ski-and-snowboard-resort-lee-canyon/,84.0,8694,9370,676,5.0,Nevada,195,129,Mountain Capital Partners,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,1,5,No,36.3033375598719,-115.679687892018,No
+Laurel Mountain,https://www.skiresort.info/ski-resort/laurel-mountain/,66.0,1998,2759,761,5.0,Pennsylvania,70,41,Vail Resorts,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,2,No,40.1638698734738,-79.165512049526,No
+Leavenworth Ski Hill,https://www.skiresort.info/ski-resort/leavenworth-ski-hill/,26.0,1476,1706,230,1.0,Washington,17,150,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,Yes,47.614442256247,-120.668934597124,Yes
+Lee’s Ski Hill,https://www.skiresort.info/ski-resort/lees-ski-hill-ouray/,0.0,7887,7959,72,0.1,Colorado,2,134,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,38.0193543842194,-107.669045188845,No
+Liberty Mountain,https://www.skiresort.info/ski-resort/liberty-mountain/,84.0,591,1165,574,6.0,Pennsylvania,100,31,Vail Resorts,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,2,7,No,39.7636436523238,-77.3754207896992,No
+Little Ski Hill,https://www.skiresort.info/ski-resort/little-ski-hill/,25.0,5184,5577,394,1.0,Idaho,50,180,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,Yes,44.9300560715823,-116.16326809432,No
+Little Switzerland,https://www.skiresort.info/ski-resort/little-switzerland/,80.0,1083,1247,164,2.0,Wisconsin,50,45,Schmitz Brothers,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,3,2,9,No,43.3378180103545,-88.2789297026259,No
+Living Memorial Park – Brattleboro,https://www.skiresort.info/ski-resort/living-memorial-park-brattleboro/,5.0,433,620,187,0.3,Vermont,8,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,Yes,42.8481991450278,-72.5857086781687,Yes
+Lonesome Pine,https://www.skiresort.info/ski-resort/lonesome-pine-trails-fort-kent/,30.0,568,981,413,3.0,Maine,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,47.245962492741,-68.5947109094748,No
+Lookout Pass,https://www.skiresort.info/ski-resort/lookout-pass/,73.0,4501,6152,1650,25.0,Idaho,1023,400,Independent,0,0,0,0,0,0,0,0,2,2,0,1,0,0,0,0,0,0,5,No,47.4560238000208,-115.697383151458,No
+Loon Mountain,https://www.skiresort.info/ski-resort/loon-mountain/,145.0,860,3051,2192,30.0,New Hampshire,400,160,Boyne Resorts,0,1,1,0,1,0,0,3,2,0,0,4,0,0,0,0,0,2,14,No,44.055240138564,-71.6349580611254,No
+Lost Trail Powder Mountain,https://www.skiresort.info/ski-resort/lost-trail-powder-mountain/,68.0,6430,8366,1936,31.0,Montana,1800,325,Independent,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,1,0,6,No,45.6919504813854,-113.952199685546,No
+Lost Valley,https://www.skiresort.info/ski-resort/lost-valley/,66.0,256,545,289,1.0,Maine,45,99,Independent,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,1,4,No,44.1360017774864,-70.2808407538408,No
+Loup Loup Ski Bowl,https://www.skiresort.info/ski-resort/loup-loup-ski-bowl/,70.0,4068,5315,1247,7.0,Washington,550,150,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,3,No,48.3941812890481,-119.91114568404,No
+Loveland,https://www.skiresort.info/ski-resort/loveland/,149.0,10646,12700,2054,58.0,Colorado,1800,422,Independent,0,0,0,0,0,0,0,1,2,4,0,0,0,0,0,0,0,0,7,No,39.6809795033515,-105.897469080953,No
+Lutsen Mountains,https://www.skiresort.info/ski-resort/lutsen-mountains/,105.0,863,1690,827,25.0,Minnesota,393,120,Midwest Family Ski Resorts,0,1,0,0,0,2,0,0,0,0,0,3,0,0,0,0,0,1,7,No,47.6640809719027,-90.7133168699301,No
+Lyndon Outing Club,https://www.skiresort.info/ski-resort/lyndon-outing-club/,15.0,853,1247,394,2.0,Vermont,18,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,44.533266212434,-71.9871816771729,Yes
+Mad River Glen,https://www.skiresort.info/ski-resort/mad-river-glen/,99.0,1598,3635,2037,29.0,Vermont,115,250,Independent,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,1,0,5,No,44.2024365758659,-72.9176184544531,No
+Mad River Mountain,https://www.skiresort.info/ski-resort/mad-river-mountain/,59.0,1158,1460,302,4.0,Ohio,144,36,Independent,0,0,0,0,0,0,0,0,1,2,0,2,0,0,0,0,3,1,9,No,40.3172137811819,-83.6786803473792,No
+Magic Mountain (Idaho),https://www.skiresort.info/ski-resort/magic-mountain-resort/,40.0,6499,7241,741,7.0,Idaho,120,230,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,3,No,42.1889478686764,-114.285421601892,No
+Magic Mountain (Vermont),https://www.skiresort.info/ski-resort/magic-mountain/,89.0,1148,2848,1699,14.0,Vermont,205,150,Independent,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,1,1,5,No,43.2016581739691,-72.7724161235869,No
+Mammoth Mountain,https://www.skiresort.info/ski-resort/mammoth-mountain/,259.0,7953,11053,3100,56.0,California,3500,400,Alterra,0,2,0,0,0,4,0,8,1,6,0,3,0,0,0,1,0,2,27,No,37.6505605971238,-119.037074193745,No
+Maple Ski Ridge,https://www.skiresort.info/ski-resort/maple-ski-ridge/,43.0,538,820,282,1.0,New York,60,60,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,2,0,4,No,42.8170310293506,-74.0322733289397,No
+Marquette Mountain,https://www.skiresort.info/ski-resort/marquette-mountain/,80.0,787,1280,492,6.0,Michigan,330,210,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,1,0,4,No,46.5081094953739,-87.4208446846992,No
+Massanutten,https://www.skiresort.info/ski-resort/massanutten/,95.0,1749,2858,1109,5.0,Virginia,70,35,Independent,0,0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,3,7,No,38.4034887492902,-78.7547990154079,No
+Maverick Mountain,https://www.skiresort.info/ski-resort/maverick-mountain/,49.0,6496,8517,2021,12.0,Montana,255,250,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,45.4339652054196,-113.128580027769,No
+McCauley Mountain,https://www.skiresort.info/ski-resort/mccauly-mountain/,40.0,1772,2297,525,6.0,New York,75,180,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,2,0,5,No,43.6980626525479,-74.9635750709885,No
+McIntyre,https://www.skiresort.info/ski-resort/mcintyre/,57.0,351,509,157,2.0,New Hampshire,37,,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,4,No,43.0062351836235,-71.4411046791014,No
+Meadowlark Ski Lodge,https://www.skiresort.info/ski-resort/meadowlark-ski-lodge/,62.0,8481,9278,797,6.0,Wyoming,300,160,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,2,No,44.1639801381549,-107.215629847369,No
+Meany Lodge,https://www.skiresort.info/ski-resort/meany-lodge/,60.0,2920,3346,427,1.0,Washington,100,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,47.2802117713962,-121.320279503498,Yes
+Middlebury College Snow Bowl,https://www.skiresort.info/ski-resort/middlebury-college-snow-bowl/,65.0,1821,2657,837,9.0,Vermont,110,200,Independent,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,4,No,43.9390638679106,-72.9577790781621,No
+Missaukee Mountain,https://www.skiresort.info/ski-resort/missaukee-mountain/,10.0,1253,1411,157,1.0,Michigan,25,90,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,Yes,44.3920673639762,-85.2274053831272,Yes
+Mohawk Mountain,https://www.skiresort.info/ski-resort/mohawk-mountain/,81.0,919,1490,571,5.0,Connecticut,107,92,Independent,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,3,8,No,41.8381109806704,-73.3150251311697,No
+Monarch,https://www.skiresort.info/ski-resort/monarch/,139.0,10794,11909,1115,23.0,Colorado,800,350,Independent,0,0,0,0,0,0,0,0,1,1,0,4,0,0,0,0,0,1,7,No,38.5119341093121,-106.332256677704,No
+Mont Ripley,https://www.skiresort.info/ski-resort/mont-ripley/,60.0,656,1083,427,4.0,Michigan,112,275,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,1,0,4,No,47.1279021926219,-88.5602456490077,No
+Mont du Lac,https://www.skiresort.info/ski-resort/mont-du-lac/,54.99,640,919,279,2.0,Wisconsin,20,55,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,3,No,46.6515796770749,-92.2844870649038,No
+Montage Mountain Resort,https://www.skiresort.info/ski-resort/montage-mountain-resort/,89.0,935,1949,1014,6.0,Pennsylvania,140,47,Independent,0,0,0,0,0,0,0,0,1,3,0,1,0,0,0,0,0,1,6,No,41.351004626727,-75.6619309845132,No
+Montana Snowbowl,https://www.skiresort.info/ski-resort/montana-snowbowl/,79.0,4997,7598,2602,19.0,Montana,950,300,Independent,0,0,0,0,0,0,0,0,0,1,0,3,0,1,0,0,1,0,6,No,47.0144510796211,-113.999707797169,No
+Moose Mountain,https://www.skiresort.info/ski-resort/moose-mountain/,55.0,679,1952,1273,16.0,Alaska,200,70,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,64.9404426895369,-147.991355521483,No
+Mt. Abram,https://www.skiresort.info/ski-resort/mt-abram/,39.0,951,2001,1050,9.0,Maine,170,115,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,1,4,No,44.3796619039895,-70.7067943423313,No
+Mt. Ashland,https://www.skiresort.info/ski-resort/mt-ashland/,79.0,6339,7500,1161,8.0,Oregon,240,300,Independent,0,0,0,0,0,0,0,0,0,3,0,2,0,0,0,0,0,1,6,No,42.0817384270801,-122.704953326488,Yes
+Mt. Ashwabay,https://www.skiresort.info/ski-resort/mt-ashwabay-salmo/,35.0,1004,1276,272,2.0,Wisconsin,65,120,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,46.7771989913976,-90.8945027136377,No
+Mt. Bachelor,https://www.skiresort.info/ski-resort/mt-bachelor/,224.0,5699,9065,3366,61.0,Oregon,4323,462,Powdr,0,0,0,0,0,1,0,7,1,3,0,0,0,0,0,0,0,3,15,No,44.0026767292127,-121.678658696209,No
+Mt. Baker,https://www.skiresort.info/ski-resort/mt-baker/,94.27,3510,5105,1594,16.0,Washington,1000,701,Independent,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,2,0,9,No,48.8618315027041,-121.654790071555,No
+Mount Baldy,https://www.skiresort.info/ski-resort/mt-baldy/,115.0,6486,8596,2110,12.0,California,800,170,Independent,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,No,34.2700526644504,-117.621860023037,No
+Mount Bohemia,https://www.skiresort.info/ski-resort/mt-bohemia/,95.0,623,1460,837,8.0,Michigan,585,273,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,2,No,47.3878041398726,-88.0207536933831,No
+Mt. Brighton,https://www.skiresort.info/ski-resort/mt-brighton/,117.0,935,1115,180,4.0,Michigan,130,60,Vail Resorts,0,0,0,0,0,0,0,0,2,3,0,0,0,0,0,0,5,2,12,No,42.5407515363666,-83.8115629359673,No
+Mt. Crescent,https://www.skiresort.info/ski-resort/mt-crescent/,44.0,1201,1499,299,1.0,Iowa,50,30,Independent,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,2,No,41.3942508584616,-95.8605955960958,No
+Mt. Eustis,https://www.skiresort.info/ski-resort/mt-eustis-littleton/,0.0,984,1263,279,1.0,New Hampshire,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,44.2973722928387,-71.7736434606393,Yes
+Mt. Eyak,https://www.skiresort.info/ski-resort/mt-eyak/,30.0,400,1201,801,3.0,Alaska,100,350,Independent,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,2,No,60.5498646477259,-145.74962083997,Yes
+Mt. Holiday,https://www.skiresort.info/ski-resort/mt-holiday/,40.0,689,899,210,3.0,Michigan,45,120,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,No,44.7434259068089,-85.5145007762381,No
+Mt. Holly,https://www.skiresort.info/ski-resort/mt-holly/,69.0,968,1247,279,4.0,Michigan,100,42,Wisconsin Resorts,0,0,0,0,0,0,0,2,2,2,0,1,0,0,0,0,4,2,13,No,42.8308312552577,-83.5643272460833,No
+Mt. Hood Meadows,https://www.skiresort.info/ski-resort/mt-hood-meadows/,164.0,4521,7300,2779,56.0,Oregon,2150,430,Independent,0,0,0,0,0,1,0,5,1,0,0,3,0,0,0,0,0,1,11,No,45.3317162898854,-121.665268345274,No
+Mt. Hood Skibowl,https://www.skiresort.info/ski-resort/mt-hood-skibowl/,89.0,3675,4954,1280,40.0,Oregon,960,300,Independent,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,1,2,2,9,No,45.3016267243773,-121.773436335297,No
+Mt. Jefferson,https://www.skiresort.info/ski-resort/mt-jefferson/,45.0,420,755,335,6.0,Maine,160,75,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,45.3574993343982,-68.2838438205781,No
+Mount Kato,https://www.skiresort.info/ski-resort/mt-kato/,59.0,791,1027,236,7.0,Minnesota,65,50,Independent,0,0,0,0,0,0,0,0,5,0,0,3,0,0,0,0,0,1,9,No,44.1330682315049,-94.0334010470907,No
+Mt. La Crosse,https://www.skiresort.info/ski-resort/mt-la-crosse/,75.0,722,1220,499,4.0,Wisconsin,100,30,Independent,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,1,4,No,43.7435160202581,-91.1829432810558,No
+Mt. Lemmon,https://www.skiresort.info/ski-resort/mt-lemmon-ski-valley/,69.0,8274,9022,748,5.0,Arizona,200,180,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,3,No,32.4473469535792,-110.781571829789,No
+Mt. McSauba,https://www.skiresort.info/ski-resort/mt-mcsauba/,23.0,607,709,102,0.4,Michigan,80,130,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,4,Yes,45.3359105594195,-85.2435563436395,No
+Mount Peter,https://www.skiresort.info/ski-resort/mount-peter/,79.0,804,1083,279,2.0,New York,60,50,Independent,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,3,6,No,41.2476651730598,-74.2951373861055,No
+Mount Pisgah,https://www.skiresort.info/ski-resort/mt-pisgah/,25.0,1772,2057,285,1.0,New York,15,60,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,44.3455513604065,-74.1256385804324,No
+Mount Pleasant,https://www.skiresort.info/ski-resort/mount-pleasant/,40.0,1181,1496,315,3.0,Pennsylvania,35,150,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,3,No,41.85189126928,-80.071202080451,No
+Mt. Rose,https://www.skiresort.info/ski-resort/mt-rose/,179.0,7897,9701,1804,37.0,Nevada,1200,350,Independent,0,0,0,0,0,2,0,1,2,1,0,0,0,0,0,0,0,3,9,No,39.3185041773208,-119.871105340327,No
+Mt. Shasta Ski Park,https://www.skiresort.info/ski-resort/mt-shasta-ski-park/,99.0,5479,7497,2018,14.0,California,635,157,Independent,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,2,6,No,41.3211305700917,-122.203663705955,No
+Mount Ski Gull,https://www.skiresort.info/ski-resort/mount-ski-gull/,45.0,1263,1453,190,1.0,Minnesota,55,50,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,3,No,46.447401766923,-94.3778316462264,No
+Mount Snow,https://www.skiresort.info/ski-resort/mount-snow/,149.0,1919,3593,1673,37.0,Vermont,601,150,Vail Resorts,0,0,0,0,0,2,0,4,0,5,0,2,0,0,0,0,1,5,19,No,42.96777334596,-72.894646616674,No
+Mount Southington,https://www.skiresort.info/ski-resort/mt-southington/,68.0,203,568,364,4.0,Connecticut,51,80,Independent,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,0,0,3,7,No,41.582585375735,-72.9249831100412,No
+Mt. Spokane,https://www.skiresort.info/ski-resort/mt-spokane/,80.0,3888,5889,2001,16.0,Washington,1704,300,Independent,0,0,0,0,0,0,0,0,0,1,0,5,0,0,0,0,1,1,8,No,47.9214791384284,-117.09602107211,Yes
+Mount Sunapee,https://www.skiresort.info/ski-resort/mt-sunapee/,119.0,1263,2717,1453,19.0,New Hampshire,233,130,Vail Resorts,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,0,3,8,No,43.3309713253797,-72.0807835697123,No
+Mt. Zion,https://www.skiresort.info/ski-resort/mt-zion-hill/,45.0,1427,1726,299,2.0,Michigan,20,200,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,0,4,No,46.4740776485022,-90.1629500858359,No
+Mountain Creek,https://www.skiresort.info/ski-resort/mountain-creek-vernon/,99.99,440,1480,1040,15.0,New Jersey,167,65,Snow Partners,0,0,0,1,0,0,0,2,2,1,0,1,0,0,0,0,0,2,9,No,,,No
+Mountain High: East,https://www.skiresort.info/ski-resort/mountain-high-east/,149.0,6594,8189,1594,7.0,California,140,117,California Mountain Resort Company,0,0,0,0,0,0,0,1,1,0,0,2,0,0,0,0,0,1,5,No,,,No
+Mountain High: West,https://www.skiresort.info/ski-resort/mountain-high-west/,149.0,6923,7907,984,9.0,California,140,117,California Mountain Resort Company,0,0,0,0,0,0,0,1,0,3,0,2,0,0,0,0,0,2,8,No,,,No
+Mt. Waterman,https://www.skiresort.info/ski-resort/mt-waterman/,80.0,6955,8005,1050,6.0,California,150,180,Independent,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,3,No,,,No
+Mulligan’s Hollow Ski Bowl,https://www.skiresort.info/ski-resort/mulligans-hollow-ski-bowl/,22.0,617,764,148,1.0,Michigan,7,60,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,5,Yes,,,Yes
+Mystic Mountain,https://www.skiresort.info/ski-resort/mystic-mountain-farmington/,50.0,1729,2031,302,2.0,Pennsylvania,27,31,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,2,No,,,No
+Nashoba Valley,https://www.skiresort.info/ski-resort/nashoba-valley/,80.0,190,420,230,4.0,Massachusetts,59,50,Independent,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,0,3,4,11,No,,,No
+Nordic Mountain,https://www.skiresort.info/ski-resort/nordic-mountain/,80.0,928,1138,210,4.0,Wisconsin,60,60,Schmitz Brothers,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,2,2,6,No,,,No
+Nordic Valley,https://www.skiresort.info/ski-resort/nordic-valley/,72.0,5354,7064,1709,6.0,Utah,200,300,Mountain Capital Partners,0,0,0,0,0,1,0,0,0,1,0,2,0,0,0,0,0,1,5,No,,,No
+Northeast Slopes,https://www.skiresort.info/ski-resort/northeast-slopes-east-corinth/,15.0,827,1165,338,1.0,Vermont,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,3,Yes,,,Yes
+Northstar California Resort,https://www.skiresort.info/ski-resort/northstar-california-resort/,270.0,6329,8609,2280,60.0,California,3170,350,Vail Resorts,0,1,1,0,0,1,1,6,1,2,0,0,0,0,0,1,1,5,20,No,,,No
+Norway Mountain,https://www.skiresort.info/ski-resort/norway-mountain/,69.0,984,1332,348,5.0,Michigan,80,27,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,3,0,6,No,,,No
+Nub’s Nob Ski Area,https://www.skiresort.info/ski-resort/nubs-nob-ski-area/,110.0,919,1322,404,12.0,Michigan,248,123,Independent,0,0,0,0,0,0,0,0,3,4,0,1,0,0,0,0,1,1,10,No,,,No
+Oak Mountain,https://www.skiresort.info/ski-resort/oak-mountain/,56.0,1749,2402,653,7.0,New York,100,101,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,2,4,No,,,No
+Ober Mountain,https://www.skiresort.info/ski-resort/ober-gatlinburg/,99.0,1362,2648,3219,4.0,Tennessee,38,35,Independent,1,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,2,6,No,,,No
+Oglebay Resort,https://www.skiresort.info/ski-resort/oglebay-resort/,34.0,915,1100,185,1.0,West Virginia,,,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,2,No,,,No
+Okemo,https://www.skiresort.info/ski-resort/okemo/,207.0,1142,3343,2201,43.0,Vermont,632,200,Vail Resorts,0,0,0,0,0,2,0,4,5,2,0,0,0,0,0,1,0,6,20,No,,,No
+Otis Ridge,https://www.skiresort.info/ski-resort/otis-ridge/,55.0,1230,1575,344,2.0,Massachusetts,70,70,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,2,5,No,,,No
+Otsego,https://www.skiresort.info/ski-resort/otsego-gaylord/,75.0,1086,1385,299,4.0,Michigan,160,155,Independent,0,0,0,0,0,0,0,0,1,1,0,3,0,0,0,0,0,0,5,No,,,No
+Pajarito Mountain,https://www.skiresort.info/ski-resort/pajarito-mountain/,65.0,8999,10440,1440,16.0,New Mexico,750,125,Mountain Capital Partners,0,0,0,0,0,0,0,0,1,1,0,3,0,0,0,0,0,1,6,No,,,No
+Palisades Tahoe,https://www.skiresort.info/ski-resort/palisades-tahoe/,290.0,6201,9006,2805,124.0,California,6000,400,Alterra,1,2,0,0,0,8,0,5,1,10,0,8,0,0,0,0,0,7,42,No,,,No
+Paoli Peaks,https://www.skiresort.info/ski-resort/paoli-peaks/,50.0,545,823,279,4.0,Indiana,65,18,Vail Resorts,0,0,0,0,0,0,0,0,1,3,0,1,0,0,0,0,0,2,7,No,,,No
+Park City,https://www.skiresort.info/ski-resort/park-city/,328.0,6801,10000,3199,155.0,Utah,7300,355,Vail Resorts,0,3,1,1,0,6,0,10,5,7,0,3,0,0,0,0,2,3,41,No,,,No
+Pats Peak,https://www.skiresort.info/ski-resort/pats-peak/,99.0,591,1398,807,21.0,New Hampshire,115,100,Independent,0,0,0,0,0,0,0,0,1,3,0,2,0,0,1,0,2,2,11,No,,,No
+Paul Bunyan Ski Hill,https://www.skiresort.info/ski-resort/paul-bunyan-ski-hill/,30.0,1247,1362,115,1.0,Wisconsin,,65,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,5,0,6,Yes,,,No
+Pebble Creek,https://www.skiresort.info/ski-resort/pebble-creek/,76.0,6358,8560,2201,12.0,Idaho,1100,225,Independent,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,1,4,No,,,No
+Peek’N Peak,https://www.skiresort.info/ski-resort/peekn-peak/,76.0,1411,1755,344,7.0,New York,105,200,Independent,0,0,0,0,0,0,0,0,0,6,0,2,0,0,0,0,0,3,11,No,,,No
+Perfect North Slopes,https://www.skiresort.info/ski-resort/perfect-north-slopes/,72.0,400,801,400,3.0,Indiana,100,18,The Perfect Family,0,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,2,5,12,No,,,No
+Pico Mountain,https://www.skiresort.info/ski-resort/pico-mountain/,124.0,2001,3967,1965,19.0,Vermont,468,250,Powdr,0,0,0,0,0,0,0,2,0,2,0,2,0,0,0,0,0,1,7,No,,,No
+Pine Creek,https://www.skiresort.info/ski-resort/pine-creek/,65.0,6873,8228,1355,10.0,Wyoming,370,150,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,2,No,,,No
+Pine Knob,https://www.skiresort.info/ski-resort/pine-knob/,69.0,1017,1286,269,3.0,Michigan,80,60,Wisconsin Resorts,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,5,3,13,No,,,No
+Pine Mountain,https://www.skiresort.info/ski-resort/pine-mountain/,69.0,1148,1512,364,6.0,Michigan,80,60,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,3,0,6,No,,,No
+Pinnacle Park,https://www.skiresort.info/ski-resort/pinnacle-park-pittsfield/,20.0,240,315,75,0.4,Maine,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,Yes,,,No
+Plattekill,https://www.skiresort.info/ski-resort/plattekill/,98.0,2283,3327,1043,10.0,New York,75,175,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,3,No,,,No
+Pleasant Mountain,https://www.skiresort.info/ski-resort/pleasant-mountain/,95.0,525,1804,1280,14.0,Maine,249,110,Boyne Resorts,0,0,0,0,0,0,0,1,1,2,0,0,0,0,0,0,0,2,6,No,,,No
+Pomerelle,https://www.skiresort.info/ski-resort/pomerelle/,68.0,7736,8661,925,9.0,Idaho,500,500,Independent,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,3,No,,,No
+Porcupine Mountain,https://www.skiresort.info/ski-resort/porcupine-mountain/,45.0,735,1365,630,6.0,Michigan,250,200,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,3,No,,,No
+Powder Mountain,https://www.skiresort.info/ski-resort/powder-mountain/,219.0,6893,8901,2008,42.0,Utah,8464,400,Independent,0,0,0,0,0,0,0,3,7,0,0,0,0,0,0,1,1,1,13,No,,,No
+Powder Ridge (Minnesota),https://www.skiresort.info/ski-resort/powder-ridge/,55.0,1168,1417,249,2.0,Minnesota,60,45,Independent,0,0,0,0,0,0,0,0,2,0,0,1,0,0,1,0,3,0,7,No,,,No
+Powder Ridge Mountain Park (Connecticut),https://www.skiresort.info/ski-resort/powder-ridge-mountain-park-resort/,59.0,377,804,427,3.0,Connecticut,80,38,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,2,5,No,,,No
+Powderhorn,https://www.skiresort.info/ski-resort/powderhorn/,119.0,8199,9843,1644,24.0,Colorado,1600,250,Pacific Group Resorts,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,2,5,No,,,No
+Powderhouse Hill,https://www.skiresort.info/ski-resort/powderhouse-hill-south-berwick/,5.0,121,262,141,0.3,Maine,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,,,No
+Powers Bluff,https://www.skiresort.info/ski-resort/powers-bluff/,13.0,1312,1430,118,1.0,Wisconsin,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,,,No
+Purgatory,https://www.skiresort.info/ski-resort/purgatory-durango/,129.0,8793,10823,2031,53.0,Colorado,1635,260,Mountain Capital Partners,0,0,0,0,0,1,0,2,0,4,0,3,0,0,0,0,0,2,12,No,,,No
+Quechee Lakes Ski Area,https://www.skiresort.info/ski-resort/quechee-lakes-ski-area/,57.0,650,1247,597,3.0,Vermont,,,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,3,No,,,No
+Quoggy Joe Ski Center,https://www.skiresort.info/ski-resort/quoggy-jo-ski-center-presque-isle/,15.0,712,902,190,0.4,Maine,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,Yes,,,Yes
+Ragged Mountain,https://www.skiresort.info/ski-resort/ragged-mountain/,119.0,1115,2231,1115,14.0,New Hampshire,224,100,Pacific Group Resorts,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,3,No,,,No
+Red Hill – Moultonborough,https://www.skiresort.info/ski-resort/red-hill-moultonborough/,25.0,627,853,226,1.0,New Hampshire,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,,,No
+Red Lodge Mountain,https://www.skiresort.info/ski-resort/red-lodge-mountain/,107.0,7014,9416,2402,40.0,Montana,1635,250,JMA Ventures,0,0,0,0,0,0,0,2,0,1,1,2,0,0,0,0,0,2,8,No,,,No
+Red River,https://www.skiresort.info/ski-resort/red-river/,129.0,8661,10285,1624,12.0,New Mexico,209,214,Independent,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,2,0,7,No,,,No
+Rotarun,https://www.skiresort.info/ski-resort/rotarun/,15.0,5482,5873,390,3.0,Idaho,15,100,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,2,Yes,,,No
+Roundtop,https://www.skiresort.info/ski-resort/roundtop/,117.0,755,1345,591,5.0,Pennsylvania,103,30,Vail Resorts,0,0,0,0,0,0,0,0,3,2,0,0,0,0,1,0,0,3,9,No,,,No
+Royal Mountain,https://www.skiresort.info/ski-resort/royal-mountain/,60.0,1201,1775,574,5.0,New York,40,90,Independent,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,1,4,No,,,No
+Saddleback,https://www.skiresort.info/ski-resort/saddleback/,139.0,2119,4003,1883,14.0,Maine,600,225,Independent,0,0,0,0,0,0,0,1,3,0,0,0,0,0,1,0,0,1,6,No,,,No
+Sapphire Valley,https://www.skiresort.info/ski-resort/sapphire-valley/,68.0,3163,3297,135,0.5,North Carolina,8,24,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,3,No,,,No
+Saskadena Six,https://www.skiresort.info/ski-resort/saskadena-six/,109.0,722,1348,627,7.0,Vermont,100,90,Independent,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,3,No,,,No
+Sawmill Mountain Resort,https://www.skiresort.info/ski-resort/sawmill-mountain-resort/,59.0,1673,2034,361,3.0,Pennsylvania,15,24,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,2,0,0,0,0,4,No,,,No
+Schweitzer Mountain Resort,https://www.skiresort.info/ski-resort/schweitzer-mountain-resort/,150.0,3957,6398,2441,40.0,Idaho,2900,300,Alterra,0,0,0,0,0,1,0,4,0,2,0,1,0,1,0,0,0,1,10,No,,,No
+Seven Oaks,https://www.skiresort.info/ski-resort/seven-oaks/,48.0,909,1083,174,2.0,Iowa,35,40,Independent,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,3,0,5,No,,,No
+Seven Springs,https://www.skiresort.info/ski-resort/seven-springs/,111.0,2264,3002,738,11.0,Pennsylvania,285,135,Vail Resorts,0,0,0,0,0,2,0,0,4,4,0,0,0,0,0,0,1,3,14,No,,,No
+Shanty Creek Resorts – Schuss Mountain,https://www.skiresort.info/ski-resort/shanty-creek-resorts-schuss-mountain/,96.0,820,1168,348,7.0,Michigan,80,160,Independent,0,0,0,0,0,0,0,0,5,0,0,2,0,0,0,0,1,1,9,No,,,No
+Shawnee Mountain,https://www.skiresort.info/ski-resort/shawnee-mountain/,85.0,476,1148,673,11.0,Pennsylvania,120,50,Independent,0,0,0,0,0,0,0,1,1,0,0,4,0,0,0,0,0,3,9,No,,,No
+Showdown,https://www.skiresort.info/ski-resort/showdown/,68.0,6857,8202,1345,12.0,Montana,640,255,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,1,4,No,,,No
+Sierra at Tahoe,https://www.skiresort.info/ski-resort/sierra-at-tahoe/,175.0,6640,8852,2211,29.0,California,2000,480,Independent,0,0,0,0,0,0,0,3,0,1,0,5,0,0,0,0,0,5,14,No,,,No
+Silver Mountain,https://www.skiresort.info/ski-resort/silver-mountain/,77.0,4100,6300,2200,16.0,Idaho,1600,300,CMR Lands,0,1,0,0,0,0,0,0,1,2,0,2,0,0,0,0,0,0,6,No,,,No
+Silverton Mountain,https://www.skiresort.info/ski-resort/silverton-mountain/,269.0,10325,12434,2110,,Colorado,1819,400,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,No,,,No
+Sipapu,https://www.skiresort.info/ski-resort/sipapu/,72.0,8202,9268,1066,11.0,New Mexico,205,190,Mountain Capital Partners,0,0,0,0,0,0,0,0,1,2,0,1,0,0,0,0,0,2,6,No,,,No
+Sitzmark Ski Mountain,https://www.skiresort.info/ski-resort/sitzmark/,50.0,4364,4872,509,5.0,Washington,80,60,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,,,No
+Skeetawk,https://www.skiresort.info/ski-resort/skeetawk-hatcher-pass/,44.0,1450,2651,1201,2.0,Alaska,30,,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,No,,,Yes
+Ski Apache,https://www.skiresort.info/ski-resort/apache/,195.0,9600,11401,1801,34.0,New Mexico,750,180,Independent,0,1,0,0,0,0,0,0,3,5,0,0,0,0,0,0,2,0,11,No,,,No
+Ski Brule,https://www.skiresort.info/ski-resort/ski-brule/,74.0,1542,1854,312,5.0,Michigan,150,150,Independent,0,0,0,0,0,0,0,0,0,0,0,5,0,2,0,0,5,0,12,No,,,No
+Ski Cooper,https://www.skiresort.info/ski-resort/cooper/,110.0,10499,11699,1201,16.0,Colorado,480,260,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,5,No,,,Yes
+Ski Santa Fe,https://www.skiresort.info/ski-resort/santa-fe/,105.0,10348,12070,1722,21.0,New Mexico,660,225,Independent,0,0,0,0,0,0,0,1,1,2,0,1,0,0,0,0,0,2,7,No,,,No
+Skiland – Mt. Aurora,https://www.skiresort.info/ski-resort/skiland-mt-aurora/,55.0,1394,2444,1050,11.0,Alaska,100,300,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,2,No,,,Yes
+Sleeping Giant,https://www.skiresort.info/ski-resort/sleeping-giant/,70.0,6644,7431,787,11.0,Wyoming,184,310,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,3,No,,,No
+Smugglers’ Notch,https://www.skiresort.info/ski-resort/smugglers-notch/,119.0,1030,3648,2618,48.0,Vermont,1000,288,Independent,0,0,0,0,0,0,0,0,0,0,0,6,0,1,0,0,0,2,9,No,,,No
+Snow Creek,https://www.skiresort.info/ski-resort/snow-creek/,88.0,820,1099,279,2.0,Missouri,35,20,Vail Resorts,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,1,1,5,No,,,No
+Snow King,https://www.skiresort.info/ski-resort/snow-king-mountain-jackson/,105.0,6250,8002,1752,10.0,Wyoming,500,300,Independent,0,1,0,0,0,0,0,0,1,2,0,0,0,0,0,0,2,3,9,No,,,No
+Snow Ridge,https://www.skiresort.info/ski-resort/snow-ridge/,65.0,1352,1850,499,6.0,New York,130,230,Independent,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,1,5,No,,,No
+Snow Snake,https://www.skiresort.info/ski-resort/snow-snake/,43.0,1040,1211,171,2.0,Michigan,40,60,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,1,4,No,,,No
+Snow Trails,https://www.skiresort.info/ski-resort/snow-trails/,65.0,1214,1444,230,3.0,Ohio,80,52,Vail Resorts,0,0,0,0,0,0,0,0,0,4,0,2,0,0,0,0,1,2,9,No,,,No
+Snowbasin,https://www.skiresort.info/ski-resort/snowbasin/,219.0,6398,9350,2953,50.0,Utah,3000,300,The Holding Family,1,2,0,0,0,3,0,3,0,1,0,0,0,0,0,0,1,2,13,No,,,No
+Snowbird,https://www.skiresort.info/ski-resort/snowbird/,216.0,7759,11001,3241,64.0,Utah,2500,500,Powdr,1,0,0,0,0,0,0,6,1,0,0,3,0,0,0,0,0,3,14,No,,,No
+Snowhaven,https://www.skiresort.info/ski-resort/snowhaven/,24.0,5305,5676,371,2.0,Idaho,40,60,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,Yes,,,No
+Snowmass,https://www.skiresort.info/ski-resort/snowmass/,264.0,8114,12510,4396,147.0,Colorado,3342,300,Aspen Skiing Company,0,1,1,0,0,3,0,6,2,0,0,1,0,1,0,3,0,2,20,No,,,No
+Snowriver: Black River Basin,https://www.skiresort.info/ski-resort/black-river-basin-snowriver-mountain-resort/,119.0,1184,1673,489,6.0,Michigan,170,204,Midwest Family Ski Resorts,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,1,0,5,No,,,No
+Snowriver: Jackson Creek Summit,https://www.skiresort.info/ski-resort/jackson-creek-summit-snowriver-mountain-resort/,119.0,1296,1936,640,6.0,Michigan,230,204,Midwest Family Ski Resorts,0,0,0,0,0,1,0,0,0,0,0,2,0,1,0,0,1,1,6,No,,,No
+Snowshoe Mountain,https://www.skiresort.info/ski-resort/snowshoe-mountain/,169.0,3281,4849,1568,19.0,West Virginia,257,180,Alterra,0,0,0,0,0,0,0,3,1,3,0,0,0,0,0,0,0,0,7,No,,,No
+Snowstar,https://www.skiresort.info/ski-resort/snowstar/,54.0,591,771,180,2.0,Illinois,28,39,Independent,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,0,1,5,No,,,No
+Snowy Range,https://www.skiresort.info/ski-resort/snowy-range/,69.0,8786,9662,876,10.0,Wyoming,250,245,Independent,0,0,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,1,5,No,,,No
+Soda Springs,https://www.skiresort.info/ski-resort/soda-springs/,70.0,6759,7323,564,6.0,California,200,400,Powdr,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,3,No,,,No
+Soldier Mountain,https://www.skiresort.info/ski-resort/soldier-mountain/,69.0,5807,7178,1371,16.0,Idaho,1142,100,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,3,No,,,No
+Solitude,https://www.skiresort.info/ski-resort/solitude/,189.0,8005,10036,2031,40.0,Utah,1200,500,Alterra,0,0,0,0,0,1,0,3,2,1,0,1,0,0,0,0,0,1,9,No,,,No
+Song Mountain,https://www.skiresort.info/ski-resort/song-mountain/,85.0,1312,1919,607,8.0,New York,100,125,Independent,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,4,No,,,No
+Spirit Mountain,https://www.skiresort.info/ski-resort/spirit-mountain/,86.0,689,1280,591,7.0,Minnesota,174,100,Independent,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,2,6,No,,,No
+Spring Mountain,https://www.skiresort.info/ski-resort/spring-mountain/,58.0,164,492,328,5.0,Pennsylvania,45,27,Independent,0,0,0,0,0,0,0,0,0,1,0,3,0,0,0,0,1,1,6,No,,,No
+Spruce Mountain,https://www.skiresort.info/ski-resort/spruce-mountain-jay/,30.0,351,600,249,1.0,Maine,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,3,Yes,,,No
+Standing Rocks Park,https://www.skiresort.info/ski-resort/standing-rocks/,16.0,1099,1220,121,1.0,Wisconsin,30,45,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,,,No
+Steamboat,https://www.skiresort.info/ski-resort/steamboat/,299.0,6900,10568,3668,103.0,Colorado,3500,313,Alterra,0,2,1,0,0,1,0,8,0,4,0,2,0,0,0,0,1,6,25,No,,,No
+Steeplechase,https://www.skiresort.info/ski-resort/steeplechase-ski-area/,45.0,902,1115,213,2.0,Minnesota,45,,Independent,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,4,No,,,No
+Stevens Pass,https://www.skiresort.info/ski-resort/stevens-pass/,119.0,3839,5741,1903,24.0,Washington,1125,460,Vail Resorts,0,0,0,0,0,0,0,4,2,3,0,1,0,0,0,0,0,2,12,No,,,No
+Storrs Hill,https://www.skiresort.info/ski-resort/storrs-hill-lebanon/,15.0,558,925,367,1.0,New Hampshire,20,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,Yes,,,No
+Stowe,https://www.skiresort.info/ski-resort/stowe/,239.0,1280,3661,2382,43.0,Vermont,485,314,Vail Resorts,0,2,0,0,0,1,0,3,1,1,0,2,0,0,0,0,0,2,12,No,,,No
+Stratton,https://www.skiresort.info/ski-resort/stratton/,197.78,1969,3875,1906,57.0,Vermont,670,180,Alterra,0,1,0,0,0,4,0,1,2,1,0,1,0,0,0,0,0,4,14,No,,,No
+Sugar Bowl,https://www.skiresort.info/ski-resort/sugar-bowl/,244.0,6883,8383,1499,43.0,California,1650,500,Independent,0,1,0,0,0,0,0,5,3,1,0,0,0,0,0,1,0,1,12,No,,,No
+Sugar Mountain,https://www.skiresort.info/ski-resort/sugar-mountain/,94.0,4098,5213,1115,9.0,North Carolina,115,70,Independent,0,0,0,0,0,1,0,2,1,0,0,2,0,0,0,0,0,1,7,No,,,No
+Sugarbush,https://www.skiresort.info/ski-resort/sugarbush/,243.75,1483,4068,2585,53.0,Vermont,581,250,Alterra,0,0,0,0,0,0,0,5,6,1,0,1,0,1,0,0,0,3,17,No,,,No
+Sugarloaf,https://www.skiresort.info/ski-resort/sugarloaf/,139.0,1398,4219,2822,54.0,Maine,1230,200,Boyne Resorts,0,0,0,0,0,0,0,3,3,1,0,5,0,2,0,0,0,1,15,No,,,No
+Sun Valley: Bald Mountain,https://www.skiresort.info/ski-resort/bald-mountain-sun-valley/,209.0,5751,9150,3399,56.0,Idaho,2054,200,The Holding Family,0,1,0,0,0,2,0,6,0,2,0,0,0,0,0,0,0,1,12,No,,,No
+Sun Valley: Dollar Mountain,https://www.skiresort.info/ski-resort/dollar-mountain-sun-valley/,139.0,6010,6637,627,6.0,Idaho,189,,The Holding Family,0,0,0,0,0,0,0,2,0,1,0,1,0,0,0,0,0,1,5,No,,,No
+Sunburst,https://www.skiresort.info/ski-resort/sunburst/,70.0,974,1171,197,2.0,Wisconsin,40,50,Independent,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,4,2,9,No,,,No
+Sundance,https://www.skiresort.info/ski-resort/sundance/,159.0,6070,8251,2182,27.0,Utah,450,300,Independent,0,0,0,0,0,0,0,1,4,1,0,0,0,0,0,0,0,3,9,No,,,No
+Sunday River,https://www.skiresort.info/ski-resort/sunday-river/,159.0,820,3140,2320,53.0,Maine,870,167,Boyne Resorts,0,0,0,0,1,1,1,2,5,5,0,1,0,1,0,0,0,3,20,No,,,No
+Sundown (Connecticut),https://www.skiresort.info/ski-resort/sundown/,75.0,449,1076,627,4.0,Connecticut,65,45,Independent,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,2,5,No,,,No
+Sundown (Iowa),https://www.skiresort.info/ski-resort/sundown-mountain-resort/,87.0,715,1148,433,2.0,Iowa,55,45,Independent,0,0,0,0,0,0,0,0,1,1,0,2,0,0,0,0,0,2,6,No,,,No
+Sunlight Mountain,https://www.skiresort.info/ski-resort/sunlight-mountain/,104.0,7884,9892,2008,12.0,Colorado,730,250,Independent,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,7,10,No,,,No
+Sunrise Park,https://www.skiresort.info/ski-resort/sunrise-park/,99.0,9360,10925,1565,,Arizona,1200,250,Independent,0,0,0,0,0,0,0,1,2,2,0,1,0,0,0,0,1,1,8,No,,,No
+Swain,https://www.skiresort.info/ski-resort/swain/,79.0,1312,1969,656,7.0,New York,130,120,Independent,0,0,0,0,0,0,0,0,3,0,0,1,0,0,0,0,0,1,5,No,,,No
+Swiss Valley,https://www.skiresort.info/ski-resort/swiss-valley/,53.0,971,1194,223,1.0,Michigan,60,60,Independent,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,2,0,5,No,,,No
+Tahoe Donner,https://www.skiresort.info/ski-resort/tahoe-donner/,110.0,6749,7349,600,9.0,California,120,400,Independent,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,3,5,No,,,No
+Tamarack Resort,https://www.skiresort.info/ski-resort/tamarack-resort/,140.0,4888,7700,2812,26.0,Idaho,1100,300,Independent,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,1,0,1,7,No,,,No
+Taos,https://www.skiresort.info/ski-resort/taos/,195.0,9203,12451,3248,70.0,New Mexico,1294,300,Independent,0,0,1,0,0,0,0,2,2,4,0,1,0,0,0,0,0,3,13,No,,,No
+Telluride,https://www.skiresort.info/ski-resort/telluride/,260.0,8727,12516,3789,55.0,Colorado,2000,280,Independent,0,2,0,0,0,0,1,7,1,1,0,2,0,0,0,2,0,3,19,No,,,No
+Tenney Mountain,https://www.skiresort.info/ski-resort/tenney-mountain/,85.0,748,2149,1401,9.0,New Hampshire,,,Independent,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,2,5,No,,,No
+Terry Peak,https://www.skiresort.info/ski-resort/terry-peak/,71.0,5906,6988,1083,10.0,South Dakota,450,150,Independent,0,0,0,0,0,0,0,3,0,1,0,0,0,0,0,0,0,1,5,No,,,No
+Teton Pass,https://www.skiresort.info/ski-resort/teton-pass/,59.0,6188,7198,1010,9.0,Montana,407,250,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,3,No,,,No
+The Highlands at Harbor Springs,https://www.skiresort.info/ski-resort/the-highlands-at-harbor-springs/,112.0,787,1339,551,16.0,Michigan,435,140,Boyne Resorts,0,0,0,0,0,1,0,1,3,1,0,0,0,0,0,0,1,2,9,No,,,No
+The Homestead Resort,https://www.skiresort.info/ski-resort/the-homestead-resort/,99.0,689,869,180,2.0,Michigan,16,150,Independent,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,1,1,5,No,,,No
+The Omni Homestead,https://www.skiresort.info/ski-resort/the-omni-homestead/,64.0,2461,3051,591,2.0,Virginia,45,50,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,2,No,,,No
+The Summit at Snoqualmie: Alpental,https://www.skiresort.info/ski-resort/alpental/,140.0,3156,5479,2323,6.0,Washington,875,428,Boyne Resorts,0,0,0,0,0,0,0,1,0,3,0,1,0,0,0,0,0,1,6,No,,,No
+The Summit at Snoqualmie: Summit Areas,https://www.skiresort.info/ski-resort/the-summit-at-snoqualmie/,140.0,2625,3871,1247,17.0,Washington,1119,428,Boyne Resorts,0,0,0,0,0,0,0,2,5,3,0,5,0,0,0,0,0,4,19,No,,,No
+Thunder Ridge,https://www.skiresort.info/ski-resort/thunder-ridge/,79.0,482,876,394,3.0,New York,100,60,Independent,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,5,8,No,,,No
+Timber Ridge,https://www.skiresort.info/ski-resort/timber-ridge/,62.0,673,899,226,2.0,Michigan,50,60,Independent,0,0,0,0,0,0,0,0,1,1,0,2,0,0,0,0,4,1,9,No,,,No
+Timberline (Oregon),https://www.skiresort.info/ski-resort/timberline/,149.0,4849,8540,3691,19.0,Oregon,1685,540,Independent,0,0,0,0,0,0,0,6,0,0,0,2,0,0,0,0,0,1,9,No,,,No
+Timberline Mountain (West Virginia),https://www.skiresort.info/ski-resort/timberline-mountain/,95.0,3268,4268,1001,11.0,West Virginia,100,200,The Perfect Family,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,2,4,No,,,No
+Timberline Summit Pass,https://www.skiresort.info/ski-resort/timberline-summit-pass/,56.0,3999,4304,305,3.0,Oregon,50,250,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,2,No,,,No
+Titcomb Mountain,https://www.skiresort.info/ski-resort/titcomb-mountain/,45.0,413,689,276,3.0,Maine,45,85,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,1,0,3,Yes,,,Yes
+Titus Mountain,https://www.skiresort.info/ski-resort/titus-mountain/,79.0,1060,2024,965,17.0,New York,200,150,Independent,0,0,0,0,0,0,0,0,0,2,0,5,0,0,0,0,0,1,8,No,,,No
+Treetops,https://www.skiresort.info/ski-resort/treetops/,40.0,1119,1332,213,3.0,Michigan,80,150,Independent,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,2,5,No,,,No
+Triangle Sports Area – Green Bay,https://www.skiresort.info/ski-resort/triangle-sports-area-green-bay/,7.0,640,712,72,0.2,Wisconsin,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,3,Yes,,,No
+Trollhaugen,https://www.skiresort.info/ski-resort/trollhaugen/,67.0,951,1188,236,3.0,Wisconsin,86,50,Independent,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,5,0,9,No,,,No
+Turner Mountain,https://www.skiresort.info/ski-resort/turner-mountain/,45.0,3842,5951,2110,9.0,Montana,1000,200,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,No,,,No
+Tussey Mountain,https://www.skiresort.info/ski-resort/tussey-mountain/,62.0,1316,1814,499,2.0,Pennsylvania,38,41,Independent,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,3,No,,,No
+Tyrol Basin,https://www.skiresort.info/ski-resort/tyrol-basin-mt-horeb/,60.0,873,1142,269,3.0,Wisconsin,32,41,Independent,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,2,2,7,No,,,No
+Vail Mountain,https://www.skiresort.info/ski-resort/vail/,329.0,8061,11572,3510,145.0,Colorado,5317,354,Vail Resorts,0,2,0,0,0,4,0,14,1,2,0,0,0,1,0,3,0,5,32,No,,,No
+Val Bialas Ski Center – Utica,https://www.skiresort.info/ski-resort/val-bialas-ski-center-utica/,10.0,574,823,249,1.0,New York,10,88,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,Yes,,,No
+Veterans Memorial – Franklin,https://www.skiresort.info/ski-resort/veterans-memorial-franklin/,30.0,774,1001,226,1.0,New Hampshire,50,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,2,Yes,,,No
+Victor Constant,https://www.skiresort.info/ski-resort/victor-constant-west-point/,38.0,459,968,509,2.0,New York,,39,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,2,No,,,Yes
+Villa Olivia,https://www.skiresort.info/ski-resort/villa-olivia-bartlett/,45.0,791,846,56,1.0,Illinois,15,25,Independent,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6,0,7,No,,,No
+Villa Roma,https://www.skiresort.info/ski-resort/villa-roma/,35.0,1099,1280,180,1.0,New York,,,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,No,,,No
+Wachusett Mountain,https://www.skiresort.info/ski-resort/wachusett-mountain/,107.0,1004,2005,1001,7.0,Massachusetts,110,100,Independent,0,0,0,0,0,1,0,2,0,1,0,0,0,0,0,0,0,3,7,No,,,No
+Ward Hill – Shrewsbury,https://www.skiresort.info/ski-resort/ward-hill-shrewsbury/,68.0,344,525,180,1.0,Massachusetts,45,80,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,4,No,,,No
+Warner Canyon,https://www.skiresort.info/ski-resort/warner-canyon-lakeview/,40.0,5699,6480,781,6.0,Oregon,200,50,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,No,,,No
+Waterville Valley,https://www.skiresort.info/ski-resort/waterville-valley/,139.0,1985,4003,2018,16.0,New Hampshire,265,148,Independent,0,0,0,0,0,1,0,1,0,2,0,3,0,2,0,0,0,2,11,No,,,No
+Welch Village,https://www.skiresort.info/ski-resort/welch-village/,82.0,699,1060,361,4.0,Minnesota,140,45,Independent,0,0,0,0,0,0,0,0,7,1,0,0,0,0,0,0,1,2,11,No,,,No
+Wenatchee – Mission Ridge,https://www.skiresort.info/ski-resort/wenatchee-mission-ridge/,119.0,4567,6818,2251,22.0,Washington,2000,200,Independent,0,0,0,0,0,0,0,1,0,0,0,3,0,0,0,0,2,1,7,No,,,No
+West Mountain,https://www.skiresort.info/ski-resort/west-mountain/,89.0,449,1427,978,6.0,New York,124,80,Independent,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,1,1,5,No,,,No
+Whaleback,https://www.skiresort.info/ski-resort/whaleback/,50.0,1138,1781,643,7.0,New Hampshire,85,110,Independent,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,4,No,,,Yes
+White Pass,https://www.skiresort.info/ski-resort/white-pass/,75.0,4498,6516,2018,19.0,Washington,1402,400,Independent,0,0,0,0,0,0,0,2,2,1,0,0,0,0,0,0,0,3,8,No,,,No
+White Pine,https://www.skiresort.info/ski-resort/white-pine-pinedale/,65.0,8501,9501,1001,7.0,Wyoming,370,150,Independent,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,No,,,No
+Whitecap Mountains,https://www.skiresort.info/ski-resort/whitecap-mountains/,85.0,1447,1768,322,9.0,Wisconsin,400,200,Independent,0,0,0,0,0,0,0,0,0,1,0,4,0,0,0,0,0,1,6,No,,,No
+Whiteface – Lake Placid,https://www.skiresort.info/ski-resort/whiteface-lake-placid/,129.0,1217,4396,3179,24.0,New York,288,190,New York State,0,1,0,0,0,0,0,2,3,1,0,2,0,0,0,0,0,2,11,No,,,Yes
+Whitefish Mountain Resort,https://www.skiresort.info/ski-resort/whitefish-mountain-resort/,110.0,4465,6818,2352,57.0,Montana,3000,320,Independent,0,0,0,0,0,1,0,3,2,6,0,0,0,2,0,0,0,2,16,No,,,No
+Whitetail,https://www.skiresort.info/ski-resort/whitetail/,128.0,856,1788,932,6.0,Pennsylvania,109,40,Vail Resorts,0,0,0,0,0,0,0,1,3,0,0,1,0,0,0,0,0,2,7,No,,,No
+Whitetail Ridge – Fort McCoy,https://www.skiresort.info/ski-resort/whitetail-ridge-fort-mccoy/,40.0,889,1056,167,1.0,Wisconsin,,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,Yes,,,No
+Wild Mountain,https://www.skiresort.info/ski-resort/wild-mountain/,59.0,784,1053,269,3.0,Minnesota,100,50,Independent,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,4,1,9,No,,,No
+Wildcat Mountain,https://www.skiresort.info/ski-resort/wildcat-mountain/,144.0,1949,4062,2113,16.0,New Hampshire,225,207,Vail Resorts,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,0,0,1,5,No,,,No
+Willamette Pass,https://www.skiresort.info/ski-resort/willamette-pass-crescent/,66.0,5118,6680,1562,18.0,Oregon,555,430,Mountain Capital Partners,0,0,0,0,0,1,0,0,0,4,0,0,0,0,0,0,0,1,6,No,,,No
+Willard Mountain,https://www.skiresort.info/ski-resort/willard-mountain-greenwich/,62.0,922,1381,459,2.0,New York,85,80,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,2,1,5,No,,,No
+Wilmot Mountain,https://www.skiresort.info/ski-resort/wilmot-mountain/,99.0,755,958,203,2.0,Wisconsin,120,48,Vail Resorts,0,0,0,0,0,0,0,0,3,1,0,2,0,0,0,0,2,2,10,No,,,No
+Windham Mountain,https://www.skiresort.info/ski-resort/windham-mountain/,225.0,1503,3100,1598,29.0,New York,285,100,Independent,0,0,0,0,0,1,0,3,0,1,0,1,0,0,0,0,0,5,11,No,,,No
+Winter Park (Kewaunee),https://www.skiresort.info/ski-resort/winter-park-kewaunee-county/,20.0,604,738,135,1.0,Wisconsin,5,,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,Yes,,,No
+Winter Park Resort,https://www.skiresort.info/ski-resort/winter-park-resort/,275.0,8999,12060,3061,89.0,Colorado,3081,327,Alterra,0,1,0,1,0,4,0,5,0,3,0,6,0,0,0,1,0,3,24,No,,,No
+Wintergreen Resort,https://www.skiresort.info/ski-resort/wintergreen-resort/,139.0,2513,3514,1001,6.0,Virginia,129,40,Pacific Group Resorts,0,0,0,0,0,2,0,0,1,1,0,1,0,0,0,0,0,3,8,No,,,No
+Winterplace,https://www.skiresort.info/ski-resort/winterplace/,85.0,2995,3599,604,6.0,West Virginia,90,100,Independent,0,0,0,0,0,0,0,0,2,3,0,2,0,0,0,0,0,2,9,No,,,No
+Wisp,https://www.skiresort.info/ski-resort/wisp-mchenry-deep-creek-lake/,129.0,2415,3117,702,10.0,Maryland,132,100,Pacific Group Resorts,0,0,0,0,0,0,0,0,2,5,0,0,0,0,0,0,1,5,13,No,,,No
+Wolf Creek,https://www.skiresort.info/ski-resort/wolf-creek/,91.0,10299,11903,1604,62.0,Colorado,1600,430,Independent,0,0,0,0,0,0,0,3,2,2,0,1,0,0,0,1,0,2,11,No,,,No
+Woods Valley,https://www.skiresort.info/ski-resort/woods-valley/,65.0,574,1066,492,3.0,New York,25,180,Independent,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,2,5,No,,,No
+Yawgoo Valley,https://www.skiresort.info/ski-resort/yawgoo-valley/,40.0,115,299,184,2.0,Rhode Island,36,39,Independent,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,3,No,,,No
