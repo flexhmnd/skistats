@@ -173,6 +173,23 @@ dash_app.layout = html.Div(style={
             }
         ),
 
+        html.Div(
+            id="map-spinner",
+            style={
+                'position': 'absolute',
+                'top': '0',
+                'left': '0',
+                'width': '100%',
+                'height': '100%',
+                'backgroundColor': 'rgba(255, 255, 255, 0.6)',
+                'display': 'flex',
+                'justifyContent': 'center',
+                'alignItems': 'center',
+                'zIndex': 20  # above the map but below the filter panel
+            },
+            children=html.Div(className='spinner')
+        ),
+
 
         # Enhanced Filter Panel
         html.Div(className='filter-panel', style={
@@ -284,6 +301,15 @@ dash_app.layout = html.Div(style={
     
 ])
 
+
+@dash_app.callback(
+    Output("map-spinner", "style"),
+    Input("ski-map", "figure")
+)
+def hide_spinner(_):
+    return {
+        'display': 'none'
+    }
 
 
 
