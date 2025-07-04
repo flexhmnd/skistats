@@ -4,9 +4,12 @@ import dash
 from dash import dcc, html, Input, Output
 import pandas as pd
 import plotly.express as px
+import os
+
 
 app = Flask(__name__)
 
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 DATABASE_URL = "postgresql://postgres:4096@localhost:5432/skistats"
 engine = create_engine(DATABASE_URL)
 
