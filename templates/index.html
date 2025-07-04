@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block title %}List View - SkiStats{% endblock %}
+
+{% block content %}
+  <div class="subnav-tabs">
+    <a href="{{ url_for('index') }}" class="tab-button {% if request.path == '/' %}active-tab{% endif %}">List View</a>
+    <a href="{{ url_for('map_view') }}" class="tab-button {% if request.path == '/map' %}active-tab{% endif %}">Map View</a>
+  </div>
+
+  <div style="text-align: center;">
+    <p style="
+      margin-bottom: 40px;
+      font-weight: 300;
+      font-size: 1.25rem;
+      color: var(--medium-gray);
+      margin-top: 60px;
+      font-family: 'Inter', sans-serif;
+      ">
+      All 440 Public Ski Areas in the U.S.
+    </p>
+  </div>
+
+  <form method="get">
+    <div class="controls" style="
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 24px; 
+      padding: 20px;
+      flex-wrap: wrap;
+    ">
+      
+      <!-- Sort Section -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <h4 style="margin: 0; font-weight: 300; font-size: 16px; color: #333;">Sort By:</h4>
+        <select name="sort_by" id="sort_by" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;">
+          <option value="name" {% if sort_by == 'name' %}selected{% endif %}>Name</option>
+          {% for col, label in filter_labels.items() %}
+            <option value="{{ col }}" {% if sort_by == col %}selected{% endif %}>{{ label }}</option>
+          {% endfor %}
+        </select>
+        <select name="sort_order" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;">
+          <option value="asc" {% if sort_order == 'asc' %}selected{% endif %}>Ascending</option>
+          <option value="desc" {% if sort_order == 'desc' %}selected{% endif %}>Descending</option>
+        </select>
+      </div>
+  
+      <!-- Vertical Divider -->
+      <div style="height: 40px; border-left: 2px solid #ddd;"></div>
+  
+      <!-- Filter Section -->
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <div class="dropdown-open column-dropdown">
+          <div class="dropdown-btn" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; background: white; cursor: pointer;">
+            Filter Columns ▾
+          </div>
+          <div class="dropdown-content">
+            {% for col, label in filter_labels.items() %}
+              <label>
+                <input type="checkbox" name="columns" value="{{ col }}" {% if col in columns or col == sort_by %}checked{% endif %}>
+                {{ label }}
+              </label>
+            {% endfor %}
+          </div>
+        </div>
+        
+        <label style="display: flex; align-items: center; gap: 8px; font-size: 16px; color: #333; white-space: nowrap;">
+          <input type="checkbox" name="nonprofit" value="yes" {% if request.args.get('nonprofit') == 'yes' %}checked{% endif %}>
+          Non-profit Only
+        </label>
+      </div>
+  
+      <!-- Apply Button -->
+      <button type="submit" style="
+        padding: 10px 20px; 
+        background: #8396ff; 
+        color: white; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+      ">
+        Apply
+      </button>
+      
+    </div>
+  </form>
+
+  <!-- TABLE -->
+  <div style="overflow-x: auto;">
+    <table style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr style="background-color: #aaaaaa; position: sticky; top: 0; z-index: 10;">
+          <th style="padding: 14px 16px; text-align: left; font-weight: 600;"></th>
+          <th style="padding: 14px 16px; text-align: left; font-weight: 600;"></th>
+          {% for col in columns %}
+            <th style="padding: 14px 16px; text-align: left; font-weight: 600;">{{ column_labels[col] }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for resort in resorts %}
+          <tr style="background-color: {% if loop.index0 % 2 == 0 %}white{% else %}#fafafa{% endif %};">
+            <td style="padding: 14px 16px;">{{ loop.index + (page - 1) * 100 }}</td>
+            <td style="padding: 14px 16px;">{{ resort.name }}</td>
+            {% for col in columns %}
+              <td style="padding: 14px 16px;">
+                {% if resort[col] is not none %}
+                  {% if col in ['vertical_drop', 'base_elevation', 'peak_elevation'] %}
+                    {{ resort[col] }}'
+                  {% elif col == 'snowfall' %}
+                    {{ resort[col] }}"
+                  {% elif col == 'slope_length' %}
+                    {{ resort[col] }} mi
+                  {% elif col == 'acreage' %}
+                    {{ resort[col] }} ac
+                  {% elif col == 'price' %}
+                    ${{ resort[col] }}
+                  {% else %}
+                    {{ resort[col] }}
+                  {% endif %}
+                {% endif %}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PAGINATION -->
+  {% if not nonprofit %}
+  <div class="pagination" style="margin-top: 40px; margin-bottom: 50px; text-align: center;">
+    {% set start = (page - 1) * 100 + 1 %}
+    {% set end = page * 100 %}
+    <p style="font-size: 14px; color: var(--medium-gray); margin-bottom: 16px;">
+      Displaying results {{ start }}–{{ 440 if end > 440 else end }}
+    </p>
+    <div>
+      {% for p in range(1, 6) %}
+        <a href="{{ url_for('index', page=p, sort_by=sort_by, sort_order=sort_order, **{'columns': request.args.getlist('columns')}) }}" class="{% if page == p %}active{% endif %}" style="margin: 0 10px; font-size: 16px; color: {% if page == p %}#000{% else %}#666{% endif %}; font-weight: {% if page == p %}700{% else %}400{% endif %}; text-decoration: none;">
+          {{ p }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+  {% if nonprofit %}
+  <div style="margin-bottom: 40px;">
+
+  </div>
+  {% endif %}
+{% endblock %}
