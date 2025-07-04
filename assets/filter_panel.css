@@ -1,0 +1,14 @@
+/* Default: large screens (720px and up) */
+.filter-panel {
+    max-height: 70vh;
+    overflow-y: visible;
+  }
+  
+  /* Smaller screens (less than 720px height) */
+  @media (max-height: 719px) {
+    .filter-panel {
+      max-height: 50vh;
+      overflow-y: auto;
+    }
+  }
+  
