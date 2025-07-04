@@ -10,7 +10,8 @@ import os
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-DATABASE_URL = "postgresql://postgres:4096@localhost:5432/skistats"
+
+DATABASE_URL = os.getenv("DATABASE_URL")  # this should be set in Render's environment tab
 engine = create_engine(DATABASE_URL)
 
 # Column metadata
