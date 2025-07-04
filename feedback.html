@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Feedback - SkiStats{% endblock %}
+
+{% block content %}
+  <div style="max-width: 600px; margin: 40px auto; padding: 20px;">
+    <h2 style="text-align: left; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 2.1rem; margin-bottom: 16px;">Your Feedback is Greatly Appreciated</h2>
+    <p style="font-size: 1.1rem; color: #555; margin-bottom: 24px; font-weight: 300;">
+      Please give any feedback you might have! This can be anything from bugs and incorrect values to suggestions to make the site better.
+    </p>
+    <form action="{{ url_for('thank-you') }}" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+      <label for="email" style="font-weight: 500;">Email (optional)</label>
+      <input type="text" name="email" id="email" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;">
+
+      <label for="feedback" style="font-weight: 500;">Your Feedback</label>
+      <textarea name="feedback" id="feedback" required rows="6" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;"></textarea>
+
+      <button type="submit" style="padding: 12px 20px; background-color: #8396ff; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+        Submit Feedback
+      </button>
+    </form>
+  </div>
+{% endblock %}
