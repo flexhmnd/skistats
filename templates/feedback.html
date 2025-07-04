@@ -3,21 +3,50 @@
 {% block title %}Feedback - SkiStats{% endblock %}
 
 {% block content %}
-  <div style="max-width: 600px; margin: 40px auto; padding: 20px;">
-    <h2 style="text-align: left; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 2.1rem; margin-bottom: 16px;">Your Feedback is Greatly Appreciated</h2>
-    <p style="font-size: 1.1rem; color: #555; margin-bottom: 24px; font-weight: 300;">
-      Please give any feedback you might have! This can be anything from bugs and incorrect values to suggestions to make the site better.
-    </p>
+<style>
+    h1 {
+        font-size: 2.5rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        letter-spacing: -0.025em;
+    }
+
+    .p-wrapper {
+        display: inline-block; /* shrink-wrap to the <p>'s width */
+    }
+    p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 1.8rem;
+    }
+
+
+</style>
+<div style="max-width: 1000px; margin: 0 auto 0 auto; padding: 0 20px;"></div>
+  <h1>Your Feedback is Greatly Appreciated</h1>
+  <div style="max-width: 600px; margin: 0px auto 40px auto;">
+    <div class="p-wrapper">
+        <p>
+            Please give any feedback you might have! This can be anything from bugs and incorrect values to suggestions to make the site better.
+        </p>
+        <div class="line-under-p"></div>
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;">
+    </div>      
     <form action="{{ url_for('submit_feedback') }}" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
-      <label for="email" style="font-weight: 500;">Email (optional)</label>
-      <input type="text" name="email" id="email" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;">
+      <label for="email" style="font-weight: 300;">Email (optional)</label>
+      <input type="text" name="email" id="email" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;" placeholder="your.email@example.com">
 
-      <label for="feedback" style="font-weight: 500;">Your Feedback</label>
-      <textarea name="feedback" id="feedback" required rows="6" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;"></textarea>
-
-      <button type="submit" style="padding: 12px 20px; background-color: #8396ff; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">
-        Submit Feedback
-      </button>
+      <label for="feedback" style="font-weight: 300;">Your Feedback</label>
+      <textarea name="feedback" id="feedback" required rows="6" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;" placeholder="Share your thoughts, report bugs, or suggest improvements..."></textarea>
+    
+        <button class="feedback-button" type="submit">
+            Submit Feedback
+        </button>
     </form>
   </div>
+</div>
 {% endblock %}
