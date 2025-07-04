@@ -410,7 +410,7 @@ def about():
 def feedback():
     return render_template('feedback.html')
 
-@app.route('/submit_feedback', methods=['POST'])
+@app.route('/thank-you', methods=['POST'])
 def submit_feedback():
     name = request.form.get('name')
     message = request.form.get('feedback')
