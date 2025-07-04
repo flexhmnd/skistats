@@ -112,8 +112,8 @@ def index():
 def map_view():
     return render_template('map_view.html')
 
-# Load data once
-df = pd.read_csv('ski_info_2.csv')
+with engine.connect() as conn:
+    df = pd.read_sql("SELECT * FROM resorts", conn)
 
 
 # Create Dash app inside Flask
