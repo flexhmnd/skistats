@@ -8,7 +8,7 @@
     <p style="font-size: 1.1rem; color: #555; margin-bottom: 24px; font-weight: 300;">
       Please give any feedback you might have! This can be anything from bugs and incorrect values to suggestions to make the site better.
     </p>
-    <form action="{{ url_for('thank-you') }}" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+    <form action="{{ url_for('submit_feedback') }}" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
       <label for="email" style="font-weight: 500;">Email (optional)</label>
       <input type="text" name="email" id="email" style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;">
 
