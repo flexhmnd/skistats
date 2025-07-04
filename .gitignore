@@ -1,0 +1,20 @@
+# Ignore the virtual environment
+venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables
+.env
+
+# OS-specific
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Flask debug file
+instance/
