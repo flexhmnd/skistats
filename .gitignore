@@ -1,20 +1,36 @@
-# Ignore the virtual environment
-venv/
-
-# Byte-compiled / cache files
+# === Python-specific ===
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Environment variables
+# === Virtual environment ===
+venv/
+
+# === Flask-specific ===
+instance/
 .env
+*.env
 
-# OS-specific
+# === Logs and debug ===
+*.log
+
+# === OS files ===
 .DS_Store
+Thumbs.db
 
-# IDE files
+# === VSCode and PyCharm ===
 .vscode/
 .idea/
 
-# Flask debug file
-instance/
+# === Jupyter (if you ever use it) ===
+.ipynb_checkpoints/
+
+# === macOS ===
+.DS_Store
+
+# === Linux ===
+*~
+
+# === Windows ===
+*.bak
+*.swp
