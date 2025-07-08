@@ -5,7 +5,7 @@
   }
   
   /* Smaller screens (less than 720px height) */
-  @media (max-height: 719px) {
+  @media (max-height: 980px) {
     .filter-panel {
       max-height: 50vh;
       overflow-y: auto;
