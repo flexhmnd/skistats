@@ -521,7 +521,7 @@ def submit_feedback():
 
     print(f"[FEEDBACK] {email}: {message}")
 
-    with engine.connect() as conn:
+    with engine.begin() as conn:
         conn.execute(
             text("INSERT INTO feedback (email, message) VALUES (:email, :message)"),
             {"email": email, "message": message}
