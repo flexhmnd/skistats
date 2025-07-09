@@ -45,6 +45,8 @@ FILTER_LABELS = {
     "price": "Day Ticket Price"
 }
 
+session = {}
+
 @app.before_request
 def track_visit():
     if 'visit_logged' not in session:
