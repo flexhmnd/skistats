@@ -500,11 +500,16 @@ def feedback():
 
 @app.route('/thank-you', methods=['POST'])
 def submit_feedback():
-    name = request.form.get('name')
+    email = request.form.get('email') or "Anonymous"
     message = request.form.get('feedback')
-    print(f"Feedback from {name or 'Anonymous'}: {message}")
-    return render_template('submitted_feedback.html')
 
+    with engine.connect() as conn:
+        conn.execute(
+            text("INSERT INTO feedback (email, message) VALUES (:email, :message)"),
+            {"email": email, "message": message}
+        )
+
+    return render_template('submitted_feedback.html')
 
 
 @dash_app.callback(
