@@ -47,14 +47,17 @@ FILTER_LABELS = {
 
 @app.before_request
 def track_visit():
-    ip = request.remote_addr
-    user_agent = request.headers.get('User-Agent')
+    if 'visit_logged' not in session:
+        ip = request.remote_addr
+        user_agent = request.headers.get('User-Agent')
 
-    with engine.begin() as conn:
-        conn.execute(
-            text("INSERT INTO visit_stats (ip_address, user_agent) VALUES (:ip, :ua)"),
-            {"ip": ip, "ua": user_agent}
-        )
+        with engine.begin() as conn:
+            conn.execute(
+                text("INSERT INTO visit_stats (ip_address, user_agent) VALUES (:ip, :ua)"),
+                {"ip": ip, "ua": user_agent}
+            )
+
+        session['visit_logged'] = True  # Mark as logged for this session
         
 @app.context_processor
 def inject_resort_names():
