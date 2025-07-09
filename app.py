@@ -44,22 +44,6 @@ FILTER_LABELS = {
     "lift_total": "Total Lift Count",
     "price": "Day Ticket Price"
 }
-
-session = {}
-
-@app.before_request
-def track_visit():
-    if 'visit_logged' not in session:
-        ip = request.remote_addr
-        user_agent = request.headers.get('User-Agent')
-
-        with engine.begin() as conn:
-            conn.execute(
-                text("INSERT INTO visit_stats (ip_address, user_agent) VALUES (:ip, :ua)"),
-                {"ip": ip, "ua": user_agent}
-            )
-
-        session['visit_logged'] = True  # Mark as logged for this session
         
 @app.context_processor
 def inject_resort_names():
@@ -68,6 +52,14 @@ def inject_resort_names():
 
 @app.route('/')
 def home():
+    ip = request.remote_addr
+    user_agent = request.headers.get('User-Agent')
+
+    with engine.begin() as conn:
+        conn.execute(
+            text("INSERT INTO visit_stats (ip_address, user_agent) VALUES (:ip, :ua)"),
+            {"ip": ip, "ua": user_agent}
+        )
     return redirect(url_for('index', columns=['state', 'vertical_drop', 'snowfall', 'price']))
     
 @app.route('/index')
