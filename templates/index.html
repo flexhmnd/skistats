@@ -98,7 +98,7 @@
       </thead>
       <tbody>
         {% for resort in resorts %}
-          <tr style="background-color: {% if loop.index0 % 2 == 0 %}white{% else %}#fafafa{% endif %};">
+          <tr style="background-color: {% if loop.index0 % 2 == 0 %}#f8f9fa{% else %}white{% endif %};">
             <td style="padding: 14px 16px;">{{ loop.index + (page - 1) * 100 }}</td>
             
             <td style="padding: 14px 16px;">
