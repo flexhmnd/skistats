@@ -50,8 +50,9 @@ def inject_resort_names():
     resort_names = df['name'].sort_values().unique().tolist()
     return dict(resort_names=resort_names)
     
-@app.route('/')
+@app.route('/index')
 def index():
+
     resort_names = df['name'].sort_values().unique().tolist()
     # Default visible columns
     default_columns = ["state", "vertical_drop", "snowfall", "price"]
@@ -75,9 +76,10 @@ def index():
         selected_columns.append(sort_by)
 
     nonprofit_only = request.args.get("nonprofit") == "yes"
+    surface_lifts_only = request.args.get("surface_lifts_only") == "yes"
 
     # Pagination (only apply if nonprofit filter not selected)
-    if not nonprofit_only:
+    if not nonprofit_only and not surface_lifts_only:
         page = int(request.args.get('page', 1))
         per_page = 100
         offset = (page - 1) * per_page
@@ -90,7 +92,15 @@ def index():
 
     columns_sql = ', '.join(['name'] + selected_columns)
 
-    where_clause = "WHERE nonprofit = 'Yes'" if nonprofit_only else ""
+    if nonprofit_only and surface_lifts_only:
+        where_clause = "WHERE nonprofit = 'Yes' AND surface_lifts_only = 'Yes'"
+    elif nonprofit_only:
+        where_clause = "WHERE nonprofit = 'Yes'"
+    elif surface_lifts_only:
+        where_clause = "WHERE surface_lifts_only = 'Yes'"
+    else:
+        where_clause = ""
+
     query = text(f"""
         SELECT {columns_sql}
         FROM resorts
@@ -99,7 +109,7 @@ def index():
         {limit_offset_clause}
     """)
 
-    params = {"limit": per_page, "offset": offset} if not nonprofit_only else {}
+    params = {"limit": per_page, "offset": offset} if not nonprofit_only and not surface_lifts_only else {}
 
     with engine.connect() as conn:
         result = conn.execute(query, params).fetchall()
@@ -115,7 +125,9 @@ def index():
         all_columns=ALL_COLUMNS,
         sort_by=sort_by,
         sort_order=sort_order,
-        nonprofit=nonprofit_only
+        nonprofit=nonprofit_only,
+        surface_lifts_only=surface_lifts_only,
+        resort_names=resort_names
     )
 
 @app.route('/map')
