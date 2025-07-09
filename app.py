@@ -49,6 +49,10 @@ FILTER_LABELS = {
 def inject_resort_names():
     resort_names = df['name'].sort_values().unique().tolist()
     return dict(resort_names=resort_names)
+
+@app.route('/')
+def home():
+    return redirect(url_for('index', columns=['state', 'vertical_drop', 'snowfall', 'price']))
     
 @app.route('/index')
 def index():
