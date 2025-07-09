@@ -135,18 +135,23 @@ dash_app = dash.Dash(
 
 owners = sorted(df['owner'].dropna().unique())
 lift_options = sorted(df['surface_lifts_only'].dropna().unique())
-sort_vars = ['vertical_drop', 'base_elevation', 'peak_elevation', 'price', 'snowfall', 'slope_length', 'acreage', 'lift_total']
+sort_vars = ['vertical_drop_ft', 'base_elevation_ft', 'peak_elevation_ft', 'price', 'total_lifts']
 sort_dict = {
-    'Vertical Drop': 'vertical_drop',
-    'Base Elevation': 'base_elevation',
-    'Peak Elevation': 'peak_elevation',
+    'Vertical Drop': 'vertical_drop_ft',
+    'Base Elevation': 'base_elevation_ft',
+    'Peak Elevation': 'peak_elevation_ft',
     'Day Ticket Price': 'price',
-    'Annual Snowfall': 'snowfall',
-    'Slope Length': 'slope_length',
-    'Acreage': 'acreage',
-    'Total Lifts': 'lift_total'
+    #'Annual Snowfall': 'annual_snowfall',
+    #'Slope Length': 'slope_mi',
+    #'Acreage': 'skiable_acres',
+    'Total Lifts': 'total_lifts'
 }
 
+lift_label_map = {
+    'Yes': 'No aerial lifts',
+    'No': 'Has aerial lifts'
+}
+lift_options_remapped = [{'label': lift_label_map[o], 'value': o} for o in lift_options]
 
 dash_app.layout = html.Div(style={
     'fontFamily': "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
