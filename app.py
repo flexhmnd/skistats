@@ -45,6 +45,17 @@ FILTER_LABELS = {
     "price": "Day Ticket Price"
 }
 
+@app.before_request
+def track_visit():
+    ip = request.remote_addr
+    user_agent = request.headers.get('User-Agent')
+
+    with engine.begin() as conn:
+        conn.execute(
+            text("INSERT INTO visit_stats (ip_address, user_agent) VALUES (:ip, :ua)"),
+            {"ip": ip, "ua": user_agent}
+        )
+        
 @app.context_processor
 def inject_resort_names():
     resort_names = df['name'].sort_values().unique().tolist()
