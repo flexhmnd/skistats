@@ -3,6 +3,19 @@
 {% block title %}List View - SkiStats{% endblock %}
 
 {% block content %}
+  <style>
+    .contact-link {
+            color: #8396ff;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        
+        .contact-link:hover {
+            border-bottom-color: #8396ff;
+        }
+  </style>
   <div class="subnav-tabs">
     <a href="{{ url_for('index') }}" class="tab-button {% if request.path == '/' %}active-tab{% endif %}">List View</a>
     <a href="{{ url_for('map_view') }}" class="tab-button {% if request.path == '/map' %}active-tab{% endif %}">Map View</a>
@@ -95,7 +108,10 @@
         {% for resort in resorts %}
           <tr style="background-color: {% if loop.index0 % 2 == 0 %}white{% else %}#fafafa{% endif %};">
             <td style="padding: 14px 16px;">{{ loop.index + (page - 1) * 100 }}</td>
-            <td style="padding: 14px 16px;">{{ resort.name }}</td>
+            
+            <td style="padding: 14px 16px;">
+              <a class="contact-link" href="/resort/{{ resort.name | urlencode }}">{{ resort.name }}</a>
+            </td>
             {% for col in columns %}
               <td style="padding: 14px 16px;">
                 {% if resort[col] is not none %}

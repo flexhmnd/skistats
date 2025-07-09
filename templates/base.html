@@ -21,22 +21,34 @@
 
     /* === NAVIGATION === */
     .nav-bar {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
+      padding: 0px 20px;
       background-color: white;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #e1e5e9;
+      position: relative;
+      height: 60px;
     }
 
+
+
     .nav-left {
+      justify-self: start;
+    }
+
+    .nav-middle {
+      justify-self: center;
       font-size: 24px;
       font-weight: 400;
       color: #8396ff;
     }
 
     .nav-right {
+      justify-self: end;
       display: flex;
+      align-items: center;
       gap: 24px;
       font-size: 16px;
     }
@@ -299,12 +311,61 @@
       box-shadow: inset 0 -2px 0 #111;
     }
 
+    .search-form input {
+      padding: 8px 12px;
+      font-size: 1rem;
+    }
+
+    .search-form {
+      position: relative;
+      display: inline-block;
+    }
+
+    #autocomplete-box {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 200%;
+      z-index: 999;
+      background: white;
+      border-top: none;
+      border-radius: 0 0 6px 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .autocomplete-item {
+      padding: 10px 12px;
+      cursor: pointer;
+    }
+
+    .autocomplete-item:hover {
+      background-color: #f5f5f5;
+    }
+
+
+
   </style>
 </head>
 <body>
   <!-- NAVIGATION BAR -->
   <div class="nav-bar">
-    <div class="nav-left">SkiStats</div>
+
+    <div class="nav-left">
+      <form class="search-form" action="{{ url_for('search') }}" method="GET" autocomplete="off">
+        <input id="search-input" name="query" type="text" placeholder="Search resorts..." />
+        <div id="autocomplete-box" class="autocomplete-items"></div>
+      </form>
+    </div>
+
+    <div class="nav-middle">
+      <a href="{{ url_for('index') }}" style="text-decoration: none; color: inherit;">
+        SkiStats
+      </a>
+    </div>
+
     <div class="nav-right">
       <!-- Main Navigation Dropdowns -->
       <div class="nav-main">
@@ -334,16 +395,39 @@
     </div>
   </div>
 
+  <script>
+    const resortNames = {{ resort_names | tojson }};
+    const input = document.getElementById("search-input");
+    const box = document.getElementById("autocomplete-box");
+  
+    input.addEventListener("input", function () {
+      const val = this.value.toLowerCase();
+      box.innerHTML = "";
+  
+      if (!val) return;
+  
+      const matches = resortNames.filter(name => name.toLowerCase().includes(val)).slice(0, 6);
+  
+      matches.forEach(name => {
+        const div = document.createElement("div");
+        div.textContent = name;
+        div.className = "autocomplete-item";
+        div.addEventListener("click", () => {
+          input.value = name;
+          box.innerHTML = "";
+          input.form.submit(); // submit on click
+        });
+        box.appendChild(div);
+      });
+    });
+  
+    // Hide on click outside
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".search-form")) box.innerHTML = "";
+    });
+  </script>
+  
   <style>
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background: #fff;
-    border-bottom: 1px solid #e1e5e9;
-    height: 60px;
-  }
 
   .nav-right {
     display: flex;

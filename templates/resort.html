@@ -1,0 +1,455 @@
+{% extends "base.html" %}
+
+{% block title %}{{ resort.name }} - SkiStats{% endblock %}
+
+{% block content %}
+<style>
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+    }
+        
+    h1 {
+        font-size: 2.5rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        color: #1a1a1a;
+        margin-bottom: 0rem;
+        text-align: center;
+        letter-spacing: -0.025em;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 300;
+        color: #1a1a1a;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        
+        padding-bottom: 0.5rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #555;
+        margin-bottom: 1.5rem;
+    }
+    
+    .state {
+        font-size: 1.6rem;
+        color: #444;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-weight: 300;
+        margin-block-start: 0.5rem;
+    }
+    
+    .notes-header {
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-link {
+        color: #8396ff;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease;
+    }
+    
+    .contact-link:hover {
+        border-bottom-color: #8396ff;
+    }
+    
+    .email {
+        background: #f8f9fa;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+    
+    .section {
+        margin-bottom: 3rem;
+    }
+
+    .left-panel {
+        width: 50%;
+        float: left;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .right-panel {
+        width: 50%;
+        float: right;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .bottom-right-panel {
+        width: 50%;
+        float: right;
+        padding: 40px;
+        box-sizing: border-box;
+        height: 500px;
+    }
+
+    .lift-panel {
+        width: 50%;
+        float: left;
+        padding: 0px 40px;
+        box-sizing: border-box;
+    }
+    
+
+    .mountain-visual {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: 300px;
+    }
+
+
+    .mountain-png {
+        width: 50%;
+        height: 200px;
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .elevation-marker {
+        position: absolute;
+        left: 10%;
+        background-color: #f8f9fa;
+        padding: 4px 8px;
+        font-weight: 300;
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+
+    .vertical-marker {
+        left: 10%;
+        top: 39%;
+    }
+
+    .peak-marker {
+        top: 9%;
+    }
+
+    .base-marker {
+        bottom: 13%;
+    }
+
+    .horizontal-line {
+        position: absolute;
+        left: 10%;
+        height: 2px;
+        background-color: #ccc;
+    }
+
+    .peak-line {
+        top: 17%;
+        width: 58%
+    }
+
+    .base-line {
+        bottom: 17%;
+        width: 38%;
+    }
+
+    .info-row {
+        display: flex;
+        justify-content: space-between; /* space between the 3 sections */
+        gap: 40px; /* optional: control spacing */
+        align-items: center;
+        margin: 20px auto 0 auto;
+        width: 80%;
+    }
+
+    .snowfall-section {
+        text-align: center;
+    }
+
+    .info-container {
+        display: flex;
+    }
+
+    .snowfall-visual {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+    }
+
+    .snowfall-amount {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-top: 8px;
+    }
+
+    .lift-amount {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            line-height: 1;
+    }
+
+    .snowfall-label {
+            font-size: 1rem;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+    }
+
+    .icon {
+        font-size: 5rem;
+        margin-right: 25px;
+        vertical-align: middle;
+    }
+
+    .detail-section {
+        margin-bottom: 30px;
+    }
+
+    .detail-label {
+        font-size: 0.95rem;
+        color: #7f8c8d;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
+
+    .detail-value {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #2c3e50;
+    }
+
+    .right-panel {
+        margin-top: 58px;
+        background: white;
+        width: 35%;
+        right: 8%;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 20px;
+        position: relative;
+        height: auto;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .right-panel p:last-child,
+    .right-panel h1:last-child,
+    .right-panel div:last-child {
+        margin-bottom: 0;
+    }
+
+    .lift-list {
+        margin: 20px auto 0 auto;
+        max-width: 300px;
+
+
+        background: #ffffff;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .lift-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        font-size: 1.05rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .lift-label {
+        color: #555;
+    }
+
+    .lift-value {
+        font-weight: 500;
+        color: #2c3e50;
+    }
+
+
+    .map-box {
+        background: white;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .bottom-right-panel iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .lift-map-panels {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center; /* ensures equal height if needed */
+        margin-top: 40px;
+    }
+
+    .back-button {
+        font-size: 1.2rem;
+        padding: 8px 14px;
+        text-decoration: none;
+        color: #444;
+        font-weight: 300;
+        transition: background-color 0.4s ease;
+        background-color: #eee;
+        border-radius: 6px;
+    }
+
+    .back-button:hover {
+        background-color: #ddd;
+    }
+
+
+
+</style>
+
+<body>
+    <div style="position: absolute; top: 120px; left: 180px;">
+        <a href="{{ url_for('index', **request.args.to_dict()) }}" class="back-button">← Back to List</a>
+    </div>
+    
+    <h1 style="margin-top: 40px;">{{ resort.name }}</h1>
+    <p class = "state">{{resort.state}}</p>
+
+    <div class="content-container">
+    <div class="left-panel">
+        <div class="mountain-visual">
+
+            <!-- Horizontal lines -->
+          <div class="horizontal-line peak-line"></div>
+          <div class="horizontal-line base-line"></div>
+      
+          <!-- Elevation markers -->
+          <div class="elevation-marker peak-marker">Summit: {{ resort.peak_elevation_ft }} ft</div>
+          <div class="elevation-marker vertical-marker">Vertical: {{ resort.vertical_drop_ft }} ft&nbsp;&nbsp;<span style="font-size: 2rem; vertical-align: middle;">⭥</span></div>
+          <div class="elevation-marker base-marker">Base: {{ resort.base_elevation_ft }} ft</div>
+    
+          <img src="{{ url_for('static', filename='images/mountain.png') }}" alt="Mountain" class="mountain-png">
+    
+        </div>
+    </div>
+
+    <div class="right-panel">
+
+        <div class="detail-section">
+            <div class="detail-value" style="text-align: center;">{{ resort.owner }}</div>
+            <div class="snowfall-label">Owner</div>
+        </div>
+
+        <div class="detail-section">
+            <div class="snowfall-amount" style="text-align: center;">${{ resort.price }}</div>
+            <div class="snowfall-label">2024–2025 Peak Ticket Price</div>
+        </div>
+    
+    </div>
+
+    </div>
+    
+
+    <div class="info-row">
+        <div class="info-container">
+            <div class="icon">❄︎</div>
+            <div class="snowfall-section">
+                <div class="snowfall-amount">{{ resort.annual_snowfall }}"</div>
+                <div class="snowfall-label">Annual Snowfall</div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="icon">⛶</div>
+            <div class="snowfall-section">
+                <div class="snowfall-amount">{{ resort.skiable_acres }} ac</div>
+                <div class="snowfall-label">Skiable Acres</div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="icon">⭤</div>
+            <div class="snowfall-section">
+                <div class="snowfall-amount">{{ resort.slope_mi }} mi</div>
+                <div class="snowfall-label">Slope Length</div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+    <div class="lift-map-panels">
+
+        <div class="lift-panel">
+            <div class="snowfall-section">
+                <div class="lift-amount">{{ resort.total_lifts }}</div>
+                <div class="snowfall-label">Total Lifts</div>
+            </div>
+        
+            <div class="lift-list">
+                {% for label, value in [
+                    ('Tram', resort.Tram),
+                    ('Gondola', resort.Gondola),
+                    ('Pulse Gondola', resort['Pulse Gondola']),
+                    ('Cabriolet', resort.Cabriolet),
+                    ('8-Pack', resort['8-pack']),
+                    ('6-Pack', resort['6-pack']),
+                    ('Chondola', resort.Chondola),
+                    ('High-Speed Quad', resort['Detach Quad']),
+                    ('Fixed Quad', resort['Fixed Quad']),
+                    ('Triple', resort.Triple),
+                    ('High-Speed Triple', resort['Detach Triple']),
+                    ('Double', resort.Double),
+                    ('Single', resort.Single),
+                    ('T-Bar', resort['T-Bar']),
+                    ('J-Bar', resort['J-Bar']),
+                    ('Poma/Platter', resort['Poma/platter']),
+                    ('Ropetow', resort.Ropetow),
+                    ('Carpet', resort.Carpet)
+                ] %}
+                    {% if value > 0 %}
+                        <div class="lift-row">
+                            <span class="lift-label">{{ label }}</span>
+                            <span class="lift-value">{{ value }}</span>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    
+        <div class="bottom-right-panel map-box">
+            {{ map_html|safe }}
+        </div>  
+
+    </div>
+  
+    <div class="bottom" style="margin-top: 40px;">
+        <hr style="margin: 40px 0 0px 0; border: none; border-top: 1px solid #ddd;">
+    </div>
+
+</body>
+
+
+{% endblock %}
