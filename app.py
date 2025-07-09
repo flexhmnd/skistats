@@ -503,11 +503,15 @@ def submit_feedback():
     email = request.form.get('email') or "Anonymous"
     message = request.form.get('feedback')
 
+    print(f"[FEEDBACK] {email}: {message}")
+
     with engine.connect() as conn:
         conn.execute(
             text("INSERT INTO feedback (email, message) VALUES (:email, :message)"),
             {"email": email, "message": message}
         )
+
+    print('INSERT SUCCESSFUL')
 
     return render_template('submitted_feedback.html')
 
