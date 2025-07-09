@@ -1,18 +1,22 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, flash
 from sqlalchemy import create_engine, text
 import dash
-from dash import dcc, html, Input, Output
+from dash import dcc, html, Input, Output, State
 import pandas as pd
 import plotly.express as px
+import plotly.io as pio
 import os
 
 
 app = Flask(__name__)
+app.secret_key = '4096'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 
 DATABASE_URL = os.getenv("DATABASE_URL")  # this should be set in Render's environment tab
 engine = create_engine(DATABASE_URL)
+
+df = pd.read_csv("ski_info.csv")
 
 # Column metadata
 ALL_COLUMNS = {
@@ -41,8 +45,14 @@ FILTER_LABELS = {
     "price": "Day Ticket Price"
 }
 
+@app.context_processor
+def inject_resort_names():
+    resort_names = df['name'].sort_values().unique().tolist()
+    return dict(resort_names=resort_names)
+    
 @app.route('/')
 def index():
+    resort_names = df['name'].sort_values().unique().tolist()
     # Default visible columns
     default_columns = ["state", "vertical_drop", "snowfall", "price"]
 
@@ -442,6 +452,140 @@ def submit_feedback():
     message = request.form.get('feedback')
     print(f"Feedback from {name or 'Anonymous'}: {message}")
     return render_template('submitted_feedback.html')
+
+
+
+@dash_app.callback(
+    Output('nonprofit-checkbox-state', 'data'),
+    Input('nonprofit-checkbox-container', 'n_clicks'),
+    State('nonprofit-checkbox-state', 'data'),
+    prevent_initial_call=True
+)
+def toggle_nonprofit_checkbox(n_clicks, current_state):
+    return not current_state
+
+
+@dash_app.callback(
+    Output('nonprofit-checkbox', 'style'),
+    Input('nonprofit-checkbox-state', 'data')
+)
+def update_checkbox_style(is_checked):
+    base_style = {
+        'width': '16px',
+        'height': '16px',
+        'border': '2px solid #8396ff',
+        'borderRadius': '3px',
+        'display': 'flex',
+        'alignItems': 'center',
+        'justifyContent': 'center'
+    }
+    
+    if is_checked:
+        base_style.update({
+            'backgroundColor': '#8396ff',
+            'color': 'white'
+        })
+        return base_style
+    else:
+        base_style.update({
+            'backgroundColor': 'white'
+        })
+        return base_style
+    
+@dash_app.callback(
+Output('nonprofit-checkbox', 'children'),
+Input('nonprofit-checkbox-state', 'data')
+)
+def update_checkbox_content(is_checked):
+    if is_checked:
+        return "✓"
+    return ""
+
+
+
+@app.route("/resort/<resort_name>")
+def resort_page(resort_name):
+    df_display = df.copy()
+    df_display['annual_snowfall'] = df_display['annual_snowfall'].astype('Int64')
+    df_display['price'] = df_display['price'].astype(int)
+    df_display['skiable_acres'] = df_display['skiable_acres'].astype('Int64')
+    df_display['annual_snowfall'] = df_display['annual_snowfall'].astype(str)
+    df_display['price'] = df_display['price'].astype(str)
+    df_display['skiable_acres'] = df_display['skiable_acres'].astype(str)
+    df_display.replace('<NA>', 'N/A', inplace=True)
+
+
+
+    resort = df_display[df_display["name"] == resort_name].to_dict(orient="records")
+    resort = resort[0]
+    if not resort:
+        return "Resort not found", 404
+    fig = px.scatter_mapbox(
+        lat=[resort['latitude']],
+        lon=[resort['longitude']],
+        zoom=5,
+        height=500,
+        hover_name=[resort['name']],  # This will be the main hover text
+        hover_data={},  # Empty dict to hide all other hover data
+    )
+
+    # Update the marker style to match your page design
+    fig.update_traces(
+        marker=dict(
+            size=10,
+            color='#2c3e50',  # Dark blue-gray to match your text color
+            symbol='circle',
+        ),
+        hovertemplate='%{hovertext}<extra></extra>',  # Custom hover template
+        hovertext=[resort['name']],  # Only show resort name
+    )
+
+    fig.update_layout(
+        mapbox_style="carto-positron",
+        margin={"r":0,"t":0,"l":0,"b":0},
+        hoverlabel=dict(
+            bgcolor="white",
+            bordercolor="#eee",
+            font_size=14,
+            font_family="Inter, sans-serif",  # Match your page font
+            font_color="#1a1a1a",
+            font_weight=500
+        )
+    )
+
+    # Remove Plotly mode bar and set responsive
+    config = {"displayModeBar": False,   # hides top menu bar
+    "scrollZoom": True,        # allow mouse wheel zoom
+    "displaylogo": False,      # hide Plotly logo
+    "modeBarButtonsToRemove": ['zoom2d', 'pan2d', 'select2d', 'lasso2d'],  # optional
+    "responsive": True}
+    map_html = pio.to_html(fig, full_html=False, include_plotlyjs='cdn', config=config)
+
+    return render_template("resort.html", resort=resort, map_html=map_html)
+
+@app.route('/search', methods=['GET'])
+def search():
+    query = request.args.get('query', '').strip().lower()
+
+    if not query:
+        flash("Please enter a resort name.")
+        return redirect(url_for('index'))
+
+    match = df[df['name'].str.lower() == query]
+    if not match.empty:
+        resort_name = match.iloc[0]['name']
+        return redirect(url_for('resort_detail', resort_name=resort_name))
+    else:
+        flash("Resort not found.")
+        return redirect(url_for('index'))
+
+@app.route('/resort/<resort_name>')
+def resort_detail(resort_name):
+    resort = df[df['name'] == resort_name]
+    if resort.empty:
+        return "Resort not found", 404
+    return render_template('resort_detail.html', resort=resort.iloc[0])
+
 
 
 
