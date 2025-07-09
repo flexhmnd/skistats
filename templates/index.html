@@ -3,21 +3,8 @@
 {% block title %}List View - SkiStats{% endblock %}
 
 {% block content %}
-  <style>
-    .contact-link {
-            color: #8396ff;
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s ease;
-        }
-        
-        .contact-link:hover {
-            border-bottom-color: #8396ff;
-        }
-  </style>
   <div class="subnav-tabs">
-    <a href="{{ url_for('index') }}" class="tab-button {% if request.path == '/' %}active-tab{% endif %}">List View</a>
+    <a href="{{ url_for('index', columns=['state', 'vertical_drop', 'snowfall', 'price']) }}"" class="tab-button {% if request.path == '/index' %}active-tab{% endif %}">List View</a>
     <a href="{{ url_for('map_view') }}" class="tab-button {% if request.path == '/map' %}active-tab{% endif %}">Map View</a>
   </div>
 
@@ -80,7 +67,12 @@
         
         <label style="display: flex; align-items: center; gap: 8px; font-size: 16px; color: #333; white-space: nowrap;">
           <input type="checkbox" name="nonprofit" value="yes" {% if request.args.get('nonprofit') == 'yes' %}checked{% endif %}>
-          Non-profit Only
+          Non-profit
+        </label>
+
+        <label style="display: flex; align-items: center; gap: 8px; font-size: 16px; color: #333; white-space: nowrap;">
+          <input type="checkbox" name="surface_lifts_only" value="yes" {% if request.args.get('surface_lifts_only') == 'yes' %}checked{% endif %}>
+          Surface Lifts Only
         </label>
       </div>
   
@@ -110,7 +102,7 @@
             <td style="padding: 14px 16px;">{{ loop.index + (page - 1) * 100 }}</td>
             
             <td style="padding: 14px 16px;">
-              <a class="contact-link" href="/resort/{{ resort.name | urlencode }}">{{ resort.name }}</a>
+              <a class="resort-link" href="/resort/{{ resort.name | urlencode }}">{{ resort.name }}</a>
             </td>
             {% for col in columns %}
               <td style="padding: 14px 16px;">
@@ -138,7 +130,7 @@
   </div>
 
   <!-- PAGINATION -->
-  {% if not nonprofit %}
+  {% if not nonprofit and not surface_lifts_only %}
   <div class="pagination" style="margin-top: 40px; margin-bottom: 50px; text-align: center;">
     {% set start = (page - 1) * 100 + 1 %}
     {% set end = page * 100 %}
@@ -154,7 +146,7 @@
     </div>
   </div>
   {% endif %}
-  {% if nonprofit %}
+  {% if nonprofit and not surface_lifts_only %}
   <div style="margin-bottom: 40px;">
 
   </div>

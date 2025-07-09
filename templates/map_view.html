@@ -20,7 +20,7 @@
 
     </style>
     <div class="subnav-tabs" style="margin-bottom: 4px">
-        <a href="{{ url_for('index') }}" class="tab-button {% if request.path == '/' %}active-tab{% endif %}">List View</a>
+        <a href="{{ url_for('index', columns=['state', 'vertical_drop', 'snowfall', 'price']) }}" class="tab-button {% if request.path == '/index' %}active-tab{% endif %}">List View</a>
         <a href="{{ url_for('map_view') }}" class="tab-button {% if request.path == '/map' %}active-tab{% endif %}">Map View</a>
       </div>
     <iframe src="/map/" width="100%" height="100%" style="border: none;"></iframe>
