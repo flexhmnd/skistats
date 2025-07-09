@@ -122,9 +122,6 @@ def index():
 def map_view():
     return render_template('map_view.html')
 
-with engine.connect() as conn:
-    df = pd.read_sql("SELECT * FROM resorts", conn)
-
 
 # Create Dash app inside Flask
 dash_app = dash.Dash(
@@ -158,6 +155,8 @@ dash_app.layout = html.Div(style={
     'backgroundColor': '#fafafa',
     'lineHeight': '1'  # Add this line
 }, children=[
+
+    
     
     # Map container with better styling
     html.Div(style={
@@ -172,15 +171,14 @@ dash_app.layout = html.Div(style={
         'overflow': 'hidden'
     }, children=[
 
-        # Map (fills container)
         dcc.Graph(
-            id='ski-map',
-            style={'position': 'absolute', 'top': 0, 'left': 0, 'width': '100%', 'height': '100%'},
-            config={
-                'scrollZoom': True,
-                'displayModeBar': False,
-                'doubleClick': 'reset'
-            }
+                id='ski-map',
+                style={'position': 'absolute', 'top': 0, 'left': 0, 'width': '100%', 'height': '100%'},
+                config={
+                    'scrollZoom': True,
+                    'displayModeBar': False,
+                    'doubleClick': 'reset'
+                }
         ),
 
         html.Div(
@@ -199,6 +197,7 @@ dash_app.layout = html.Div(style={
             },
             children=html.Div(className='spinner')
         ),
+
 
 
         # Enhanced Filter Panel
@@ -268,7 +267,8 @@ dash_app.layout = html.Div(style={
                 )
             ]),
             
-            html.Div(children=[
+            
+            html.Div(style={'marginBottom': '20px'}, children=[
                 html.Label("Surface Lifts Only", style={
                     'fontSize': '14px',
                     'fontWeight': '500',
@@ -278,13 +278,51 @@ dash_app.layout = html.Div(style={
                 }),
                 dcc.Dropdown(
                     id='lift-filter',
-                    options=[{'label': str(o), 'value': o} for o in lift_options],
+                    options=lift_options_remapped,
                     value=None,
                     placeholder='All lift types',
                     style={'fontSize': '14px',
                            'overflow': 'visible'
                            }
                 )
+            ]),
+
+            html.Div(style={'marginBottom': '20px'}, children=[
+                html.Label("Non-profit Resorts Only", style={
+                    'fontSize': '14px',
+                    'fontWeight': '500',
+                    'color': '#555',
+                    'marginBottom': '8px',
+                    'display': 'block'
+                }),
+                html.Div(id='nonprofit-checkbox-container', style={
+                    'display': 'flex',
+                    'alignItems': 'center',
+                    'gap': '8px',
+                    'padding': '8px',
+                    'border': '1px solid #ccc',
+                    'borderRadius': '6px',
+                    'backgroundColor': 'white',
+                    'cursor': 'pointer'
+                }, children=[
+                    html.Div(id='nonprofit-checkbox', style={
+                        'width': '16px',
+                        'height': '16px',
+                        'border': '2px solid #8396ff',
+                        'borderRadius': '3px',
+                        'backgroundColor': 'white',
+                        'display': 'flex',
+                        'alignItems': 'center',
+                        'justifyContent': 'center'
+                    }),
+                    html.Label("Show only non-profit resorts", style={
+                        'fontSize': '14px',
+                        'color': '#555',
+                        'margin': '0',
+                        'cursor': 'pointer'
+                    })
+                ]),
+                dcc.Store(id='nonprofit-checkbox-state', data=False)
             ])
             
         ]),
@@ -327,18 +365,19 @@ def hide_spinner(_):
     Output('ski-map', 'figure'),
     Input('owner-filter', 'value'),
     Input('lift-filter', 'value'),
-    Input('sort-variable', 'value')
+    Input('sort-variable', 'value'),
+    Input('nonprofit-checkbox-state', 'data')
 )
-def update_map(owner, lift, sort_var):
+def update_map(owner, lift, sort_var, nonprofit_checked):
     column_lookup = {
-        'vertical_drop': 'Vertical Drop (ft)',
-        'base_elevation': 'Base Elevation (ft)',
-        'peak_elevation': 'Peak Elevation (ft)',
+        'vertical_drop_ft': 'Vertical Drop (ft)',
+        'base_elevation_ft': 'Base Elevation (ft)',
+        'peak_elevation_ft': 'Peak Elevation (ft)',
         'price': 'Day Ticket Price ($)',
-        'snowfall': 'Annual Snowfall (in)',
-        'slope_length': 'Slope Length (mi)',
-        'acreage': 'Skiable Acres',
-        'lift_total': 'Total Lifts'
+        'annual_snowfall': 'Annual Snowfall (in)',
+        'slope_mi': 'Slope Length (mi)',
+        'skiable_acres': 'Skiable Acres',
+        'total_lifts': 'Total Lifts'
     }
     sort_label = column_lookup.get(sort_var, 'price')
     filtered_df = df.copy()
@@ -347,6 +386,9 @@ def update_map(owner, lift, sort_var):
 
     if lift:
         filtered_df = filtered_df[filtered_df['surface_lifts_only'] == lift]
+
+    if nonprofit_checked:
+        filtered_df = filtered_df[filtered_df['nonprofit'] == 'Yes']
 
     if sort_var:
         fig = px.scatter_mapbox(
@@ -363,12 +405,13 @@ def update_map(owner, lift, sort_var):
             },
             color=sort_var,
             size=sort_var,
-            size_max=20,
+            size_max=15,
             color_continuous_scale='Viridis',
             zoom=3,
             height=None,
             title=""
         )
+
     else:
         fig = px.scatter_mapbox(
             filtered_df,
@@ -387,8 +430,7 @@ def update_map(owner, lift, sort_var):
         )
 
         # Manually set a uniform color
-        fig.update_traces(marker=dict(color='#8396ff', size=5))
-
+        fig.update_traces(marker=dict(color='#607695', size=6, opacity=0.8))
 
     fig.update_layout(
         mapbox=dict(
@@ -422,19 +464,24 @@ def update_map(owner, lift, sort_var):
         paper_bgcolor='rgba(0,0,0,0)'
     )
 
+    
+
     return fig
 
 @dash_app.callback(
     Output('resort-count', 'children'),
     Input('owner-filter', 'value'),
     Input('lift-filter', 'value'),
+    Input('nonprofit-checkbox-state', 'data')
 )
-def update_resort_count(owner, lift):
+def update_resort_count(owner, lift, nonprofit_checked):
     filtered_df = df.copy()
     if owner:
         filtered_df = filtered_df[filtered_df['owner'].isin(owner)]
     if lift:
         filtered_df = filtered_df[filtered_df['surface_lifts_only'] == lift]
+    if nonprofit_checked:
+        filtered_df = filtered_df[filtered_df['nonprofit'] == 'Yes']
     return f"Showing {len(filtered_df)} ski resorts"
 
 
