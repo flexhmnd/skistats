@@ -371,12 +371,89 @@ dash_app.layout = html.Div(style={
                 'zIndex': 10
             },
             children="Showing 0 ski resorts"
+        ),
+
+        html.Div(
+            id='resort-popup',
+            style={
+                'display': 'none',
+                'position': 'absolute',
+                'zIndex': 30,
+                'backgroundColor': 'white',
+                'border': '1px solid #ccc',
+                'padding': '10px 15px',
+                'borderRadius': '8px',
+                'boxShadow': '0 4px 12px rgba(0,0,0,0.1)',
+                'transform': 'translate(-50%, -100%)',
+                'pointerEvents': 'none'  # avoids interfering with map
+            }
         )
+
 
     
     ])
     
 ])
+
+
+@dash_app.callback(
+    Output('resort-popup', 'style'),
+    Output('resort-popup', 'children'),
+    Output('popup-visible', 'data'),
+    Input('ski-map', 'clickData'),
+    State('sort-variable', 'value')
+)
+def show_popup(click_data, sort_var):
+    if not click_data or not click_data['points']:
+        return {'display': 'none'}, "", False
+
+    point = click_data['points'][0]
+    resort_name = point['customdata'][0]
+
+    resort_info = df[df['name'] == resort_name].iloc[0]
+    
+    state = resort_info['state']
+    owner = resort_info['owner'] or "N/A"
+    sort_val = resort_info.get(sort_var, "N/A")
+    sort_label = sort_dict.get(sort_var, sort_var.replace('_', ' ').title())
+
+    link_name = resort_name.replace(" ", "%20")
+    
+    content = html.Div([
+        html.A(resort_name, href=f"/resort/{link_name}", style={
+            'fontWeight': '600',
+            'color': '#1a73e8',
+            'textDecoration': 'none',
+            'fontSize': '16px',
+            'display': 'block',
+            'marginBottom': '6px'
+        }),
+        html.Div(f"State: {state}", style={'fontSize': '14px'}),
+        html.Div(f"Owner: {owner}", style={'fontSize': '14px'}),
+        html.Div(f"{sort_label}: {sort_val}", style={'fontSize': '14px'})
+    ])
+
+    pixel_x = point.get('x', 0)
+    pixel_y = point.get('y', 0)
+
+    style = {
+        'display': 'block',
+        'left': f"{pixel_x}px",
+        'top': f"{pixel_y}px",
+        'position': 'absolute',
+        'zIndex': 30,
+        'backgroundColor': 'white',
+        'border': '1px solid #ccc',
+        'padding': '10px 15px',
+        'borderRadius': '8px',
+        'boxShadow': '0 4px 12px rgba(0,0,0,0.1)',
+        'transform': 'translate(-50%, -100%)',
+        'pointerEvents': 'none'
+    }
+
+    return style, content, True
+
+
 
 
 @dash_app.callback(
@@ -419,19 +496,35 @@ def update_map(owner, lift, sort_var, nonprofit_checked):
     if nonprofit_checked:
         filtered_df = filtered_df[filtered_df['nonprofit'] == 'Yes']
 
+
+    # Create custom hover text
+    filtered_df['hover_text'] = ('<br>' +
+        '<b>' + filtered_df['name'] + '</b><br>' +
+        filtered_df['state'] + '<br>' + '<br>'
+        '<span style="color: #7f8c8d;">Owner:</span> ' + filtered_df['owner'].fillna('N/A') + '<br>' +
+        '<span style="color: #7f8c8d;">Day Ticket:</span> $' + filtered_df['price'].astype(str) + '<br>' +
+        '<span style="color: #7f8c8d;">Vertical Drop:</span> ' + filtered_df['vertical_drop_ft'].astype(str) + ' ft<br>' +
+        '<span style="color: #7f8c8d;">Annual Snowfall:</span> ' + filtered_df['annual_snowfall'].astype(str) + '"<br>' +
+        '<span style="color: #7f8c8d;">Skiable Acres:</span> ' + filtered_df['skiable_acres'].astype(str) + ' ac' + '<br>' +
+        '<span style="color: #7f8c8d;">Total Lifts:</span> ' + filtered_df['total_lifts'].astype(str) + '<br>'
+    )
+
     if sort_var:
         fig = px.scatter_mapbox(
             filtered_df,
             lat='latitude',
             lon='longitude',
-            hover_name='name',
+            hover_name=None,
+            custom_data=['name'],
             hover_data={
-                'state': True,
+                'name': True,
                 'owner': True,
-                sort_var: True,
+                'state': False,
+                sort_var: True if sort_var else False,
                 'latitude': False,
                 'longitude': False
             },
+
             color=sort_var,
             size=sort_var,
             size_max=15,
@@ -461,6 +554,12 @@ def update_map(owner, lift, sort_var, nonprofit_checked):
         # Manually set a uniform color
         fig.update_traces(marker=dict(color='#607695', size=6, opacity=0.8))
 
+    # Update hover template to use custom hover text
+    fig.update_traces(
+        hovertemplate='%{text}<extra></extra>',
+        text=filtered_df['hover_text']
+    )
+
     fig.update_layout(
         mapbox=dict(
             style='carto-positron',
@@ -472,6 +571,18 @@ def update_map(owner, lift, sort_var, nonprofit_checked):
             family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
             size=12,
             color="#111"
+        ),
+        # Style the hover labels to match your website
+        hoverlabel=dict(
+            bgcolor="#f8f9fa",
+            bordercolor="#eee",
+            font=dict(
+                size=14,
+                family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+                color="#1a1a1a",
+            ),
+            namelength=-1,
+            align="left"
         ),
         coloraxis=dict(
             colorbar=dict(
@@ -496,6 +607,7 @@ def update_map(owner, lift, sort_var, nonprofit_checked):
     
 
     return fig
+    
 
 @dash_app.callback(
     Output('resort-count', 'children'),
