@@ -80,6 +80,7 @@
 <p class="subheading">Is the sentiment of corporate greediness backed by the data?</p>
 
 <div class="main-content">
+  <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;">
   <p>
     There's a lot of negative sentiment about corporations buying up ski resorts and raising prices, so I wanted to examine the data and see how these corporate-owned resorts compare to the independent resorts across the U.S.
   </p>
@@ -107,54 +108,69 @@
   </p>
 
   <p>
-    Still, we can at least compare prices normalized for a few simple metrics that are easily accessible and accurate: skiable acres and lift count. These should both have a strong relationship to price.
+    Still, there are at least a few relevant metrics that are easily accessible and mostly accurate; skiable acres and lift count for example. These should both have a strong relationship to price, and the following graph shows that. Instead of average price, it displays average acres and average lift count
+    for each owner.
   </p>
 
 </div>
 
 <div>
     <img class="chart-container-2" src="{{ url_for('static', filename='avg_combined_by_owner.svg') }}"
-         alt="Average Vertical by Owner"/>
+         alt="Average Lift/Acres by Owner"/>
 </div>
 
   <div class="main-content">
     <p>
-        Although the order isn't exactly the same as before, the trend still follows what we would expect. Independent resorts are towards the bottom
-        of the size ranking and Vail is somewhere in the middle.
+      Although the order isn't exactly the same as before, the trend still follows what we would expect. Independent resorts are towards the bottom of the size ranking and Vail is somewhere in the middle.
+    </p>
+    <p>
+      To get a slightly better sense of value, lets look at the normalized prices using the acreage and lift data. Do guests have to pay more per acre of skiable terrain or per lift?
     </p>
 
   </div>
 
   <div>
     <img class="chart-container-2" src="{{ url_for('static', filename='savg_price_normalized_by_owner.svg') }}"
-         alt="Average Vertical by Owner"/>
+         alt="Average Price per Lift/Acres by Owner"/>
   </div>
 
   <div class="main-content">
     <p>
-      Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. 
+      When we look at price per skiable acre and price per lift, the picture shifts. Independent resorts are actually priced higher than Vail when using this metric. This might seem surprising at first, but smaller resorts often don’t benefit from economies of scale. It costs a lot to maintain lifts, snowmaking, and staff even if you don’t have as many visitors. So while their base ticket price is lower, the price relative to what’s offered is often not as efficient.
+    </p>
+    <p>
+      To get a more complete picture, we can use a regression model that takes into account all the relevant features we have that should influence ticket price. These include: vertical drop, slope length, skiable acreage, annual snowfall, total lift count, and detailed lift types like gondolas, carpets, and detachable quads.
+    </p>
+    <p>
+      Owner is not included as a feature in the model because we want to use the model to see how actual prices compare to what the model expects, regardless of ownership. That way we can test whether certain ownership groups consistently charge more or less than they should, given the resort’s stats.
     </p>
     <div class="chart-container">
       <img src="{{ url_for('static', filename='price_prediction_scatter.svg') }}"
            alt="Price Prediction Scatterplot"
            style="width: 75%; height: auto; display: block; margin: auto;" />
     </div>
-
     <p>
-      Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. 
+      The model has an R² of 0.79, which isn’t particularly high, but it does suggest a strong relationship between resort characteristics and ticket price. The average prediction is $22 off, which is reasonably accurate when prices range from $0 to $350. In the scatterplot above, each dot represents a resort. Dots above the diagonal line are resorts that are more expensive than the model predicts, while dots below are underpriced. Vail does appear to have more resorts above the line, but it’s difficult to draw any strong conclusions from the scatterplot alone.
+    </p>
+    <p>
+      To dig deeper, we can look at the residuals — the difference between actual and predicted ticket prices — and average them by owner.
     </p>
     <div class="chart-container">
       <img src="{{ url_for('static', filename='avg_residual_by_owner.svg') }}"
            alt="Price Prediction Residual"
            style="width: 100%; height: auto; display: block; margin: auto;" />
     </div>
-
     <p>
-      According to our model, Aspen Skiing Company is by far the most overpriced with the actual ticket price being more than $50 higher than expected. Its only resorts are the four that are in Aspen, so this result should come as no surprise. Nobody is going to Aspen for its affordability; they go because of the name and its luxurious reputation.
+      According to this model, Vail’s resorts are on average $8 more expensive than what would be expected. Independent resorts are $2 underpriced on average, while New York State-run resorts are heavily underpriced by $36. This suggests that Vail does tend to charge more than expected, and independents slightly less, but the difference isn’t massive. New York’s pricing strategy likely has more to do with the fact that it’s government-operated and not trying to maximize profit like the others.
     </p>
     <p>
-      Also note that none of the analysis here takes into account season pass prices and Epic/Ikon passes. Larger ski resorts probably spend a lot of resources figuring out the perfect pricing strategy for day tickets vs season passes, so that could have some effect
-      on ticket prices that isn't factored in here.
+      Aspen Skiing Company stands out as the most overpriced group by far, with ticket prices averaging more than $50 over what the model predicts. This isn’t surprising given that all of their resorts are located in Aspen, a destination known more for its luxury than its affordability.
+    </p>
+    <p>
+      While Vail and other corporate resorts are clearly more expensive and deserve scrutiny for many of their practices, it's worth remembering that running a ski area is incredibly costly. And as winters keep getting milder, more resorts are now relying almost entirely on snowmaking, which requires massive infrastructure, water, and energy. No matter who owns the resort, skiing is likely to remain an expensive hobby.
+    </p>
+    <p>
+      Also keep in mind that none of this analysis considers season passes like the Epic or Ikon pass. Large ski companies probably put a lot of effort into optimizing their ticket pricing strategy across both day tickets and season passes, so that could influence pricing in ways this model doesn't capture.
     </p>
   </div>
   
