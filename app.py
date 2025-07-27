@@ -607,7 +607,6 @@ def update_map(owner, lift, sort_var, nonprofit_checked):
     
 
     return fig
-    
 
 @dash_app.callback(
     Output('resort-count', 'children'),
@@ -641,7 +640,7 @@ def submit_feedback():
 
     print(f"[FEEDBACK] {email}: {message}")
 
-    with engine.begin() as conn:
+    with engine.connect() as conn:
         conn.execute(
             text("INSERT INTO feedback (email, message) VALUES (:email, :message)"),
             {"email": email, "message": message}
@@ -650,6 +649,7 @@ def submit_feedback():
     print('INSERT SUCCESSFUL')
 
     return render_template('submitted_feedback.html')
+
 
 
 @dash_app.callback(
@@ -783,6 +783,9 @@ def resort_detail(resort_name):
         return "Resort not found", 404
     return render_template('resort_detail.html', resort=resort.iloc[0])
 
+@app.route("/stats/owner")
+def stats_owner():
+    return render_template("stats_owner.html")
 
 
 
