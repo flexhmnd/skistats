@@ -787,6 +787,10 @@ def resort_detail(resort_name):
 def stats_owner():
     return render_template("stats_owner.html")
 
+@app.route("/stats/value")
+def stats_value():
+    return render_template("stats_value.html")
+
 
 
 if __name__ == '__main__':
