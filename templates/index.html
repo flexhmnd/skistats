@@ -139,7 +139,7 @@
     </p>
     <div>
       {% for p in range(1, 6) %}
-        <a href="{{ url_for('index', page=p, sort_by=sort_by, sort_order=sort_order, **{'columns': request.args.getlist('columns')}) }}" class="{% if page == p %}active{% endif %}" style="margin: 0 10px; font-size: 16px; color: {% if page == p %}#000{% else %}#666{% endif %}; font-weight: {% if page == p %}700{% else %}400{% endif %}; text-decoration: none;">
+        <a href="{{ url_for('index', page=p, sort_by=sort_by, sort_order=sort_order, **{'columns': request.args.getlist('columns')}) }}" class="{% if page == p %}active{% endif %}" style="margin: 0 10px; font-size: 16px; color: {% if page == p %}#000{% else %}#626262{% endif %}; font-weight: {% if page == p %}700{% else %}400{% endif %}; text-decoration: none;">
           {{ p }}
         </a>
       {% endfor %}

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% block title %}SkiStats{% endblock %}</title>
   <style>
     :root {
@@ -264,7 +265,7 @@
 
     .pagination a {
       font-size: 16px;
-      color: #666;
+      color: #626262;
       margin: 0 10px;
       text-decoration: none;
       font-weight: 400;
@@ -392,9 +393,10 @@
           </div>
         </div>
         <div class="nav-group">
-          <div class="nav-item">Statistics ▾</div>
+          <div class="nav-item">Analysis ▾</div>
           <div class="dropdown">
-            <a href="#">Coming Soon</a>
+            <a href="{{ url_for('stats_owner') }}">Corporate vs Independent</a>
+            <a href="#">More Coming Soon</a>
           </div>
         </div>
       </div>
@@ -444,6 +446,13 @@
   
   <style>
 
+  .page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
   .nav-right {
     display: flex;
     align-items: center;
@@ -464,7 +473,7 @@
     padding: 8px 12px;
     cursor: pointer;
     border-radius: 6px;
-    color: #333;
+    color: #626262;
     font-size: 14px;
     transition: background-color 0.2s;
   }
@@ -531,7 +540,7 @@
 
   .nav-link {
     padding: 8px 12px;
-    color: #666;
+    color: #626262;
     text-decoration: none;
     font-size: 14px;
     border-radius: 6px;
@@ -565,8 +574,10 @@
   </style>
 
   <!-- MAIN CONTENT -->
+<div class="page-wrapper">
   <div class="container">
     {% block content %}{% endblock %}
   </div>
+</div>
 </body>
 </html>

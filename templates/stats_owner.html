@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block title %}Ownership Statistics - SkiStats{% endblock %}
+
+{% block content %}
+<style>
+    .main-content {
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+  
+    h1 {
+        font-size: 2.8rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        color: #111;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.03em;
+    }
+  
+    .subheading {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #555;
+        margin-bottom: 3rem;
+    }
+  
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 400;
+        color: #1a1a1a;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid #eee;
+    }
+  
+    p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #2c2c2c;
+        margin-bottom: 1.8rem;
+    }
+  
+    .chart-container {
+        max-width: 100%;
+        margin: 40px auto;
+        padding: 20px 0;
+    }
+
+    .chart-container-2 {
+        max-width: 95%;
+        height: auto;
+        display: block;
+        margin: 0px auto;
+        padding: 20px 0;
+    }
+
+    @media (min-width: 1400px) {
+    .chart-container-2 {
+        max-width: 80%;
+
+        }
+    }
+  
+    .chart-caption {
+        font-size: 0.9rem;
+        color: #777;
+        text-align: center;
+        margin-top: 8px;
+        font-style: italic;
+    }
+  </style>
+  
+  <h1>Corporate-Owned vs Independent Resorts</h1>
+<p class="subheading">Is the sentiment of corporate greediness backed by the data?</p>
+
+<div class="main-content">
+  <p>
+    There's a lot of negative sentiment about corporations buying up ski resorts and raising prices, so I wanted to examine the data and see how these corporate-owned resorts compare to the independent resorts across the U.S.
+  </p>
+
+  <p>
+    In the following analysis, Vail Resorts is highlighted as it is by far the largest ski corporation and has been the target of the most criticism. New York State is also included as an owner since they operate three resorts, but it should be treated as its own category that is neither independent nor corporate.
+  </p>
+
+  <p>
+    The first metric to start understanding how different resorts are priced is the average ticket price for each ownership group:
+  </p>
+
+  <div class="chart-container">
+    <img src="{{ url_for('static', filename='avg_price_by_owner.svg') }}"
+         alt="Average Price by Owner"
+         style="width: 100%; height: auto; display: block;" />
+  </div>
+
+  <p>
+    As expected, big corporations price their tickets significantly higher than independent resorts—sometimes several times higher. But this doesn’t really say much about how overpriced they are.
+  </p>
+
+  <p>
+    Corporate-owned ski resorts tend to be much larger, with better lifts and more amenities, so they also require a lot more money to run. Ideally we’d normalize ticket prices according to all of these factors, but there are just too many factors that are impossible to measure.
+  </p>
+
+  <p>
+    Still, we can at least compare prices normalized for a few simple metrics that are easily accessible and accurate: skiable acres and lift count. These should both have a strong relationship to price.
+  </p>
+
+</div>
+
+<div>
+    <img class="chart-container-2" src="{{ url_for('static', filename='avg_combined_by_owner.svg') }}"
+         alt="Average Vertical by Owner"/>
+</div>
+
+  <div class="main-content">
+    <p>
+        Although the order isn't exactly the same as before, the trend still follows what we would expect. Independent resorts are towards the bottom
+        of the size ranking and Vail is somewhere in the middle.
+    </p>
+
+  </div>
+
+  <div>
+    <img class="chart-container-2" src="{{ url_for('static', filename='savg_price_normalized_by_owner.svg') }}"
+         alt="Average Vertical by Owner"/>
+  </div>
+
+  <div class="main-content">
+    <p>
+      Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. 
+    </p>
+    <div class="chart-container">
+      <img src="{{ url_for('static', filename='price_prediction_scatter.svg') }}"
+           alt="Price Prediction Scatterplot"
+           style="width: 75%; height: auto; display: block; margin: auto;" />
+    </div>
+
+    <p>
+      Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. Now heres a graph. 
+    </p>
+    <div class="chart-container">
+      <img src="{{ url_for('static', filename='avg_residual_by_owner.svg') }}"
+           alt="Price Prediction Residual"
+           style="width: 100%; height: auto; display: block; margin: auto;" />
+    </div>
+
+    <p>
+      According to our model, Aspen Skiing Company is by far the most overpriced with the actual ticket price being more than $50 higher than expected. Its only resorts are the four that are in Aspen, so this result should come as no surprise. Nobody is going to Aspen for its affordability; they go because of the name and its luxurious reputation.
+    </p>
+    <p>
+      Also note that none of the analysis here takes into account season pass prices and Epic/Ikon passes. Larger ski resorts probably spend a lot of resources figuring out the perfect pricing strategy for day tickets vs season passes, so that could have some effect
+      on ticket prices that isn't factored in here.
+    </p>
+  </div>
+  
+{% endblock %}
