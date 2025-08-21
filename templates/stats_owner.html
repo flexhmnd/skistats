@@ -74,6 +74,18 @@
         margin-top: 8px;
         font-style: italic;
     }
+
+    .contact-link {
+            color: #8396ff;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+    }
+        
+    .contact-link:hover {
+            border-bottom-color: #8396ff;
+    }
   </style>
   
   <h1>Corporate-Owned vs Independent Resorts</h1>
@@ -136,7 +148,11 @@
 
   <div class="main-content">
     <p>
-      When we look at price per skiable acre and price per lift, the picture shifts. Independent resorts are actually priced higher than Vail when using this metric. This might seem surprising at first, but smaller resorts often don’t benefit from economies of scale. It costs a lot to maintain lifts, snowmaking, and staff even if you don’t have as many visitors. So while their base ticket price is lower, the price relative to what’s offered is often not as efficient.
+      When we look at price per skiable acre and price per lift, the picture shifts. Independent resorts are actually priced higher than Vail when using this metric. If I had to guess, this is due to the number of very small independent resorts with only a couple of groomed trails. These resorts still need snowmaking, grooming, and lift infrastructure, which are all very expensive to set up and maintain. Larger resorts in the West are also able to advertise thousands of acres of
+      ungroomed bowls and glades, which gives them a much larger acreage than any resort in the Midwest or East where most of the independent resorts are.
+    </p>
+    <p>
+      Additionally, the graph for price per lift doesn't differentiate between types of lift. This means that a resort with only magic carpets is treated the same as one with only high-speed lifts, which can obviously make the results less meaningful.
     </p>
     <p>
       To get a more complete picture, we can use a regression model that takes into account all the relevant features we have that should influence ticket price. These include: vertical drop, slope length, skiable acreage, annual snowfall, total lift count, and detailed lift types like gondolas, carpets, and detachable quads.
@@ -151,6 +167,10 @@
     </div>
     <p>
       The model has an R² of 0.79, which isn’t particularly high, but it does suggest a strong relationship between resort characteristics and ticket price. The average prediction is $22 off, which is reasonably accurate when prices range from $0 to $350. In the scatterplot above, each dot represents a resort. Dots above the diagonal line are resorts that are more expensive than the model predicts, while dots below are underpriced. Vail does appear to have more resorts above the line, but it’s difficult to draw any strong conclusions from the scatterplot alone.
+    </p>
+
+    <p>
+      If you want to look at individual resorts on this plot and see which ones are the most overpriced, you can look at my analysis of the best value resorts <a href="{{ url_for('stats_value') }}" class="contact-link">here</a>.
     </p>
     <p>
       To dig deeper, we can look at the residuals — the difference between actual and predicted ticket prices — and average them by owner.

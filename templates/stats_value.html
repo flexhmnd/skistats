@@ -3,5 +3,202 @@
 {% block title %}About - SkiStats{% endblock %}
 
 {% block content %}
+<style>
+    .main-content {
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
 
+    h1 {
+        font-size: 2.8rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        color: #111;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.03em;
+    }
+  
+    .subheading {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #555;
+        margin-bottom: 3rem;
+    }
+  
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 400;
+        color: #1a1a1a;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid #eee;
+    }
+  
+    p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #2c2c2c;
+        margin-bottom: 1.8rem;
+    }
+  
+    .chart-container {
+        max-width: 100%;
+        margin: 40px auto;
+        padding: 20px 0;
+    }
+
+    .chart-container-2 {
+        max-width: 95%;
+        height: auto;
+        display: block;
+        margin: 0px auto;
+        padding: 20px 0;
+    }
+
+    @media (min-width: 1400px) {
+    .chart-container-2 {
+        max-width: 75%;
+
+        }
+    }
+  
+    .chart-caption {
+        font-size: 0.9rem;
+        color: #777;
+        text-align: center;
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+
+    th, td {
+        padding: 10px 14px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+
+<h1>Best & Worst Value Ski Resorts</h1>
+<p class="subheading">Which resorts charge the most money for their size?</p>
+
+<div class="main-content">
+  <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;">
+
+  <p>
+    The price between different ski areas can vary wildy, sometimes by hundreds of dollars. In this analysis, I try to determine
+    which resorts offer the best value in terms of terrain and snowfall. Is a $300 lift ticket at Beaver Creek that much better than
+    a $110 ticket at Whitefish?
+  </p>
+  <p>Keep in mind that I only use day pass prices for this, so 
+    Ikon/Epic and season passes are not taken into account.
+  </p>
+
+  <p>
+    In order to begin to determine which resorts give you the most for your money, we can look at a few different metrics. The ones I chose are vertical drop, skiable acres and the number of lifts. This analysis is by no means perfect,
+    but looking at these metrics normalized for ticket price should give a rough idea of a resort's value. 
+    
+    Keep in mind though that vertical drop is mostly limited by region, so resorts in the Midwest and East are at a disadvantage for this metric.  
+  </p>
+
+  <div class="chart-container">
+    <img src="{{ url_for('static', filename='vertical_per_dollar.svg') }}"
+         alt="Vertical per Dollar"
+         style="width: 100%; height: auto; display: block;" />
+  </div>
+
+  <div class="chart-container">
+    <img src="{{ url_for('static', filename='acres_per_dollar.svg') }}"
+         alt="Vertical per Dollar"
+         style="width: 100%; height: auto; display: block;" />
+  </div>
+
+  <div class="chart-container">
+    <img src="{{ url_for('static', filename='lifts_per_dollar.svg') }}"
+         alt="Lifts per Dollar"
+         style="width: 100%; height: auto; display: block;" />
+  </div>
+
+  <p>
+    As expected, the Midwest offers low vertical, but a very high number of lifts. Being located in Washington, Badger Mountain is the exception in lifts per dollar, but it only offers two ropetows and a T-Bar (for a $10 lift ticket nonetheless).
+  </p>
+
+  <p>
+    When it comes to vertical and acreage, Montana and Idaho are the clear winners. These states have beautiful Rocky Mountain terrain without the typical Rocky Mountain crowds, but they're also more remote and have older lifts, which explains the lower prices.
+  </p>
+
+  <p>
+    The best way to determine which resorts offer the most per dollar is to create a metric that combines all of the previous features, plus any other possible variables that could influence ticket value. The way that I chose to do this is to train a regression model on the variables I have available for all ski resorts. These include: vertical drop, slope length, skiable acreage, annual snowfall, total lift count, and detailed lift types like gondolas, carpets, and detachable quads. This is by no means a complete picture, but it's enough to do a fun little analysis.
+  </p>
+
+  <p>
+    As shown in the model below, the R² is 0.79, which is certainly enough to give our model some credibility. For each resort, I used the model to compute the expected price given the variables listed above. The expected price can be compared to the actual price to get a rough measure of how overpriced a resort is. Each dot on the plot below represents one ski resort, and dots above the diagonal line represent overpriced ones.
+  </p>
+
+  <div class="chart-container">
+    <img src="{{ url_for('static', filename='price_prediction_scatter_2.svg') }}"
+         alt="Scatterplot of Price Prediction Model"
+         style="width: 100%; height: auto; display: block;" />
+  </div>
+
+  <p>
+    Now that we have this model, we can identify the resorts with the largest differences between expected and actual prices. Below are the top 10 most overpriced (actual price higher than expected) and underpriced (actual price lower than expected) ski resorts:
+  </p>
+
+</div>
+
+<div class="chart-container-2">
+    <img src="{{ url_for('static', filename='top_overpriced_resorts.svg') }}"
+         alt="Top 10 Overpriced Resorts"
+         style="width: 100%; height: auto; display: block;" />
+</div>
+
+<div class="chart-container-2">
+    <img src="{{ url_for('static', filename='top_underpriced_resorts.svg') }}"
+         alt="Top 10 Underpriced Resorts"
+         style="width: 100%; height: auto; display: block;" />
+</div>
+
+<div class="main-content">
+
+    <p>
+        Interestingly, 9 out of the top 10 most overpriced ski areas are in the West. It also has 8 of the 10 most underpriced areas, but they seem to be in mostly different states. 
+        The most overpriced resorts tend to be in Colorado and California, while the most underpriced ones are more concentrated in Montana and Idaho. Powder Mountain is certainly a surprise given how large it is, but I suspect that its relatively low lift count and lack of high-speed lifts caused a lower predicted price.
+    </p>
+    <p>
+        Another surprise is Palisades Tahoe being underpriced considering it has one of the most expensive tickets of any ski resort. This is probably because unlike Powder Mountain, Palisades is covered with high-speed lifts (16 to be exact) and has over 100 miles of trails. Obviously many skiers don't like places like this and prefer resorts like June Mountain with its low crowds and measly two high-speed lifts, but unfortunately the model can't account for that.
+    </p>
+    <p>
+        Now before any skiers complain that this analysis is completely wrong, I know this doesn't account for the quality of the terrain. I know Aspen Highlands has amazing bowls and steeps which may not make it overpriced to you. And I know that there are many cheaper ways to get a ticket than paying the peak season window price. This is just intended to be a fun experiment using the data that is easily available on every ski resort.
+    </p>
+
+    <p>
+        And for anyone who wants to see the sorted list of all 388 ski areas, from most overpriced to most underpriced, here it is:
+    </p>
+
+    <div class="table-container">
+        {{ table|safe }}
+    </div>
+
+</div>
 {% endblock %}
