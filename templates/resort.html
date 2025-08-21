@@ -332,6 +332,15 @@
 </style>
 
 <body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73V9WK31KR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-73V9WK31KR');
+    </script>
     <div style="position: absolute; top: 150px; left: 180px;">
         <a href="{{ url_for('index', **request.args.to_dict()) }}" class="back-button">← Back to List</a>
     </div>
