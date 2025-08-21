@@ -771,17 +771,12 @@ def search():
     match = df[df['name'].str.lower() == query]
     if not match.empty:
         resort_name = match.iloc[0]['name']
-        return redirect(url_for('resort_detail', resort_name=resort_name))
+        return redirect(url_for('resort_page', resort_name=resort_name))
     else:
         flash("Resort not found.")
         return redirect(url_for('index'))
 
-@app.route('/resort/<resort_name>')
-def resort_detail(resort_name):
-    resort = df[df['name'] == resort_name]
-    if resort.empty:
-        return "Resort not found", 404
-    return render_template('resort_detail.html', resort=resort.iloc[0])
+
 
 
 @app.route("/stats/owner")
@@ -804,6 +799,8 @@ def stats_value():
 
     table_html = resorts.to_html(classes="table table-striped", index=False, escape=False)
     return render_template("stats_value.html", table=table_html)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
