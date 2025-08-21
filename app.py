@@ -783,15 +783,27 @@ def resort_detail(resort_name):
         return "Resort not found", 404
     return render_template('resort_detail.html', resort=resort.iloc[0])
 
+
 @app.route("/stats/owner")
 def stats_owner():
     return render_template("stats_owner.html")
 
 @app.route("/stats/value")
 def stats_value():
-    return render_template("stats_value.html")
+    resorts = pd.read_csv('resorts_price_differences.csv')
+    resorts["Rank"] = range(1, len(resorts) + 1) 
+    resorts = resorts[["Rank"] + [col for col in resorts.columns if col != "Rank"]]
 
+    # Format Expected Price and Price Difference to 2 decimals
+    if "Expected Price" in resorts.columns:
+        resorts["Expected Price"] = resorts["Expected Price"].map(lambda x: f"${x:,.2f}")
+    if "Price Residual" in resorts.columns:
+        resorts["Price Residual"] = resorts["Price Residual"].map(lambda x: f"${x:,.2f}")
+    if "Actual Price" in resorts.columns:
+        resorts["Actual Price"] = resorts["Actual Price"].map(lambda x: f"${x:,.2f}")
 
+    table_html = resorts.to_html(classes="table table-striped", index=False, escape=False)
+    return render_template("stats_value.html", table=table_html)
 
 if __name__ == '__main__':
     app.run(debug=True)
