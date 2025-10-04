@@ -6,14 +6,14 @@ import pandas as pd
 import plotly.express as px
 import plotly.io as pio
 import os
+from datetime import datetime
 
 
 app = Flask(__name__)
 app.secret_key = '4096'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-
-DATABASE_URL = os.getenv("DATABASE_URL")  # this should be set in Render's environment tab
+DATABASE_URL = "postgresql://postgres:4096@localhost:5432/skistats"
 engine = create_engine(DATABASE_URL)
 
 df = pd.read_csv("ski_info.csv")
@@ -44,7 +44,7 @@ FILTER_LABELS = {
     "lift_total": "Total Lift Count",
     "price": "Day Ticket Price"
 }
-        
+
 @app.context_processor
 def inject_resort_names():
     resort_names = df['name'].sort_values().unique().tolist()
@@ -52,16 +52,8 @@ def inject_resort_names():
 
 @app.route('/')
 def home():
-    ip = request.remote_addr
-    user_agent = request.headers.get('User-Agent')
-
-    with engine.begin() as conn:
-        conn.execute(
-            text("INSERT INTO visit_stats (ip_address, user_agent) VALUES (:ip, :ua)"),
-            {"ip": ip, "ua": user_agent}
-        )
     return redirect(url_for('index', columns=['state', 'vertical_drop', 'snowfall', 'price']))
-    
+
 @app.route('/index')
 def index():
 
@@ -123,7 +115,7 @@ def index():
 
     params = {"limit": per_page, "offset": offset} if not nonprofit_only and not surface_lifts_only else {}
 
-    with engine.connect() as conn:
+    with engine.begin() as conn:
         result = conn.execute(query, params).fetchall()
 
 

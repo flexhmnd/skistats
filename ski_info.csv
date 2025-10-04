@@ -36,9 +36,9 @@ Beech Mountain,https://www.skiresort.info/ski-resort/beech-mountain/,79.0,4672,5
 Belleayre Mountain,https://www.skiresort.info/ski-resort/belleayre-mountain/,114.0,2024,3428,1404,12.0,New York,171,141,New York State,0,1,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,4,9,No,42.1409475000713,-74.5020555965859,Yes
 Berkshire East,https://www.skiresort.info/ski-resort/berkshire-east/,99.0,659,1841,1181,8.0,Massachusetts,180,120,The Schaefer Family,0,0,0,0,0,0,0,1,2,0,0,1,0,0,0,0,0,2,6,No,42.6208879427655,-72.8768560536622,No
 Big Bear at Masthope Mountain,https://www.skiresort.info/ski-resort/big-bear-at-masthope-mountain/,78.0,722,1286,564,4.0,Pennsylvania,26,50,Independent,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,3,7,No,41.5237095917575,-75.024579805837,No
-Big Bear: Bear Mountain,https://www.skiresort.info/ski-resort/bear-mountain-big-bear-lake/,169.0,7139,8806,1667,17.0,California,198,100,Alterra,0,0,0,0,0,1,0,2,0,2,0,2,0,0,0,0,0,4,11,No,34.2279780828159,-116.86089636389,No
-Big Bear: Snow Summit,https://www.skiresort.info/ski-resort/snow-summit-big-bear-lake/,169.0,6988,8202,1214,18.0,California,240,100,Alterra,0,0,0,0,0,0,0,2,2,2,0,4,0,0,0,0,0,5,15,No,34.2358206937449,-116.889253309291,No
-Big Bear: Snow Valley,https://www.skiresort.info/ski-resort/snow-valley/,169.0,6726,7841,1115,21.0,California,240,160,Alterra,0,0,0,0,0,1,0,0,0,4,0,4,0,0,0,0,0,2,11,No,34.2245705198959,-117.035519019636,No
+Big Bear - Bear Mountain,https://www.skiresort.info/ski-resort/bear-mountain-big-bear-lake/,169.0,7139,8806,1667,17.0,California,198,100,Alterra,0,0,0,0,0,1,0,2,0,2,0,2,0,0,0,0,0,4,11,No,34.2279780828159,-116.86089636389,No
+Big Bear - Snow Summit,https://www.skiresort.info/ski-resort/snow-summit-big-bear-lake/,169.0,6988,8202,1214,18.0,California,240,100,Alterra,0,0,0,0,0,0,0,2,2,2,0,4,0,0,0,0,0,5,15,No,34.2358206937449,-116.889253309291,No
+Big Bear - Snow Valley,https://www.skiresort.info/ski-resort/snow-valley/,169.0,6726,7841,1115,21.0,California,240,160,Alterra,0,0,0,0,0,1,0,0,0,4,0,4,0,0,0,0,0,2,11,No,34.2245705198959,-117.035519019636,No
 Big Boulder,https://www.skiresort.info/ski-resort/big-boulder/,105.0,1699,2175,476,3.0,Pennsylvania,55,50,Vail Resorts,0,0,0,0,0,0,0,0,2,1,0,1,0,0,0,0,0,1,5,No,41.0497914194315,-75.6006871876771,No
 Big Moose,https://www.skiresort.info/ski-resort/big-squaw/,40.0,1325,1896,571,5.0,Maine,,136,Independent,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,2,No,45.5064963517218,-69.7018982148919,No
 Big Powderhorn Mountain,https://www.skiresort.info/ski-resort/big-powderhorn-mountain/,89.0,1148,1772,623,6.0,Michigan,253,214,Independent,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,1,0,10,No,46.5090445551297,-90.0946769349822,No
@@ -283,7 +283,7 @@ Pajarito Mountain,https://www.skiresort.info/ski-resort/pajarito-mountain/,65.0,
 Palisades Tahoe,https://www.skiresort.info/ski-resort/palisades-tahoe/,290.0,6201,9006,2805,124.0,California,6000,400,Alterra,1,2,0,0,0,8,0,5,1,10,0,8,0,0,0,0,0,7,42,No,39.1957670677847,-120.234702669971,No
 Paoli Peaks,https://www.skiresort.info/ski-resort/paoli-peaks/,50.0,545,823,279,4.0,Indiana,65,18,Vail Resorts,0,0,0,0,0,0,0,0,1,3,0,1,0,0,0,0,0,2,7,No,38.5555868185865,-86.5121927603359,No
 Park City,https://www.skiresort.info/ski-resort/park-city/,328.0,6801,10000,3199,155.0,Utah,7300,355,Vail Resorts,0,3,1,1,0,6,0,10,5,7,0,3,0,0,0,0,2,3,41,No,40.6528631863087,-111.508887993851,No
-Pats Peak,https://www.skiresort.info/ski-resort/pats-peak/,99.0,591,1398,807,21.0,New Hampshire,115,100,Independent,0,0,0,0,0,0,0,0,1,3,0,2,0,0,1,0,2,2,11,No,43.16224601624913,-71.79680475530348,No
+Pats Peak,https://www.skiresort.info/ski-resort/pats-peak/,99.0,591,1398,807,21.0,New Hampshire,115,100,Independent,0,0,0,0,0,0,0,0,1,3,0,2,0,0,1,0,2,2,11,No,43.16224601624910,-71.79680475530350,No
 Paul Bunyan Ski Hill,https://www.skiresort.info/ski-resort/paul-bunyan-ski-hill/,30.0,1247,1362,115,1.0,Wisconsin,,65,Independent,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,5,0,6,Yes,45.3255228234331,-88.524447650357,No
 Pebble Creek,https://www.skiresort.info/ski-resort/pebble-creek/,76.0,6358,8560,2201,12.0,Idaho,1100,225,Independent,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,1,4,No,42.7784665085899,-112.159198204677,No
 Peek’N Peak,https://www.skiresort.info/ski-resort/peekn-peak/,76.0,1411,1755,344,7.0,New York,105,200,Independent,0,0,0,0,0,0,0,0,0,6,0,2,0,0,0,0,0,3,11,No,42.0623792116924,-79.7358075897459,No
