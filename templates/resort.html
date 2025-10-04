@@ -7,7 +7,7 @@
 
     body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        background: #f8f9fa;
+        background: white;
         color: #333;
         line-height: 1.6;
     }
@@ -38,6 +38,78 @@
         color: #555;
         margin-bottom: 1.5rem;
     }
+
+    .resort-hero {
+        position: relative; 
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+    }
+
+    .resort-hero img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Dark translucent tint */
+    .resort-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(10, 15, 30, 0.55);
+        z-index: 1;
+    }
+
+
+    /* Overlay container */
+    .resort-overlay {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        color: #fff;
+        width: 80vw;
+    }
+
+
+
+
+    /* Resort title text */
+    .resort-overlay h1 {
+        font-size: 4rem;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: white;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+
+    /* State text below title */
+    .resort-overlay .state {
+        font-size: 1.6rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 0rem;
+        font-weight: 100;
+        letter-spacing: 0.02em;
+        margin-block-start: 0.5rem;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Dynamic text colors */
+    .light-text {
+        color: white;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .dark-text {
+        color: black;
+        text-shadow: 0 1px 4px rgba(255,255,255,0.3);
+    }
     
     .state {
         font-size: 1.6rem;
@@ -67,7 +139,7 @@
     }
     
     .email {
-        background: #f8f9fa;
+        background: white;
         padding: 0.25rem 0.5rem;
         border-radius: 4px;
         font-size: 1rem;
@@ -80,13 +152,6 @@
     .left-panel {
         width: 50%;
         float: left;
-        padding: 40px;
-        box-sizing: border-box;
-    }
-
-    .right-panel {
-        width: 50%;
-        float: right;
         padding: 40px;
         box-sizing: border-box;
     }
@@ -128,7 +193,7 @@
     .elevation-marker {
         position: absolute;
         left: 10%;
-        background-color: #f8f9fa;
+        background-color: white;
         padding: 4px 8px;
         font-weight: 300;
         font-size: 1.2rem;
@@ -236,16 +301,85 @@
     }
 
     .right-panel {
-        margin-top: 58px;
-        background: white;
-        width: 35%;
-        right: 8%;
+        margin-top: 40px;
+        background: #f8f9fa;
+        width: 40%;
+        right: 3%;
+        padding: 10px;
         border: 1px solid #eee;
         border-radius: 8px;
-        padding: 20px;
         position: relative;
-        height: auto;
+        height: 250px; /* 👈 sets consistent height */
+        cursor: pointer;
+        overflow: hidden;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .right-panel:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .trail-map-preview {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 👈 auto-crops the image while preserving aspect ratio */
+        display: block;
+        border-radius: 8px;
+    }
+
+    .trail-map-overlay {
+        position: absolute;
+        bottom: 230px;
+        left: 28%;
+        background: #f8f9fa;
+        color: #222;
+        font-size: 1.2rem;
+        font-weight: 200;
+        padding: 6px 14px;
+        border-radius: 8px;
+        pointer-events: none; /* so clicking still triggers openTrailMap */
+    }
+
+
+    /* Modal for fullscreen image */
+    .trailmap-modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        padding-top: 40px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .trailmap-full {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 1000px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .close-btn:hover {
+        color: #ddd;
+    }
+
 
     .content-container {
         display: flex;
@@ -265,9 +399,7 @@
         max-width: 300px;
 
 
-        background: #ffffff;
-        border: 1px solid #eee;
-        border-radius: 10px;
+        background: white;
         padding: 20px;
     }
 
@@ -291,7 +423,7 @@
 
     .map-box {
         background: white;
-        border: 1px solid #eee;
+        border: 1px solid #ccc;
         border-radius: 10px;
         padding: 10px;
         height: 100%;
@@ -312,23 +444,6 @@
         margin-top: 40px;
     }
 
-    .back-button {
-        font-size: 1.2rem;
-        padding: 8px 14px;
-        text-decoration: none;
-        color: #444;
-        font-weight: 300;
-        transition: background-color 0.4s ease;
-        background-color: #eee;
-        border-radius: 6px;
-    }
-
-    .back-button:hover {
-        background-color: #ddd;
-    }
-
-
-
 </style>
 
 <body>
@@ -341,12 +456,18 @@
 
     gtag('config', 'G-73V9WK31KR');
     </script>
-    <div style="position: absolute; top: 150px; left: 180px;">
-        <a href="{{ url_for('index', **request.args.to_dict()) }}" class="back-button">← Back to List</a>
-    </div>
     
-    <h1 style="margin-top: 40px;">{{ resort.name }}</h1>
-    <p class = "state">{{resort.state}}</p>
+    <div class="resort-hero">
+        <img src="{{ url_for('static', filename='resort_pictures/' ~ resort.name ~ '.jpg') }}" 
+             alt="{{ resort.name }} photo">
+        
+        
+    </div>
+    <div class="resort-overlay">
+        <h1>{{ resort.name }}</h1>
+        <p class="state">{{ resort.state }}</p>
+    </div>
+      
 
     <div class="content-container">
     <div class="left-panel">
@@ -366,19 +487,31 @@
         </div>
     </div>
 
-    <div class="right-panel">
+    <script>
+        function openTrailMap(url) {
+            const modal = document.getElementById("trailMapModal");
+            const img = document.getElementById("trailMapFull");
+            img.src = url;
+            modal.style.display = "block";
+        }
+        
+        function closeTrailMap() {
+            document.getElementById("trailMapModal").style.display = "none";
+        }
+    </script>
+        
 
-        <div class="detail-section">
-            <div class="detail-value" style="text-align: center;">{{ resort.owner }}</div>
-            <div class="snowfall-label">Owner</div>
-        </div>
-
-        <div class="detail-section">
-            <div class="snowfall-amount" style="text-align: center;">${{ resort.price }}</div>
-            <div class="snowfall-label">2024–2025 Peak Ticket Price</div>
-        </div>
-    
+    <div class='right-panel' onclick='openTrailMap("{{ url_for("static", filename="resort_maps/" ~ resort.name ~ "_map.jpg") }}")'>
+        <img src="{{ url_for('static', filename='resort_maps/' ~ resort.name ~ '_map.jpg') }}" alt="Trail Map" class="trail-map-preview">
+        <div class="trail-map-overlay">Trail Map (click to expand)</div>
     </div>
+    
+    <!-- Fullscreen modal -->
+    <div id="trailMapModal" class="trailmap-modal" onclick="closeTrailMap()">
+        <span class="close-btn">&times;</span>
+        <img id="trailMapFull" class="trailmap-full">
+    </div>
+    
 
     </div>
     
@@ -452,6 +585,21 @@
             {{ map_html|safe }}
         </div>  
 
+
+    </div>
+
+    <div class="right-panel">
+
+        <div class="detail-section">
+            <div class="detail-value" style="text-align: center;">{{ resort.owner }}</div>
+            <div class="snowfall-label">Owner</div>
+        </div>
+
+        <div class="detail-section">
+            <div class="snowfall-amount" style="text-align: center;">${{ resort.price }}</div>
+            <div class="snowfall-label">2024–2025 Peak Ticket Price</div>
+        </div>
+    
     </div>
   
 
